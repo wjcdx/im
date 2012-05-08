@@ -1,0 +1,73 @@
+<html>
+<head>
+<script language="javascript" src="charset.js"></script>
+<script type="text/javascript">
+
+function isUndefined(v)
+{
+	if (v == "undefined")
+		return true;
+	return false;
+}
+
+function pattnNotBelongsTo(pattn, pattns)
+{
+	for (var p in pattns)
+		if (p == pattn)
+			return false;
+	return true;
+}
+
+function laterInMapping(later, scode)
+{
+	var c;
+	var pattns;
+	var len = scode.length > later.length ? later.length:scode.length;
+	for (var i = 0; i < len; i++) {
+		c = scode.charAt(i);
+		pattns = buzhou_maps[c];
+		if (isUndefined(pattns) || pattnNotBelongsTo(later[i], pattns)) {
+			return false;
+		}
+	}
+	return true;
+}
+
+function scode_change()
+{
+	var input = document.getElementById("input");
+	var candi = document.getElementById("candidates");
+	var scode = input.value;
+	var patterns = pattern_maps[scode.charAt(0)];
+	if (isUndefined(patterns)) {
+		candi.value = "No first pattern.";
+	}
+
+	var candidates = new Array();
+	for (var c in Characters) {
+		if (pattnNotBelongsTo(c.first, patterns)) {
+			continue;
+		}
+		if (laterInMapping(c.later, scode.substring(1))) {
+			candidates[candidates.length] = c;
+		}
+	}
+	var candi_chars = "";
+	for (var c in candidates) {
+		candi_chars += c.char + " ";
+	}
+	candi.value = candi_chars;
+}
+
+</script>
+
+</head>
+
+<body>
+	Input: <input type="text" id='input' onkeyup="scode_change()"><br /><br />
+	Candidates: <br />
+	<textarea  id="candidates" style="width: 250px; height: 230px;">
+	</textarea>
+</body>
+
+</html>

@@ -112,20 +112,48 @@ var baozipang = 64; /* 豹 */
 var chaozipang = 65; /* 朝 */
 var quezipang = 66; /* 雄 */
 
-var pattern_mapping = [
-	[A] = [],
-	[B] = []
-];
+var yi = 1;
+var pieheng = 1;
+var ji = 1;
+var hengzhegou = 1;
+var shuzhegou = 1;
+var shi = 1;
+var you = 1;
+var chang = 1;
+var ding = 1;
+var cha = 1;
+var li = 1;
+var er = 1;
+var zuokai = 1;
+var bi = 1;
+var dao = 1;
+var two = 1;
+var bu_sd = 1;
+var qi = 1;
+var jiu = 1;
+var jin = 1;
+var nai = 1;
+var fanzipang = 1;
+var ren = 1;
+var dao_lp = 1;
+var jinzidi = 1;
+var ba = 1;
+var zhi = 1;
+var canzidi = 1;
 
-var buzhou_mapping = [];
+var pattern_maps = {
+	'A': [],
+	'B': []
+};
 
-var offen_use_buzhou_mapping = [];
+var buzhou_maps = {};
+
+var offen_use_buzhou_mapping = {};
 
 function Char() {
 	this.char = '';
 	this.first = 1;
 	this.later = new Array();
-	
 }
 
 var Characters = new Array();
