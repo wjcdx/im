@@ -50,7 +50,7 @@ var shangzitou = 2; /* 上 */
 var lidaopang = 3; /* 刚 */
 var tongzikuang = 4; /* 同 */
 var danrenpang = 5; /* 化 */
-var fanzitou = 6; /* 反 */
+var fanzipang = 6; /* 反 */
 var weizitou  = 7; /* 危 */
 var baozitou = 8; /* 包 */
 var fengzitou = 9; /* 凤 */
@@ -63,7 +63,7 @@ var xiongzikuang = 15; /* 画 */
 var danerpang = 16; /* 印 */
 var zuoerpang = 17; /* 阳 */
 var youerpang = 18; /* 那 */
-var sizitou = 19; /* 私 */
+var sigong = 19; /* 私 */
 var jianzidi = 20; /* 建 */
 var caozitou = 21; /* 草 */
 var nongzidi = 22; /* 弄 */
@@ -80,14 +80,14 @@ var zhewen = 32; /* 条 */
 var shizipang = 33; /* 饭 */
 var jiangzipang = 34; /* 壮 */
 var shuxinpang = 35; /* 怀 */
-var baogai = 36; /* 安 */
+var baogaitou = 36; /* 安 */
 var sandianshui = 37; /* 江 */
 var zouzhidi = 38; /* 过 */
 var luzitou = 39; /* 录 */
 var xunzitou = 40; /* 寻 */
 var jiaosipang = 41; /* 红 */
 var youzipang = 42; /* 幼 */
-var sanguai = 43; /* 巡 */
+var sanzhe = 43; /* 巡 */
 var laozitou = 44; /* 老 */
 var shuxindi = 45; /* 恭 */
 var fanwenpang = 46; /* 故 */
@@ -98,11 +98,11 @@ var shizipang = 50; /* 视 */
 var minzidi = 51; /* 监 */
 var jinzipang = 52; /* 银 */
 var bingzitou = 53; /* 病 */
-var yizipang = 54; /* 补 */
+var buyipang = 54; /* 补 */
 var dengzitou = 55; /* 登 */
 var huzitou = 56; /* 虎 */
 var zhuzitou = 57; /* 第 */
-var piweiyang = 58; /* 差 */
+var pieweiyang = 58; /* 差 */
 var yangzitou = 59; /* 羔 */
 var jianzili = 60; /* 聿 */
 var kenzitou = 61; /* 垦 */
@@ -133,13 +133,16 @@ var qi = 1;
 var jiu = 1;
 var jin = 1;
 var nai = 1;
-var fanzipang = 1;
 var ren = 1;
 var dao_lp = 1;
 var jinzidi = 1;
 var ba = 1;
 var zhi = 1;
-var canzidi = 1;
+var cangzidi = 1;
+var liangpie = 1;
+var gong = 1;
+var zi = 1;
+var shutidian = 1;
 
 var pattern_maps = {
 	'A': [],
@@ -850,7 +853,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "公",
 	first: pattern_ud_up_1_down_1_down_big,
-	later: [ba, sizitou]
+	later: [ba, sigong]
 }
 Characters[Characters.length] = {
 	char: "仓",
@@ -905,7 +908,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "勾",
 	first: pattern_round_right_up,
-	later: [baozitou, sizitou]
+	later: [baozitou, sigong]
 }
 Characters[Characters.length] = {
 	char: "文",
@@ -1010,7 +1013,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "允",
 	first: pattern_ud_up_1_down_1_up_big,
-	later: [sizitou, er]
+	later: [sigong, er]
 }
 Characters[Characters.length] = {
 	char: "予",
