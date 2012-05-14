@@ -25,7 +25,7 @@ function laterInMapping(later, scode)
 	var len = scode.length > later.length ? later.length:scode.length;
 	for (var i = 0; i < len; i++) {
 		c = scode.charAt(i);
-		pattns = buzhou_maps[c];
+		pattns = bushou_maps[c];
 		if (isUndefined(pattns) || pattnNotBelongsTo(later[i], pattns)) {
 			return false;
 		}
@@ -44,7 +44,8 @@ function scode_change()
 	}
 
 	var candidates = new Array();
-	for (var c in Characters) {
+	for (var i in Characters) {
+		var c = Characters[i];
 		if (pattnNotBelongsTo(c.first, patterns)) {
 			continue;
 		}
@@ -53,7 +54,8 @@ function scode_change()
 		}
 	}
 	var candi_chars = "";
-	for (var c in candidates) {
+	for (var i in candidates) {
+		var c = candidates[i];
 		candi_chars += c.char + " ";
 	}
 	candi.value = candi_chars;

@@ -34,6 +34,9 @@ var pattern_round_right_up = 38; /* 式 */
 /* 结构型：品字形及其他 */
 var pattern_pin = 41;
 
+/* presudo patter */
+var pattern_ = 42;
+
 /* 横竖撇捺折 for 独体字 续笔 */
 var heng = 1;
 var shu = 2;
@@ -149,9 +152,9 @@ var pattern_maps = {
 	'B': []
 };
 
-var buzhou_maps = {};
+var bushou_maps = {};
 
-var offen_use_buzhou_mapping = {};
+var offen_use_bushou_mapping = {};
 
 function Char() {
 	this.char = '';
