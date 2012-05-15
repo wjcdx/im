@@ -48,111 +48,148 @@ var dian = 6;
 /* 其他结构型续笔：部首
  * from 常用汉字正形手册
  */
+
+/* 横起 */
 var jiangzikuang = 1; /* 匠 */
-var shangzitou = 2; /* 上 */
-var lidaopang = 3; /* 刚 */
-var tongzikuang = 4; /* 同 */
-var danrenpang = 5; /* 化 */
-var fanzipang = 6; /* 反 */
-var weizitou  = 7; /* 危 */
-var baozitou = 8; /* 包 */
-var fengzitou = 9; /* 凤 */
-var liuzitou = 10; /* 六 */
-var liangdianshui = 11; /* 次 */
-var lanzitou = 12; /* 兰 */
-var tubaogai = 13; /* 军 */
-var yanzipang = 14; /* 语 */
-var xiongzikuang = 15; /* 画 */
-var danerpang = 16; /* 印 */
-var zuoerpang = 17; /* 阳 */
-var youerpang = 18; /* 那 */
-var sigong = 19; /* 私 */
-var jianzidi = 20; /* 建 */
 var caozitou = 21; /* 草 */
 var nongzidi = 22; /* 弄 */
 var youzishen = 23; /* 尤，无点 */
 var yaozidi = 24; /* 尧 */
 var tishoupang = 25; /* 提 */
 var shizikuang = 26; /* 式 */
+var laozitou = 44; /* 老 */
+var chaozipang = 65; /* 朝 */
+var shi = 1;
+var chang = 1;
+var ding = 1;
+var two = 1;
+
+/* 竖起 */
+var shangzitou = 2; /* 上 */
+var lidaopang = 3; /* 刚 */
+var tongzikuang = 4; /* 同 */
 var dakoukuang = 27; /* 国 */
 var guangzitou = 28; /* 光 */
+var jiangzipang = 34; /* 壮 */
+var shuxinpang = 35; /* 怀 */
+var minzidi = 51; /* 监 */
+var huzitou = 56; /* 虎 */
+var zuzipang = 62; /* 跟 */
+var bu_sd = 1;
+var jin = 1;
+
+/* 撇起 */
+var danrenpang = 5; /* 化 */
+var weizitou  = 7; /* 危 */
+var baozitou = 8; /* 包 */
+var fengzitou = 9; /* 凤 */
+var tubaogai = 13; /* 军 */
 var shuangrenpang = 29; /* 很 */
 var sanpie = 30; /* 形 */
 var fanquanpang = 31; /* 狼 */
 var zhewen = 32; /* 条 */
 var shizipang = 33; /* 饭 */
-var jiangzipang = 34; /* 壮 */
-var shuxinpang = 35; /* 怀 */
+var fanwenpang = 46; /* 故 */
+var caizitou = 47; /* 采 */
+var jinzipang = 52; /* 银 */
+var zhuzitou = 57; /* 第 */
+var fanzitou = 63; /* 番 */
+var baozipang = 64; /* 豹 */
+var quezipang = 66; /* 雄 */
+var pieheng = 1;
+var ji = 1;
+var cha = 1;
+var er = 1;
+var bi = 1;
+var qi = 1;
+var jiu = 1;
+var ren = 1;
+var dao_lp = 1;
+var ba = 1;
+var liangpie = 1;
+
+/* 捺起 */
+var liuzitou = 10; /* 六 */
+var liangdianshui = 11; /* 次 */
+var lanzitou = 12; /* 兰 */
+var yanzipang = 14; /* 语 */
 var baogaitou = 36; /* 安 */
 var sandianshui = 37; /* 江 */
 var zouzhidi = 38; /* 过 */
+var huozipang = 48; /* 火 */
+var sidiandi = 49; /* 点 */
+var shizipang = 50; /* 视 */
+var bingzitou = 53; /* 病 */
+var buyipang = 54; /* 补 */
+var pieweiyang = 58; /* 差 */
+var yangzitou = 59; /* 羔 */
+var jinzidi = 1;
+var zhi = 1;
+
+/* 折起 */
+var fanzipang = 6; /* 反 */
+var xiongzikuang = 15; /* 画 */
+var danerpang = 16; /* 印 */
+var zuoerpang = 17; /* 阳 */
+var youerpang = 18; /* 那 */
+var sigong = 19; /* 私 */
+var jianzidi = 20; /* 建 */
 var luzitou = 39; /* 录 */
 var xunzitou = 40; /* 寻 */
 var jiaosipang = 41; /* 红 */
 var youzipang = 42; /* 幼 */
 var sanzhe = 43; /* 巡 */
-var laozitou = 44; /* 老 */
 var shuxindi = 45; /* 恭 */
-var fanwenpang = 46; /* 故 */
-var caizitou = 47; /* 采 */
-var huozipang = 48; /* 火 */
-var sidiandi = 49; /* 点 */
-var shizipang = 50; /* 视 */
-var minzidi = 51; /* 监 */
-var jinzipang = 52; /* 银 */
-var bingzitou = 53; /* 病 */
-var buyipang = 54; /* 补 */
 var dengzitou = 55; /* 登 */
-var huzitou = 56; /* 虎 */
-var zhuzitou = 57; /* 第 */
-var pieweiyang = 58; /* 差 */
-var yangzitou = 59; /* 羔 */
 var jianzili = 60; /* 聿 */
 var kenzitou = 61; /* 垦 */
-var zuzipang = 62; /* 跟 */
-var fanzitou = 63; /* 番 */
-var baozipang = 64; /* 豹 */
-var chaozipang = 65; /* 朝 */
-var quezipang = 66; /* 雄 */
-
 var yi = 1;
-var pieheng = 1;
-var ji = 1;
 var hengzhegou = 1;
 var shuzhegou = 1;
-var shi = 1;
 var you = 1;
-var chang = 1;
-var ding = 1;
-var cha = 1;
 var li = 1;
-var er = 1;
 var zuokai = 1;
-var bi = 1;
 var dao = 1;
-var two = 1;
-var bu_sd = 1;
-var qi = 1;
-var jiu = 1;
-var jin = 1;
 var nai = 1;
-var ren = 1;
-var dao_lp = 1;
-var jinzidi = 1;
-var ba = 1;
-var zhi = 1;
 var cangzidi = 1;
-var liangpie = 1;
 var gong = 1;
 var zi = 1;
 var shutidian = 1;
 
+
+
+/* 键盘映射表 */
 var pattern_maps = {
 	'A': [],
 	'B': []
+	'C': []
+	'D': []
+	'E': []
+	'F': []
+	'G': []
+	'H': []
+	'I': []
+	'J': []
+	'K': []
+	'L': []
+	'M': []
+	'N': []
+	'O': []
 };
 
-var bushou_maps = {};
+var bushou_maps = {
+	'P': []
+	'Q': []
+	'R': []
+	'S': []
+	'T': []
+	'U': []
+	'V': []
+	'W': []
+	'X': []
+	'Y': []
+	'Z': []
+};
 
 var offen_use_bushou_mapping = {};
 
