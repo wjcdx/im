@@ -35,7 +35,7 @@ var pattern_round_right_up = 38; /* 式 */
 var pattern_pin = 41;
 
 /* presudo patter */
-var pattern_ = 42;
+var pattern_ = 51;
 
 /* 横竖撇捺折 for 独体字 续笔 */
 var heng = 1;
@@ -50,139 +50,164 @@ var dian = 6;
  */
 
 /* 横起 */
-var jiangzikuang = 1; /* 匠 */
-var caozitou = 21; /* 草 */
-var nongzidi = 22; /* 弄 */
-var youzishen = 23; /* 尤，无点 */
-var yaozidi = 24; /* 尧 */
-var tishoupang = 25; /* 提 */
-var shizikuang = 26; /* 式 */
-var laozitou = 44; /* 老 */
-var chaozipang = 65; /* 朝 */
-var shi = 1;
-var chang = 1;
-var ding = 1;
-var two = 1;
+var jiangzikuang = 1001; /* 匠 */
+var caozitou = 1002; /* 草 */
+var nongzidi = 1003; /* 弄 */
+var youzishen = 1004; /* 尤，无点 */
+var yaozidi = 1005; /* 尧 */
+var tishoupang = 1006; /* 提 */
+var shizikuang = 1007; /* 式 */
+var laozitou = 1008; /* 老 */
+var chaozipang = 1009; /* 朝 */
+var shi = 1010;
+var chang = 1011;
+var ding = 1012;
+var two = 1013;
 
 /* 竖起 */
-var shangzitou = 2; /* 上 */
-var lidaopang = 3; /* 刚 */
-var tongzikuang = 4; /* 同 */
-var dakoukuang = 27; /* 国 */
-var guangzitou = 28; /* 光 */
-var jiangzipang = 34; /* 壮 */
-var shuxinpang = 35; /* 怀 */
-var minzidi = 51; /* 监 */
-var huzitou = 56; /* 虎 */
-var zuzipang = 62; /* 跟 */
-var bu_sd = 1;
-var jin = 1;
+var shangzitou = 2001; /* 上 */
+var lidaopang = 2002; /* 刚 */
+var tongzikuang = 2003; /* 同 */
+var dakoukuang = 2004; /* 国 */
+var guangzitou = 2005; /* 光 */
+var jiangzipang = 2006; /* 壮 */
+var shuxinpang = 2007; /* 怀 */
+var minzidi = 2008; /* 监 */
+var huzitou = 2009; /* 虎 */
+var zuzipang = 2010; /* 跟 */
+var bu_sd = 2011;
+var jin = 2012;
 
 /* 撇起 */
-var danrenpang = 5; /* 化 */
-var weizitou  = 7; /* 危 */
-var baozitou = 8; /* 包 */
-var fengzitou = 9; /* 凤 */
-var tubaogai = 13; /* 军 */
-var shuangrenpang = 29; /* 很 */
-var sanpie = 30; /* 形 */
-var fanquanpang = 31; /* 狼 */
-var zhewen = 32; /* 条 */
-var shizipang = 33; /* 饭 */
-var fanwenpang = 46; /* 故 */
-var caizitou = 47; /* 采 */
-var jinzipang = 52; /* 银 */
-var zhuzitou = 57; /* 第 */
-var fanzitou = 63; /* 番 */
-var baozipang = 64; /* 豹 */
-var quezipang = 66; /* 雄 */
-var pieheng = 1;
-var ji = 1;
-var cha = 1;
-var er = 1;
-var bi = 1;
-var qi = 1;
-var jiu = 1;
-var ren = 1;
-var dao_lp = 1;
-var ba = 1;
-var liangpie = 1;
+var danrenpang = 3001; /* 化 */
+var weizitou  = 3002; /* 危 */
+var baozitou = 3004; /* 包 */
+var fengzitou = 3005; /* 凤 */
+var tubaogai = 3006; /* 军 */
+var shuangrenpang = 3007; /* 很 */
+var sanpie = 3008; /* 形 */
+var fanquanpang = 3009; /* 狼 */
+var zhewen = 3010; /* 条 */
+var shizipang = 3011; /* 饭 */
+var fanwenpang = 3012; /* 故 */
+var caizitou = 3013; /* 采 */
+var jinzipang = 3014; /* 银 */
+var zhuzitou = 3015; /* 第 */
+var fanzitou = 3016; /* 番 */
+var baozipang = 3017; /* 豹 */
+var quezipang = 3018; /* 雄 */
+var pieheng = 3019;
+var ji = 3020;
+var cha = 3021;
+var er = 3022;
+var bi = 3023;
+var qi = 3024;
+var jiu = 3025;
+var ren = 3026;
+var dao_lp = 3027;
+var ba = 3028;
+var liangpie = 3029;
 
 /* 捺起 */
-var liuzitou = 10; /* 六 */
-var liangdianshui = 11; /* 次 */
-var lanzitou = 12; /* 兰 */
-var yanzipang = 14; /* 语 */
-var baogaitou = 36; /* 安 */
-var sandianshui = 37; /* 江 */
-var zouzhidi = 38; /* 过 */
-var huozipang = 48; /* 火 */
-var sidiandi = 49; /* 点 */
-var shizipang = 50; /* 视 */
-var bingzitou = 53; /* 病 */
-var buyipang = 54; /* 补 */
-var pieweiyang = 58; /* 差 */
-var yangzitou = 59; /* 羔 */
-var jinzidi = 1;
-var zhi = 1;
+var liuzitou = 4001; /* 六 */
+var liangdianshui = 4002; /* 次 */
+var lanzitou = 4003; /* 兰 */
+var yanzipang = 4004; /* 语 */
+var baogaitou = 4005; /* 安 */
+var sandianshui = 4006; /* 江 */
+var zouzhidi = 4007; /* 过 */
+var huozipang = 4008; /* 火 */
+var sidiandi = 4009; /* 点 */
+var shizipang = 4010; /* 视 */
+var bingzitou = 4011; /* 病 */
+var buyipang = 4012; /* 补 */
+var pieweiyang = 4013; /* 差 */
+var yangzitou = 4014; /* 羔 */
+var jinzidi = 4015;
+var zhi = 4016;
 
 /* 折起 */
-var fanzipang = 6; /* 反 */
-var xiongzikuang = 15; /* 画 */
-var danerpang = 16; /* 印 */
-var zuoerpang = 17; /* 阳 */
-var youerpang = 18; /* 那 */
-var sigong = 19; /* 私 */
-var jianzidi = 20; /* 建 */
-var luzitou = 39; /* 录 */
-var xunzitou = 40; /* 寻 */
-var jiaosipang = 41; /* 红 */
-var youzipang = 42; /* 幼 */
-var sanzhe = 43; /* 巡 */
-var shuxindi = 45; /* 恭 */
-var dengzitou = 55; /* 登 */
-var jianzili = 60; /* 聿 */
-var kenzitou = 61; /* 垦 */
-var yi = 1;
-var hengzhegou = 1;
-var shuzhegou = 1;
-var you = 1;
-var li = 1;
-var zuokai = 1;
-var dao = 1;
-var nai = 1;
-var cangzidi = 1;
-var gong = 1;
-var zi = 1;
-var shutidian = 1;
-
+var fanzipang = 5001; /* 反 */
+var xiongzikuang = 5002; /* 画 */
+var danerpang = 5003; /* 印 */
+var zuoerpang = 5004; /* 阳 */
+var youerpang = 5005; /* 那 */
+var sigong = 5006; /* 私 */
+var jianzidi = 5007; /* 建 */
+var luzitou = 5008; /* 录 */
+var xunzitou = 5009; /* 寻 */
+var jiaosipang = 5010; /* 红 */
+var youzipang = 5011; /* 幼 */
+var sanzhe = 5012; /* 巡 */
+var shuxindi = 5013; /* 恭 */
+var dengzitou = 5014; /* 登 */
+var jianzili = 5015; /* 聿 */
+var kenzitou = 5016; /* 垦 */
+var yi = 5017;
+var hengzhegou = 5018;
+var shuzhegou = 5019;
+var you = 5020;
+var li = 5021;
+var zuokai = 5022;
+var dao = 5023;
+var nai = 5024;
+var cangzidi = 5025;
+var gong = 5026;
+var zi = 5027;
+var shutidian = 5028;
 
 
 /* 键盘映射表 */
 var pattern_maps = {
-	'A': [],
-	'B': []
-	'C': []
-	'D': []
-	'E': []
-	'F': []
-	'G': []
-	'H': []
-	'I': []
-	'J': []
-	'K': []
-	'L': []
-	'M': []
-	'N': []
-	'O': []
+	'A': [pattern_lr_left_1_right_1_left_big, pattern_lr_left_1_right_1_right_big],
+	'B': [pattern_lr_left_middle_right]
+	'C': [pattern_lr_left_1_right_2, pattern_lr_left_1_right_many]
+	'D': [pattern_lr_left_2_right_1, pattern_lr_left_many_right_1]
+	'E': [pattern_lr_left_many_right_many]
+
+	'F': [pattern_ud_up_1_down_1_up_big, pattern_ud_up_1_down_1_down_big]
+	'G': [pattern_ud_up_middle_down]
+	'H': [pattern_ud_up_1_down_2, pattern_ud_up_1_down_many]
+	'I': [pattern_ud_up_2_down_1, pattern_ud_up_many_down_1]
+	'J': [pattern_ud_up_many_down_many]
+	
+	'K': [pattern_single]
+
+	'L': [pattern_round_whole]
+	'M': [pattern_round_left_down]
+	'N': [pattern_round_up, pattern_round_down, pattern_round_right_up,
+		pattern_round_left, pattern_round_right, pattern_round_left_up]
+
+	'O': [pattern_pin]
 };
 
 var bushou_maps = {
-	'P': []
-	'Q': []
-	'R': []
-	'S': []
-	'T': []
+	'P': [jiangzikuang, caozitou, nongzidi, youzishen,
+			yaozidi, tishoupang, shizikuang, laozitou,
+			chaozipang, shi, chang, ding, two]
+
+	'Q': [shangzitou, lidaopang, tongzikuang, dakoukuang,
+			guangzitou, jiangzipang, shuxinpang, minzidi,
+			huzitou, zuzipang, bu_sd, jin]
+
+	'R': [danrenpang, weizitou , baozitou, fengzitou,
+			tubaogai, shuangrenpang, sanpie, fanquanpang,
+			zhewen, shizipang, fanwenpang, caizitou, jinzipang,
+			zhuzitou, fanzitou, baozipang, quezipang, pieheng,
+			ji, cha, er, bi, qi, jiu, ren, dao_lp, ba, liangpie]
+
+	'S': [liuzitou, liangdianshui, lanzitou, yanzipang,
+			baogaitou, sandianshui, zouzhidi, huozipang,
+			sidiandi, shizipang, bingzitou, buyipang,
+			pieweiyang, yangzitou, jinzidi, zhi]
+
+
+	'T': [fanzipang, xiongzikuang, danerpang, zuoerpang,
+			youerpang, sigong, jianzidi, luzitou, xunzitou,
+			jiaosipang, youzipang, sanzhe, shuxindi, dengzitou,
+			jianzili, kenzitou, yi, hengzhegou, shuzhegou, you,
+			li, zuokai, dao, nai, cangzidi, gong, zi, shutidian]
+
 	'U': []
 	'V': []
 	'W': []
