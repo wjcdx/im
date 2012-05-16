@@ -160,60 +160,60 @@ var shutidian = 5028;
 /* 键盘映射表 */
 var pattern_maps = {
 	'A': [pattern_lr_left_1_right_1_left_big, pattern_lr_left_1_right_1_right_big],
-	'B': [pattern_lr_left_middle_right]
-	'C': [pattern_lr_left_1_right_2, pattern_lr_left_1_right_many]
-	'D': [pattern_lr_left_2_right_1, pattern_lr_left_many_right_1]
-	'E': [pattern_lr_left_many_right_many]
+	'B': [pattern_lr_left_middle_right],
+	'C': [pattern_lr_left_1_right_2, pattern_lr_left_1_right_many],
+	'D': [pattern_lr_left_2_right_1, pattern_lr_left_many_right_1],
+	'E': [pattern_lr_left_many_right_many],
 
-	'F': [pattern_ud_up_1_down_1_up_big, pattern_ud_up_1_down_1_down_big]
-	'G': [pattern_ud_up_middle_down]
-	'H': [pattern_ud_up_1_down_2, pattern_ud_up_1_down_many]
-	'I': [pattern_ud_up_2_down_1, pattern_ud_up_many_down_1]
-	'J': [pattern_ud_up_many_down_many]
+	'F': [pattern_ud_up_1_down_1_up_big, pattern_ud_up_1_down_1_down_big],
+	'G': [pattern_ud_up_middle_down],
+	'H': [pattern_ud_up_1_down_2, pattern_ud_up_1_down_many],
+	'I': [pattern_ud_up_2_down_1, pattern_ud_up_many_down_1],
+	'J': [pattern_ud_up_many_down_many],
 	
-	'K': [pattern_single]
+	'K': [pattern_single],
 
-	'L': [pattern_round_whole]
-	'M': [pattern_round_left_down]
+	'L': [pattern_round_whole],
+	'M': [pattern_round_left_down],
 	'N': [pattern_round_up, pattern_round_down, pattern_round_right_up,
-		pattern_round_left, pattern_round_right, pattern_round_left_up]
+			pattern_round_left, pattern_round_right, pattern_round_left_up],
 
-	'O': [pattern_pin]
+	'O': [pattern_pin],
 };
 
 var bushou_maps = {
 	'P': [jiangzikuang, caozitou, nongzidi, youzishen,
 			yaozidi, tishoupang, shizikuang, laozitou,
-			chaozipang, shi, chang, ding, two]
+			chaozipang, shi, chang, ding, two],
 
 	'Q': [shangzitou, lidaopang, tongzikuang, dakoukuang,
 			guangzitou, jiangzipang, shuxinpang, minzidi,
-			huzitou, zuzipang, bu_sd, jin]
+			huzitou, zuzipang, bu_sd, jin],
 
 	'R': [danrenpang, weizitou , baozitou, fengzitou,
 			tubaogai, shuangrenpang, sanpie, fanquanpang,
 			zhewen, shizipang, fanwenpang, caizitou, jinzipang,
 			zhuzitou, fanzitou, baozipang, quezipang, pieheng,
-			ji, cha, er, bi, qi, jiu, ren, dao_lp, ba, liangpie]
+			ji, cha, er, bi, qi, jiu, ren, dao_lp, ba, liangpie],
 
 	'S': [liuzitou, liangdianshui, lanzitou, yanzipang,
 			baogaitou, sandianshui, zouzhidi, huozipang,
 			sidiandi, shizipang, bingzitou, buyipang,
-			pieweiyang, yangzitou, jinzidi, zhi]
+			pieweiyang, yangzitou, jinzidi, zhi],
 
 
 	'T': [fanzipang, xiongzikuang, danerpang, zuoerpang,
 			youerpang, sigong, jianzidi, luzitou, xunzitou,
 			jiaosipang, youzipang, sanzhe, shuxindi, dengzitou,
 			jianzili, kenzitou, yi, hengzhegou, shuzhegou, you,
-			li, zuokai, dao, nai, cangzidi, gong, zi, shutidian]
+			li, zuokai, dao, nai, cangzidi, gong, zi, shutidian],
 
-	'U': []
-	'V': []
-	'W': []
-	'X': []
-	'Y': []
-	'Z': []
+	'U': [],
+	'V': [],
+	'W': [],
+	'X': [],
+	'Y': [],
+	'Z': [],
 };
 
 var offen_use_bushou_mapping = {};
