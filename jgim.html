@@ -5,16 +5,18 @@
 
 function isUndefined(v)
 {
-	if (v == "undefined")
+	if (v == undefined)
 		return true;
 	return false;
 }
 
 function pattnNotBelongsTo(pattn, pattns)
 {
-	for (var p in pattns)
+	for (var i in pattns) {
+		var p = pattns[i];
 		if (p == pattn)
 			return false;
+	}
 	return true;
 }
 
@@ -22,9 +24,11 @@ function laterInMapping(later, scode)
 {
 	var c;
 	var pattns;
-	var len = scode.length > later.length ? later.length:scode.length;
+	var len = scode.length;
+	if (len > later.length)
+		return false;
 	for (var i = 0; i < len; i++) {
-		c = scode.charAt(i);
+		c = scode.charAt(i).toUpperCase();
 		pattns = bushou_maps[c];
 		if (isUndefined(pattns) || pattnNotBelongsTo(later[i], pattns)) {
 			return false;
@@ -38,7 +42,7 @@ function scode_change()
 	var input = document.getElementById("input");
 	var candi = document.getElementById("candidates");
 	var scode = input.value;
-	var patterns = pattern_maps[scode.charAt(0)];
+	var patterns = pattern_maps[scode.charAt(0).toUpperCase()];
 	if (isUndefined(patterns)) {
 		candi.value = "No first pattern.";
 	}
@@ -49,7 +53,9 @@ function scode_change()
 		if (pattnNotBelongsTo(c.first, patterns)) {
 			continue;
 		}
-		if (laterInMapping(c.later, scode.substring(1))) {
+		if (scode.length == 1) {
+			candidates[candidates.length] = c;
+		} else if (laterInMapping(c.later, scode.substring(1))) {
 			candidates[candidates.length] = c;
 		}
 	}

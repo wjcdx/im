@@ -182,27 +182,27 @@ var pattern_maps = {
 };
 
 var bushou_maps = {
-	'P': [jiangzikuang, caozitou, nongzidi, youzishen,
+	'P': [heng, jiangzikuang, caozitou, nongzidi, youzishen,
 			yaozidi, tishoupang, shizikuang, laozitou,
 			chaozipang, shi, chang, ding, two],
 
-	'Q': [shangzitou, lidaopang, tongzikuang, dakoukuang,
+	'Q': [shu, shangzitou, lidaopang, tongzikuang, dakoukuang,
 			guangzitou, jiangzipang, shuxinpang, minzidi,
 			huzitou, zuzipang, bu_sd, jin],
 
-	'R': [danrenpang, weizitou , baozitou, fengzitou,
+	'R': [pie, danrenpang, weizitou , baozitou, fengzitou,
 			tubaogai, shuangrenpang, sanpie, fanquanpang,
 			zhewen, shizipang, fanwenpang, caizitou, jinzipang,
 			zhuzitou, fanzitou, baozipang, quezipang, pieheng,
 			ji, cha, er, bi, qi, jiu, ren, dao_lp, ba, liangpie],
 
-	'S': [liuzitou, liangdianshui, lanzitou, yanzipang,
+	'S': [na, dian, liuzitou, liangdianshui, lanzitou, yanzipang,
 			baogaitou, sandianshui, zouzhidi, huozipang,
 			sidiandi, shizipang, bingzitou, buyipang,
 			pieweiyang, yangzitou, jinzidi, zhi],
 
 
-	'T': [fanzipang, xiongzikuang, danerpang, zuoerpang,
+	'T': [zhe, fanzipang, xiongzikuang, danerpang, zuoerpang,
 			youerpang, sigong, jianzidi, luzitou, xunzitou,
 			jiaosipang, youzipang, sanzhe, shuxindi, dengzitou,
 			jianzili, kenzitou, yi, hengzhegou, shuzhegou, you,
