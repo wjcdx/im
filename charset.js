@@ -42,8 +42,28 @@ var heng = 1;
 var shu = 2;
 var pie = 3;
 var na = 4;
-var zhe = 5;
-var dian = 6;
+var dian = 5;
+var zhe = 6;
+var hengzheshu = 7;
+var hengzhepie = 8;
+var henggou = 9;
+var shuzheheng = 10;
+var shuzheti = 11;
+var piezheheng = 12;
+var wanshugou = 13;
+var nagou = 14;
+var hengzheshuzheheng = 15;
+var hengzheshuzheti = 16;
+var hengzheshugou = 17;
+var hengzhenagou = 18;
+var shuzhehengzheshu = 19;
+var shuzhehengzhepie = 20;
+var shuwanhenggou = 21;
+var hengzheshuzhehengzheshu = 22;
+var hengzheshuzhehengzhepie = 23;
+var hengzheshuwanhenggou = 24;
+var hengzhepiezhewanshugou = 25;
+var hengzheshuzhehengzheshugou = 26;
 
 /* 其他结构型续笔：部首
  * from 常用汉字正形手册
