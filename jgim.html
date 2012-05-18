@@ -23,21 +23,53 @@ function pattnNotBelongsTo(pattn, pattns)
 	return true;
 }
 
+function pattnBelongsTo(pattn, pattns)
+{
+	return !pattnNotBelongsTo(pattn, pattns);
+}
+
 function laterInMapping(later, scode)
 {
 	var c;
 	var pattns;
-	var len = scode.length;
-	if (len > later.length)
+	var s_idx = 0;
+	var l_idx = 0;
+	var scode_len = scode.length;
+	var later_len = later.length;
+
+	if (scode_len > later_len)
 		return false;
-	for (var i = 0; i < len; i++) {
-		c = scode.charAt(i).toUpperCase();
+
+	for (; s_idx < scode_len; s_idx++) {
+		c = scode.charAt(s_idx).toUpperCase();
+		/* pattns is asured to be exist */
 		pattns = bushou_maps[c];
-		if (isUndefined(pattns) || pattnNotBelongsTo(later[i], pattns)) {
+		/* search from last l_idx+1 */
+		for (; l_idx < later_len; l_idx++) {
+			if (pattnBelongsTo(later[l_idx], pattns)) {
+				break;
+			}
+		}
+		if (l_idx >= later_len) {
 			return false;
+		} else {
+			/* search from next partial next time */
+			l_idx++;
 		}
 	}
 	return true;
+}
+
+function scodeNotInLaterMap(scode)
+{
+	var c;
+	for (var i = scode.length-1; i >= 0; i--) {
+		c = scode.charAt(i).toUpperCase();
+		if (isUndefined(bushou_maps[c])) {
+			return true;
+		}
+	}
+	return false;
 }
 
 function scode_change()
@@ -48,6 +80,11 @@ function scode_change()
 	var patterns = pattern_maps[scode.charAt(0).toUpperCase()];
 	if (isUndefined(patterns)) {
 		candi.value = "No first pattern.";
+		return;
+	}
+	if (scodeNotInLaterMap(scode.substring(1))) {
+		candi.value = "No later patial.";
+		return;
 	}
 
 	var candidates = new Array();
