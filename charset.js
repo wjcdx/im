@@ -41,6 +41,7 @@ var pattern_ = 51;
 var heng = 1;
 var shu = 2;
 var pie = 3;
+/* na can not be the the first stroke of a character */
 var na = 4;
 var dian = 5;
 var zhe = 6;
