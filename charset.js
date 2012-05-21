@@ -45,26 +45,27 @@ var pie = 3;
 var na = 4;
 var dian = 5;
 var zhe = 6;
-var hengzheshu = 7;
-var hengzhepie = 8;
-var henggou = 9;
-var shuzheheng = 10;
-var shuzheti = 11;
-var piezheheng = 12;
-var wanshugou = 13;
-var nagou = 14;
-var hengzheshuzheheng = 15;
-var hengzheshuzheti = 16;
-var hengzheshugou = 17;
-var hengzhenagou = 18;
-var shuzhehengzheshu = 19;
-var shuzhehengzhepie = 20;
-var shuwanhenggou = 21;
-var hengzheshuzhehengzheshu = 22;
-var hengzheshuzhehengzhepie = 23;
-var hengzheshuwanhenggou = 24;
-var hengzhepiezhewanshugou = 25;
-var hengzheshuzhehengzheshugou = 26;
+var hengzheshu = 7; /* 口 */
+var hengzhepie = 8; /* 又 */
+var henggou = 9; /* 买 */
+var shuzheheng = 10; /* 山 */
+var shuzheti = 11; /* 长 */
+var piezheheng = 12; /* 厶 */
+var wanshugou = 13; /* 犹，家 */
+var nagou = 14; /* 代，戈 */
+var hengzheshuzheheng = 15; /* 凹 */
+var hengzheshuzheti = 16; /* 说，言字旁 */
+var hengzheshugou = 17; /* 习 */
+var hengzhenagou = 18; /* 飞 */
+var shuzhehengzheshu = 19; /* 鼎 */
+var shuzhehengzhepie = 20; /* 专 */
+var shuwanhenggou = 21; /* 己，匕 */
+var hengzheshuzhehengzheshu = 22; /* 凸 */
+var hengzheshuzhehengzhepie = 23; /* 及 */
+var hengzheshuwanhenggou = 24; /* 几，乙 */
+var hengzhepiezhewanshugou = 25; /* 阳 */
+var shuzhehengzheshugou = 26; /* 与，马 */
+var hengzheshuzhehengzheshugou = 27; /* 乃，杨 */
 
 /* 其他结构型续笔：部首
  * from 常用汉字正形手册
@@ -227,7 +228,14 @@ var bushou_maps = {
 			youerpang, sigong, jianzidi, luzitou, xunzitou,
 			jiaosipang, youzipang, sanzhe, shuxindi, dengzitou,
 			jianzili, kenzitou, yi, hengzhegou, shuzhegou, you,
-			li, zuokai, dao, nai, cangzidi, gong, zi, shutidian],
+			li, zuokai, dao, nai, cangzidi, gong, zi, shutidian,
+			hengzheshu, hengzhepie, henggou, shuzheheng, shuzheti,
+			piezheheng, wanshugou, nagou, hengzheshuzheheng,
+			hengzheshuzheti, hengzheshugou, hengzhenagou,
+			shuzhehengzheshu, shuzhehengzhepie, shuwanhenggou,
+			hengzheshuzhehengzheshu, hengzheshuzhehengzhepie,
+			hengzheshuwanhenggou, hengzhepiezhewanshugou,
+			shuzhehengzheshugou, hengzheshuzhehengzheshugou],
 
 	'U': [],
 	'V': [],
@@ -258,7 +266,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "乙",
 	first: pattern_single,
-	later: [zhe]
+	later: [hengzheshuwanhenggou]
 }
 
 /* 二画 */
