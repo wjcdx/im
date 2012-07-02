@@ -1007,15 +1007,15 @@ var partial_strokes = {
 	5015: [], /* jianzili  聿 */
 	5016: [], /* kenzitou  垦 */
 	5017: [], /* yi  乙 */
-	5018: [], /* z_you 
+	5018: [], /* z_you */
 	5019: [], /* z_li  力 */
 	5020: [], /* z_zuokai  巨，里面 */
 	5021: [], /* z_dao  刀 */
 	5022: [], /* z_nai  乃 */
 	5023: [], /* cangzidi  仓，下部 */
-	5024: [], /* z_gong 
+	5024: [], /* z_gong */
 	5025: [], /* z_zi  子 */
-	5026: [], /* shutidian 
+	5026: [], /* shutidian */
 	5027: [], /* z_shouzizuo  收，左边 */
 	5028: [], /* z_ye  也 */
 	5029: [], /* z_xunziyou  讯，右边 */
