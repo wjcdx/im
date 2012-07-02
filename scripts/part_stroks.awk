@@ -11,8 +11,8 @@ BEGIN {
 }
 
 {
-	printf "\t%s: [], /* %s ", substr($4, 1, length($4) - 1), $2 >> out;
-	for (i=6; i<= NF; i++) {
+	printf "\t%-16s: [], ", $2 >> out;
+	for (i=5; i<= NF; i++) {
 		printf " %s", $i >> out;
 	}
 	printf "\n" >> out;

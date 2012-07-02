@@ -15,6 +15,7 @@ BEGIN {
 
 {
 	printf "%s %-16s%s", $1, $2, $3 >> out;
+#	printf "%s %-32s%s", $1, $2, $3 >> out;
 	printf " %d; ", idx >> out;
 	for (i=5; i<= NF; i++) {
 		printf " %s", $i >> out;
