@@ -233,7 +233,6 @@ var tongzikuang     = 2003;  /* 同 */
 var s_kou           = 2004;  /* 口 */
 var guangzitou      = 2005;  /* 光 */
 var jiangzipang     = 2006;  /* 壮 */
-var shuxinpang      = 2007;  /* 怀 */
 var minzidi         = 2008;  /* 监 */
 var huzitou         = 2009;  /* 虎 */
 var zuzipang        = 2010;  /* 跟 */
@@ -441,6 +440,7 @@ var buyipang        = 4012;  /* 补 */
 var pieweiyang      = 4013;  /* 差 */
 var yangzitou       = 4014;  /* 羔 */
 var jinzidi         = 4015;  /* 今，下边 */
+var shuxinpang      = 2007;  /* 怀 */
 var d_zhi           = 4016;  /* 之 */
 var d_men           = 4017;  /* 门 */
 var d_yi            = 4018;  /* 义 */
@@ -707,67 +707,66 @@ var partial_strokes = {
 	h_yuezili       : [heng, shuzheti, nagou, pie, dian],  /* 越，里面 */
 	h_huizitou      : [heng, shu, hengzheshu, heng, heng, shu, heng, dian],  /* 惠，上部 */
 	h_benzitou      : [heng, shu, heng, shu, shu],  /* 贲，上部 */
-	h_sanhls        : [],  /* 塞，中上 */
-	h_qinzizuo      : [],  /* 勤，左边 */
-	h_caozitou      : [],  /* 曹，上部 */
-	h_hsishu        : [],  /* 舞，一横四竖 */
-	h_liaoyoush     : [],  /* 燎，右上 */
-	h_yinzizhong    : [],  /* 寅，中部 */
-	zangzikuang     : [],  /* 臧，外框 */
-	h_nangzitou     : [],  /* 囊，最上 */
-	h_nue           : [],  /* 虐，里面 */
-	h_gai           : [],  /* 丐 */
-	h_wu            : [],  /* 巫 */
-	h_shixue        : [],  /* 妻，上部 */
-	h_chi           : [],  /* 赤 */
-	h_yuwuheng      : [],  /* 与，无下横 */
-	h_jimei         : [],  /* 姬，右边，美 */
-	h_guazizhong    : [],  /* 寡，中部 */
-	h_jian          : [],  /* 柬 */
+	h_sanhls        : [heng, heng, shu, shu, heng],  /* 塞，中上 */
+	h_qinzizuo      : [heng, shu, shu, heng, shu, hengzheshu, heng, heng, heng, shu, ti],  /* 勤，左边 */
+	h_caozitou      : [heng, shu, hengzheshu, heng, shu, shu, heng],  /* 曹，上部 */
+	h_hsishu        : [heng, shu, shu, shu, shu],  /* 舞，一横四竖 */
+	h_liaoyoush     : [heng, pie, na, dian, pie],  /* 燎，右上 */
+	h_yinzizhong    : [heng, shu, hengzheshu, heng, shu, heng],  /* 寅，中部 */
+	zangzikuang     : [heng, pie, shuzheheng, heng, pie, nagou, pie, dian],  /* 臧，外框 */
+	h_nangzitou     : [heng, shu, hengzheshu, heng, shu],  /* 囊，最上 */
+	h_nue           : [heng, shuzheheng, heng],  /* 虐，里面 */
+	h_gai           : [heng, shu, heng, shuzhehengzheshugou],  /* 丐 */
+	h_wu            : [heng, shu, pie, dian, pie, dian, heng],  /* 巫 */
+	h_shixue        : [heng, hengzheshu, heng, heng, shu],  /* 妻，上部 */
+	h_chi           : [heng, shu, heng, pie, shugou, pie, dian],  /* 赤 */
+	h_yuwuheng      : [heng, shuzhehengzheshugou],  /* 与，无下横 */
+	h_jimei         : [heng, shu, shu, hengzheshu, heng, shu, shuzheheng],  /* 姬，右边，美 */
+	h_guazizhong    : [heng, pie, shu, hengzheshu, heng, heng, heng],  /* 寡，中部 */
+	h_jian          : [heng, shu, hengzheshu, dian, pie, heng, shu, pie, na],  /* 柬 */
 
 	/* 竖起 */
-	shangzitou      : [],  /* 上 */
-	lidaopang       : [],  /* 刚 */
-	tongzikuang     : [],  /* 同 */
-	s_kou           : [],  /* 口 */
-	guangzitou      : [],  /* 光 */
-	jiangzipang     : [],  /* 壮 */
-	shuxinpang      : [],  /* 怀 */
-	minzidi         : [],  /* 监 */
-	huzitou         : [],  /* 虎 */
-	zuzipang        : [],  /* 跟 */
-	s_bu            : [],  /* 卜 */
-	s_jin           : [],  /* 巾 */
-	s_beizizuo      : [],  /* 北，左边 */
-	s_ri            : [],  /* 日 */
-	s_shupie        : [],  /* 帅，左边 */
-	s_zhi           : [],  /* 止 */
-	s_bei           : [],  /* 贝 */
-	s_xiao          : [],  /* 小，无钩 */
-	s_shao          : [],  /* 少 */
-	s_shan          : [],  /* 山 */
-	s_gang          : [],  /* 冈 */
-	s_zhong         : [],  /* 中 */
-	s_jian          : [],  /* 见 */
-	s_shaowud       : [],  /* 步，下部 */
-	s_liangshu      : [],  /* 竖，上左 */
-	s_mu            : [],  /* 目 */
-	s_qie           : [],  /* 且 */
-	s_you           : [],  /* 由 */
-	s_tian          : [],  /* 田 */
-	s_shen          : [],  /* 申 */
-	s_nei           : [],  /* 内 */
-	s_yue           : [],  /* 月，竖起 */
-	s_jia           : [],  /* 甲 */
-	s_yang          : [],  /* 央 */
-	s_juzitou       : [],  /* 具，上边 */
-	s_zhan          : [],  /* 占 */
-	s_dianzitou     : [],  /* 典，上面 */
-	s_siwuzhe       : [],  /* 罗，上面 */
-	s_shi           : [],  /* 史 */
-	s_zouzidi       : [],  /* 走，下面 */
-	s_guanzidi      : [],  /* 官，下面 */
-	s_chu           : [],  /* 出 */
+	shangzitou      : [shu, heng],  /* 上 */
+	lidaopang       : [shu, shugou],  /* 刚 */
+	tongzikuang     : [shu, hengzheshugou],  /* 同 */
+	s_kou           : [shu, hengzheshu, heng],  /* 口 */
+	guangzitou      : [shu, dian, pie],  /* 光 */
+	jiangzipang     : [shu, dian, ti],  /* 壮 */
+	minzidi         : [shu, hengzheshu, shu, shu, heng],  /* 监 */
+	huzitou         : [shu, heng, henggou, pie, heng, shuwanhenggou],  /* 虎 */
+	zuzipang        : [shu, hengzheshu, heng, shu, heng, shu, ti],  /* 跟 */
+	s_bu            : [shu, dian],  /* 卜 */
+	s_jin           : [shu, hengzheshugou, shu],  /* 巾 */
+	s_beizizuo      : [shu, heng, ti],  /* 北，左边 */
+	s_ri            : [shu, hengzheshu, heng, heng],  /* 日 */
+	s_shupie        : [shu, pie],  /* 帅，左边 */
+	s_zhi           : [shu, heng, shu, heng],  /* 止 */
+	s_bei           : [shu, hengzheshu, pie, dian],  /* 贝 */
+	s_xiao          : [shu, pie, dian],  /* 小，无钩 */
+	s_shao          : [shu, pie, dian, pie],  /* 少 */
+	s_shan          : [shu, shuzheheng, shu],  /* 山 */
+	s_gang          : [shu, hengzheshugou, pie, dian],  /* 冈 */
+	s_zhong         : [shu, hengzheshu, heng, shu],  /* 中 */
+	s_jian          : [shu, hengzheshu, pie, shuwanhenggou],  /* 见 */
+	s_shaowud       : [shu, pie, pie],  /* 步，下部 */
+	s_liangshu      : [shu, shu],  /* 竖，上左 */
+	s_mu            : [shu, hengzheshu, heng, heng, heng],  /* 目 */
+	s_qie           : [shu, hengzheshu, heng, heng, heng],  /* 且 */
+	s_you           : [shu, hengzheshu, heng, shu, heng],  /* 由 */
+	s_tian          : [shu, hengzheshu, heng, shu, heng],  /* 田 */
+	s_shen          : [shu, hengzheshu, heng, heng, shu],  /* 申 */
+	s_nei           : [shu, hengzheshugou, pie, dian],  /* 内 */
+	s_yue           : [shu, hengzheshugou, heng, heng],  /* 月，竖起 */
+	s_jia           : [shu, hengzheshu, heng, heng, shu],  /* 甲 */
+	s_yang          : [shu, hengzheshu, heng, pie, na],  /* 央 */
+	s_juzitou       : [shu, hengzheshu, heng, heng, heng, heng],  /* 具，上边 */
+	s_zhan          : [shu, heng, shu, hengzheshu, heng],  /* 占 */
+	s_dianzitou     : [shu, hengzheshu, heng, shu, shu, heng],  /* 典，上面 */
+	s_siwuzhe       : [shu, hengzheshu, shu, shu, heng],  /* 罗，上面 */
+	s_shi           : [shu, hengzheshu, heng, pie, na],  /* 史 */
+	s_zouzidi       : [shu, heng, pie, na],  /* 走，下面 */
+	s_guanzidi      : [shu, hengzheshu, heng, hengzheshu, heng],  /* 官，下面 */
+	s_chu           : [shuzheheng, shu, shu, shuzheheng, shu],  /* 出 */
 	s_guanzitou     : [],  /* 贯 */
 	s_gezidi        : [],  /* 革，下面 */
 	s_chong         : [],  /* 虫 */
@@ -940,6 +939,7 @@ var partial_strokes = {
 	pieweiyang      : [],  /* 差 */
 	yangzitou       : [],  /* 羔 */
 	jinzidi         : [],  /* 今，下边 */
+	shuxinpang      : [dian, dian, shu],  /* 怀 */
 	d_zhi           : [],  /* 之 */
 	d_men           : [],  /* 门 */
 	d_yi            : [],  /* 义 */
