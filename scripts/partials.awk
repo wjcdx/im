@@ -2,7 +2,7 @@
 
 BEGIN {
 	if (ARGC < 3) {
-		print "Usage: " $ARGV[1] " input-file index-start-number";
+		print "Usage: " $ARGV[0] " input-file index-start-number";
 		exit 0
 	} else {
 		out=ARGV[1] ".out";

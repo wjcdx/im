@@ -2,7 +2,7 @@
 
 BEGIN {
 	if (ARGC < 2) {
-		print "Usage: " $ARGV[1] " input-file";
+		print "Usage: " $ARGV[0] " input-file";
 		exit 0
 	} else {
 		out=ARGV[1] ".ptl";
