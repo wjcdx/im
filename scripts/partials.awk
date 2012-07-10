@@ -1,4 +1,9 @@
 #! /bin/awk -f
+# ARGV[0]: awk
+# ARGV[1]: input file
+# ARGV[2]: first index number
+
+
 
 BEGIN {
 	if (ARGC < 3) {
