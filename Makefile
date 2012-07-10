@@ -1,4 +1,6 @@
 
+all: partial_all partial_nv pattern_nv stroke_nv
+
 SEQUENCE_AWK = scripts/sequence.awk
 PARTIAL_DIR = meta/partials
 
@@ -11,5 +13,16 @@ partial_all:
 	echo "/* Don't EDIT, It's auto generated! */" > js/partials.js
 	cat $(PARTIAL_DIR)/*.2 >> js/partials.js
 	rm -rf $(PARTIAL_DIR)/*.2
+
+NAMVAL_AWK = scripts/namval.awk
+
+partial_nv:
+	$(NAMVAL_AWK) js/partials.js js/partial_nv.js 1 var partial_nv 2 4
+
+pattern_nv:
+	$(NAMVAL_AWK) js/pattern.js js/pattern_nv.js 1 var pattern_nv 2 4
+
+stroke_nv:
+	$(NAMVAL_AWK) js/stroke.js js/stroke_nv.js 1 var stroke_nv 2 4
 
 
