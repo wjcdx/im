@@ -11,7 +11,7 @@
 
 BEGIN {
 	if (ARGC < 6) {
-		print "Usage: " $ARGV[0] " input-file field-no-1 pattern field-no-2 index-start-number";
+		print "Usage: " ARGV[0] " input-file field-no-1 pattern field-no-2 index-start-number";
 		exit 0
 	} else {
 		FIN = ARGV[1];

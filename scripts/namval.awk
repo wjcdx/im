@@ -13,7 +13,7 @@
 
 BEGIN {
 	if (ARGC < 6) {
-		print "Usage: " $ARGV[0] " input-file output-file field-no-1 " \
+		print "Usage: " ARGV[0] " input-file output-file field-no-1 " \
 			"pattern struct-name name-field-no value-field-no";
 		exit 0
 	}

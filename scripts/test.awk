@@ -12,11 +12,9 @@
 
 
 BEGIN {
-	i = 0;
-	for (i=0; i<=ARGC; i++) {
-		printf "$" i ":" $i "\n";
+	for (i in ARGV) {
+		print "ARGV["i"]="ARGV[i]
 	}
-	ARGC = 1;
 }
 
 {
