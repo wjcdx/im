@@ -20,14 +20,11 @@ function isUndefined(v)
 	return false;
 }
 
-var total = Characters.length;
-var pattern_stat = new Array();
-
-function print_stat_tr(item, nv, stats)
+function print_stat_tr(item, nv, stats, total)
 {
 	var j = 1;
 	document.write("<table><tr><td>No</td><td>" + item + 
-			"</td><td>number used</td><td>ratio(total: 3500)</td></tr>");
+			"</td><td>number used</td><td>ratio(total: " + total + ")</td></tr>");
 	for (var i in stats) {
 		document.write("<tr>");
 		document.write("<td>" + (j++) + "</td>");
@@ -36,34 +33,111 @@ function print_stat_tr(item, nv, stats)
 		document.write("<td>" + stats[i]/total*100 + "</td>");
 		document.write("</tr>");
 	}
-	document.write("</table>");
+	document.write("</table><br />");
 }
 
+function add_one(stat, s)
+{
+	if (!isUndefined(stat[s])) {
+		stat[s]++;
+	} else {
+		stat[s] = 1;
+	}
+}
+
+
+var total_chars = Characters.length;
+var pattern_stat = new Array();
 function stat_pattern()
 {
 	for (var i in Characters) {
 		var c = Characters[i];
-		if (!isUndefined(pattern_stat[c.first])) {
-			pattern_stat[c.first]++;
-		} else {
-			pattern_stat[c.first] = 1;
-		}
+		add_one(pattern_stat, c.first);
 	}
 }
 stat_pattern();
 
 
-function stroke_stat_all()
+var total_strokes_all = 0;
+var stroke_stat_all = new Array();
+
+/* stat all the appearences of a
+ * stroke in a character */
+function stat_stroke_all()
 {
 	for (var i in Characters) {
 		var c = Characters[i];
-		if (!isUndefined(pattern_stat[c.first])) {
-			pattern_stat[c.first]++;
-		} else {
-			pattern_stat[c.first] = 1;
+		for (var j in c.later) {
+			var s = c.later[j];
+			if (s > 1000) {
+				var p = partial_strokes[partial_nv[s]];
+				for (var k in p) {
+					s = p[k];
+					add_one(stroke_stat_all, s);
+					total_strokes_all++;
+				}
+			} else {
+				add_one(stroke_stat_all, s);
+				total_strokes_all++;
+			}
 		}
 	}
 }
+stat_stroke_all();
+
+
+var total_strokes_once = 0;
+var stroke_stat_once = new Array();
+
+function add_one_once(stat, s, sign)
+{
+	if (isUndefined(sign[s])) {
+		add_one(stat, s);
+		total_strokes_once++;
+		sign[s] = 1;
+	}
+}
+
+/* stat only once each time a stroke
+   appears in a character */
+function stat_stroke_once()
+{
+	for (var i in Characters) {
+		var sign = new Array();
+		var c = Characters[i];
+		for (var j in c.later) {
+			var s = c.later[j];
+			if (s > 1000) {
+				var p = partial_strokes[partial_nv[s]];
+				for (var k in p) {
+					s = p[k];
+					add_one_once(stroke_stat_once, s, sign);
+				}
+			} else {
+				add_one_once(stroke_stat_once, s, sign);
+			}
+		}
+	}
+}
+stat_stroke_once();
+
+
+var total_partial = 0;
+var partial_stat = new Array();
+function stat_partial()
+{
+	for (var i in Characters) {
+		var c = Characters[i];
+		for (var j in c.later) {
+			var s = c.later[j];
+			if (s > 1000) {
+				add_one(partial_stat, s);
+				total_partial++;
+			}
+		}
+	}
+}
+stat_partial();
 
 </script>
 
@@ -71,7 +145,10 @@ function stroke_stat_all()
 
 <body>
 	<script type="text/javascript">
-		print_stat_tr("pattern", pattern_nv, pattern_stat);
+		print_stat_tr("pattern", pattern_nv, pattern_stat, total_chars);
+		print_stat_tr("stroke all", stroke_nv, stroke_stat_all, total_strokes_all);
+		print_stat_tr("stroke once", stroke_nv, stroke_stat_once, total_strokes_once);
+		print_stat_tr("partial", partial_nv, partial_stat, total_partial);
 	</script>
 </body>
 
