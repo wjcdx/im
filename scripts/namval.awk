@@ -30,6 +30,7 @@ BEGIN {
 	printf "" > FOUT;
 	printf "/* Don't EDIT, It's auto generated! */\n\n" > FOUT;
 	printf "var " struct " = new Array();\n\n" >> FOUT;
+	printf struct " = {\n" >> FOUT;
 }
 
 {
@@ -41,9 +42,10 @@ BEGIN {
 		next;
 	}
 
-	printf struct "[" struct ".length] = {\n" >> FOUT;
-	printf "\tname: \"%s\",\n", $nfn >> FOUT;
-	printf "\tvalue: %d\n", $vfn >> FOUT;
+	printf "\t%d: \"%s\",\n", $vfn, $nfn >> FOUT;
+}
+
+END {
 	printf "}\n" >> FOUT;
 }
 

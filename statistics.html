@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript" src="js/pattern.js"></script>
+<script language="javascript" src="js/stroke.js"></script>
+<script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/keymap.js"></script>
+<script language="javascript" src="js/charset.js"></script>
+<script language="javascript" src="js/partial_nv.js"></script>
+<script language="javascript" src="js/pattern_nv.js"></script>
+<script language="javascript" src="js/stroke_nv.js"></script>
+<script type="text/javascript">
+
+function isUndefined(v)
+{
+	if (v == undefined)
+		return true;
+	return false;
+}
+
+var total = Characters.length;
+var pattern_stat = new Array();
+
+function print_stat_tr(item, nv, stats)
+{
+	var j = 1;
+	document.write("<table><tr><td>No</td><td>" + item + 
+			"</td><td>number used</td><td>ratio(total: 3500)</td></tr>");
+	for (var i in stats) {
+		document.write("<tr>");
+		document.write("<td>" + (j++) + "</td>");
+		document.write("<td>" + nv[i] + "</td>");
+		document.write("<td>" + stats[i] + "</td>");
+		document.write("<td>" + stats[i]/total*100 + "</td>");
+		document.write("</tr>");
+	}
+	document.write("</table>");
+}
+
+function stat_pattern()
+{
+	for (var i in Characters) {
+		var c = Characters[i];
+		if (!isUndefined(pattern_stat[c.first])) {
+			pattern_stat[c.first]++;
+		} else {
+			pattern_stat[c.first] = 1;
+		}
+	}
+}
+stat_pattern();
+
+
+function stroke_stat_all()
+{
+	for (var i in Characters) {
+		var c = Characters[i];
+		if (!isUndefined(pattern_stat[c.first])) {
+			pattern_stat[c.first]++;
+		} else {
+			pattern_stat[c.first] = 1;
+		}
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		print_stat_tr("pattern", pattern_nv, pattern_stat);
+	</script>
+</body>
+
+</html>

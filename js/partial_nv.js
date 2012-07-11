@@ -2,1959 +2,494 @@
 
 var partial_nv = new Array();
 
-partial_nv[partial_nv.length] = {
-	name: "jiangzikuang",
-	value: 1001
-}
-partial_nv[partial_nv.length] = {
-	name: "caozitou",
-	value: 1002
-}
-partial_nv[partial_nv.length] = {
-	name: "youzishen",
-	value: 1003
-}
-partial_nv[partial_nv.length] = {
-	name: "tishoupang",
-	value: 1004
-}
-partial_nv[partial_nv.length] = {
-	name: "shizikuang",
-	value: 1005
-}
-partial_nv[partial_nv.length] = {
-	name: "laozitou",
-	value: 1006
-}
-partial_nv[partial_nv.length] = {
-	name: "chaozipang",
-	value: 1007
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ten",
-	value: 1008
-}
-partial_nv[partial_nv.length] = {
-	name: "h_chang",
-	value: 1009
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ding",
-	value: 1010
-}
-partial_nv[partial_nv.length] = {
-	name: "h_two",
-	value: 1011
-}
-partial_nv[partial_nv.length] = {
-	name: "h_gan",
-	value: 1012
-}
-partial_nv[partial_nv.length] = {
-	name: "h_gong",
-	value: 1013
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qiaoziyou",
-	value: 1014
-}
-partial_nv[partial_nv.length] = {
-	name: "h_hengpie",
-	value: 1015
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wan",
-	value: 1016
-}
-partial_nv[partial_nv.length] = {
-	name: "h_che",
-	value: 1017
-}
-partial_nv[partial_nv.length] = {
-	name: "h_cun",
-	value: 1018
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zhang",
-	value: 1019
-}
-partial_nv[partial_nv.length] = {
-	name: "h_three",
-	value: 1020
-}
-partial_nv[partial_nv.length] = {
-	name: "h_and",
-	value: 1021
-}
-partial_nv[partial_nv.length] = {
-	name: "h_tu",
-	value: 1022
-}
-partial_nv[partial_nv.length] = {
-	name: "h_kai",
-	value: 1023
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yun",
-	value: 1024
-}
-partial_nv[partial_nv.length] = {
-	name: "h_shi",
-	value: 1025
-}
-partial_nv[partial_nv.length] = {
-	name: "h_stone",
-	value: 1026
-}
-partial_nv[partial_nv.length] = {
-	name: "h_mu",
-	value: 1027
-}
-partial_nv[partial_nv.length] = {
-	name: "h_da",
-	value: 1028
-}
-partial_nv[partial_nv.length] = {
-	name: "h_quan",
-	value: 1029
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zaizitou",
-	value: 1030
-}
-partial_nv[partial_nv.length] = {
-	name: "h_kui",
-	value: 1031
-}
-partial_nv[partial_nv.length] = {
-	name: "h_dai",
-	value: 1032
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ya",
-	value: 1033
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ge",
-	value: 1034
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wuzidi",
-	value: 1035
-}
-partial_nv[partial_nv.length] = {
-	name: "h_xia",
-	value: 1036
-}
-partial_nv[partial_nv.length] = {
-	name: "h_cai",
-	value: 1037
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qu",
-	value: 1038
-}
-partial_nv[partial_nv.length] = {
-	name: "h_gu",
-	value: 1039
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wei",
-	value: 1040
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zhuan",
-	value: 1041
-}
-partial_nv[partial_nv.length] = {
-	name: "h_five",
-	value: 1042
-}
-partial_nv[partial_nv.length] = {
-	name: "h_xingziyou",
-	value: 1043
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wang",
-	value: 1044
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yu",
-	value: 1045
-}
-partial_nv[partial_nv.length] = {
-	name: "h_mugou",
-	value: 1046
-}
-partial_nv[partial_nv.length] = {
-	name: "h_kai",
-	value: 1047
-}
-partial_nv[partial_nv.length] = {
-	name: "h_tian",
-	value: 1048
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yushi",
-	value: 1049
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jing",
-	value: 1050
-}
-partial_nv[partial_nv.length] = {
-	name: "h_piecao",
-	value: 1051
-}
-partial_nv[partial_nv.length] = {
-	name: "h_piefeng",
-	value: 1052
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qingzitou",
-	value: 1053
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yuan",
-	value: 1054
-}
-partial_nv[partial_nv.length] = {
-	name: "h_fu",
-	value: 1055
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zhi",
-	value: 1056
-}
-partial_nv[partial_nv.length] = {
-	name: "h_bu",
-	value: 1057
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ju",
-	value: 1058
-}
-partial_nv[partial_nv.length] = {
-	name: "h_tun",
-	value: 1059
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ben",
-	value: 1060
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ke",
-	value: 1061
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yuzidi",
-	value: 1062
-}
-partial_nv[partial_nv.length] = {
-	name: "h_budai",
-	value: 1063
-}
-partial_nv[partial_nv.length] = {
-	name: "h_dong",
-	value: 1064
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zheng",
-	value: 1065
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ping",
-	value: 1066
-}
-partial_nv[partial_nv.length] = {
-	name: "h_shiren",
-	value: 1067
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jida",
-	value: 1068
-}
-partial_nv[partial_nv.length] = {
-	name: "h_fengzitou",
-	value: 1069
-}
-partial_nv[partial_nv.length] = {
-	name: "h_fengzidi",
-	value: 1070
-}
-partial_nv[partial_nv.length] = {
-	name: "h_mo",
-	value: 1071
-}
-partial_nv[partial_nv.length] = {
-	name: "h_long",
-	value: 1072
-}
-partial_nv[partial_nv.length] = {
-	name: "h_you",
-	value: 1073
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jianziyou",
-	value: 1074
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ye",
-	value: 1075
-}
-partial_nv[partial_nv.length] = {
-	name: "h_erduo",
-	value: 1076
-}
-partial_nv[partial_nv.length] = {
-	name: "h_erqie",
-	value: 1077
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wuxu",
-	value: 1078
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qiangzitou",
-	value: 1079
-}
-partial_nv[partial_nv.length] = {
-	name: "h_chen",
-	value: 1080
-}
-partial_nv[partial_nv.length] = {
-	name: "h_cizizuo",
-	value: 1081
-}
-partial_nv[partial_nv.length] = {
-	name: "h_shu",
-	value: 1082
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yushui",
-	value: 1083
-}
-partial_nv[partial_nv.length] = {
-	name: "h_tai",
-	value: 1084
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zhiyu",
-	value: 1085
-}
-partial_nv[partial_nv.length] = {
-	name: "h_weilai",
-	value: 1086
-}
-partial_nv[partial_nv.length] = {
-	name: "h_xizitou",
-	value: 1087
-}
-partial_nv[partial_nv.length] = {
-	name: "h_li",
-	value: 1088
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jinxia",
-	value: 1089
-}
-partial_nv[partial_nv.length] = {
-	name: "h_shushi",
-	value: 1090
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zhan",
-	value: 1091
-}
-partial_nv[partial_nv.length] = {
-	name: "h_shijie",
-	value: 1092
-}
-partial_nv[partial_nv.length] = {
-	name: "h_cheng",
-	value: 1093
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jia",
-	value: 1094
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jiangyouxia",
-	value: 1095
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wuyou",
-	value: 1096
-}
-partial_nv[partial_nv.length] = {
-	name: "h_gewudian",
-	value: 1097
-}
-partial_nv[partial_nv.length] = {
-	name: "h_ganku",
-	value: 1098
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qizitou",
-	value: 1099
-}
-partial_nv[partial_nv.length] = {
-	name: "h_caoheng",
-	value: 1100
-}
-partial_nv[partial_nv.length] = {
-	name: "h_daizitou",
-	value: 1101
-}
-partial_nv[partial_nv.length] = {
-	name: "h_bing",
-	value: 1102
-}
-partial_nv[partial_nv.length] = {
-	name: "h_xiwuzhe",
-	value: 1103
-}
-partial_nv[partial_nv.length] = {
-	name: "chengzikuang",
-	value: 1104
-}
-partial_nv[partial_nv.length] = {
-	name: "h_baiziyou",
-	value: 1105
-}
-partial_nv[partial_nv.length] = {
-	name: "h_geng",
-	value: 1106
-}
-partial_nv[partial_nv.length] = {
-	name: "h_liang",
-	value: 1107
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yangzizh",
-	value: 1108
-}
-partial_nv[partial_nv.length] = {
-	name: "h_xi",
-	value: 1109
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jiziyou",
-	value: 1110
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yi",
-	value: 1111
-}
-partial_nv[partial_nv.length] = {
-	name: "h_gengzizuo",
-	value: 1112
-}
-partial_nv[partial_nv.length] = {
-	name: "h_feng",
-	value: 1113
-}
-partial_nv[partial_nv.length] = {
-	name: "zaizikuang",
-	value: 1114
-}
-partial_nv[partial_nv.length] = {
-	name: "h_fudu",
-	value: 1115
-}
-partial_nv[partial_nv.length] = {
-	name: "h_chenxing",
-	value: 1116
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yazhou",
-	value: 1117
-}
-partial_nv[partial_nv.length] = {
-	name: "h_dingwugou",
-	value: 1118
-}
-partial_nv[partial_nv.length] = {
-	name: "h_dou",
-	value: 1119
-}
-partial_nv[partial_nv.length] = {
-	name: "h_youxin",
-	value: 1120
-}
-partial_nv[partial_nv.length] = {
-	name: "h_hengxiapie",
-	value: 1121
-}
-partial_nv[partial_nv.length] = {
-	name: "h_sizizuo",
-	value: 1122
-}
-partial_nv[partial_nv.length] = {
-	name: "h_zhizhu",
-	value: 1123
-}
-partial_nv[partial_nv.length] = {
-	name: "h_dunti",
-	value: 1124
-}
-partial_nv[partial_nv.length] = {
-	name: "h_seven",
-	value: 1125
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wa",
-	value: 1126
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qiu",
-	value: 1127
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jieziyou",
-	value: 1128
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yuezili",
-	value: 1129
-}
-partial_nv[partial_nv.length] = {
-	name: "h_huizitou",
-	value: 1130
-}
-partial_nv[partial_nv.length] = {
-	name: "h_benzitou",
-	value: 1131
-}
-partial_nv[partial_nv.length] = {
-	name: "h_sanhls",
-	value: 1132
-}
-partial_nv[partial_nv.length] = {
-	name: "h_qinzizuo",
-	value: 1133
-}
-partial_nv[partial_nv.length] = {
-	name: "h_caozitou",
-	value: 1134
-}
-partial_nv[partial_nv.length] = {
-	name: "h_hsishu",
-	value: 1135
-}
-partial_nv[partial_nv.length] = {
-	name: "h_liaoyoush",
-	value: 1136
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yinzizhong",
-	value: 1137
-}
-partial_nv[partial_nv.length] = {
-	name: "zangzikuang",
-	value: 1138
-}
-partial_nv[partial_nv.length] = {
-	name: "h_nangzitou",
-	value: 1139
-}
-partial_nv[partial_nv.length] = {
-	name: "h_nue",
-	value: 1140
-}
-partial_nv[partial_nv.length] = {
-	name: "h_gai",
-	value: 1141
-}
-partial_nv[partial_nv.length] = {
-	name: "h_wu",
-	value: 1142
-}
-partial_nv[partial_nv.length] = {
-	name: "h_shixue",
-	value: 1143
-}
-partial_nv[partial_nv.length] = {
-	name: "h_chi",
-	value: 1144
-}
-partial_nv[partial_nv.length] = {
-	name: "h_yuwuheng",
-	value: 1145
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jimei",
-	value: 1146
-}
-partial_nv[partial_nv.length] = {
-	name: "h_guazizhong",
-	value: 1147
-}
-partial_nv[partial_nv.length] = {
-	name: "h_jian",
-	value: 1148
-}
-partial_nv[partial_nv.length] = {
-	name: "shangzitou",
-	value: 2001
-}
-partial_nv[partial_nv.length] = {
-	name: "lidaopang",
-	value: 2002
-}
-partial_nv[partial_nv.length] = {
-	name: "tongzikuang",
-	value: 2003
-}
-partial_nv[partial_nv.length] = {
-	name: "s_kou",
-	value: 2004
-}
-partial_nv[partial_nv.length] = {
-	name: "guangzitou",
-	value: 2005
-}
-partial_nv[partial_nv.length] = {
-	name: "jiangzipang",
-	value: 2006
-}
-partial_nv[partial_nv.length] = {
-	name: "minzidi",
-	value: 2007
-}
-partial_nv[partial_nv.length] = {
-	name: "huzitou",
-	value: 2008
-}
-partial_nv[partial_nv.length] = {
-	name: "zuzipang",
-	value: 2009
-}
-partial_nv[partial_nv.length] = {
-	name: "s_bu",
-	value: 2010
-}
-partial_nv[partial_nv.length] = {
-	name: "s_jin",
-	value: 2011
-}
-partial_nv[partial_nv.length] = {
-	name: "s_beizizuo",
-	value: 2012
-}
-partial_nv[partial_nv.length] = {
-	name: "s_ri",
-	value: 2013
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shupie",
-	value: 2014
-}
-partial_nv[partial_nv.length] = {
-	name: "s_zhi",
-	value: 2015
-}
-partial_nv[partial_nv.length] = {
-	name: "s_bei",
-	value: 2016
-}
-partial_nv[partial_nv.length] = {
-	name: "s_xiao",
-	value: 2017
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shao",
-	value: 2018
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shan",
-	value: 2019
-}
-partial_nv[partial_nv.length] = {
-	name: "s_gang",
-	value: 2020
-}
-partial_nv[partial_nv.length] = {
-	name: "s_zhong",
-	value: 2021
-}
-partial_nv[partial_nv.length] = {
-	name: "s_jian",
-	value: 2022
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shaowud",
-	value: 2023
-}
-partial_nv[partial_nv.length] = {
-	name: "s_liangshu",
-	value: 2024
-}
-partial_nv[partial_nv.length] = {
-	name: "s_mu",
-	value: 2025
-}
-partial_nv[partial_nv.length] = {
-	name: "s_qie",
-	value: 2026
-}
-partial_nv[partial_nv.length] = {
-	name: "s_you",
-	value: 2027
-}
-partial_nv[partial_nv.length] = {
-	name: "s_tian",
-	value: 2028
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shen",
-	value: 2029
-}
-partial_nv[partial_nv.length] = {
-	name: "s_nei",
-	value: 2030
-}
-partial_nv[partial_nv.length] = {
-	name: "s_yue",
-	value: 2031
-}
-partial_nv[partial_nv.length] = {
-	name: "s_jia",
-	value: 2032
-}
-partial_nv[partial_nv.length] = {
-	name: "s_yang",
-	value: 2033
-}
-partial_nv[partial_nv.length] = {
-	name: "s_juzitou",
-	value: 2034
-}
-partial_nv[partial_nv.length] = {
-	name: "s_zhan",
-	value: 2035
-}
-partial_nv[partial_nv.length] = {
-	name: "s_dianzitou",
-	value: 2036
-}
-partial_nv[partial_nv.length] = {
-	name: "s_siwuzhe",
-	value: 2037
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shi",
-	value: 2038
-}
-partial_nv[partial_nv.length] = {
-	name: "s_zouzidi",
-	value: 2039
-}
-partial_nv[partial_nv.length] = {
-	name: "s_guanzidi",
-	value: 2040
-}
-partial_nv[partial_nv.length] = {
-	name: "s_guanzitou",
-	value: 2041
-}
-partial_nv[partial_nv.length] = {
-	name: "s_gezidi",
-	value: 2042
-}
-partial_nv[partial_nv.length] = {
-	name: "s_chong",
-	value: 2043
-}
-partial_nv[partial_nv.length] = {
-	name: "s_li",
-	value: 2044
-}
-partial_nv[partial_nv.length] = {
-	name: "s_daori",
-	value: 2045
-}
-partial_nv[partial_nv.length] = {
-	name: "s_ye",
-	value: 2046
-}
-partial_nv[partial_nv.length] = {
-	name: "s_guizitou",
-	value: 2047
-}
-partial_nv[partial_nv.length] = {
-	name: "s_guzitou",
-	value: 2048
-}
-partial_nv[partial_nv.length] = {
-	name: "s_bianzili",
-	value: 2049
-}
-partial_nv[partial_nv.length] = {
-	name: "s_yong",
-	value: 2050
-}
-partial_nv[partial_nv.length] = {
-	name: "s_fei",
-	value: 2051
-}
-partial_nv[partial_nv.length] = {
-	name: "s_hguankou",
-	value: 2052
-}
-partial_nv[partial_nv.length] = {
-	name: "s_guo",
-	value: 2053
-}
-partial_nv[partial_nv.length] = {
-	name: "s_dian",
-	value: 2054
-}
-partial_nv[partial_nv.length] = {
-	name: "s_shuzizuo",
-	value: 2055
-}
-partial_nv[partial_nv.length] = {
-	name: "s_chuan",
-	value: 2056
-}
-partial_nv[partial_nv.length] = {
-	name: "s_yu",
-	value: 2057
-}
-partial_nv[partial_nv.length] = {
-	name: "s_danzidi",
-	value: 2058
-}
-partial_nv[partial_nv.length] = {
-	name: "s_heizitou",
-	value: 2059
-}
-partial_nv[partial_nv.length] = {
-	name: "s_zengzizh",
-	value: 2060
-}
-partial_nv[partial_nv.length] = {
-	name: "s_dingxiayou",
-	value: 2061
-}
-partial_nv[partial_nv.length] = {
-	name: "s_dianshui",
-	value: 2062
-}
-partial_nv[partial_nv.length] = {
-	name: "s_mianzidi",
-	value: 2063
-}
-partial_nv[partial_nv.length] = {
-	name: "danrenpang",
-	value: 3001
-}
-partial_nv[partial_nv.length] = {
-	name: "weizitou",
-	value: 3002
-}
-partial_nv[partial_nv.length] = {
-	name: "baozitou",
-	value: 3003
-}
-partial_nv[partial_nv.length] = {
-	name: "fengzitou",
-	value: 3004
-}
-partial_nv[partial_nv.length] = {
-	name: "tubaogai",
-	value: 3005
-}
-partial_nv[partial_nv.length] = {
-	name: "shuangrenpang",
-	value: 3006
-}
-partial_nv[partial_nv.length] = {
-	name: "sanpie",
-	value: 3007
-}
-partial_nv[partial_nv.length] = {
-	name: "fanquanpang",
-	value: 3008
-}
-partial_nv[partial_nv.length] = {
-	name: "zhewen",
-	value: 3009
-}
-partial_nv[partial_nv.length] = {
-	name: "shichi",
-	value: 3010
-}
-partial_nv[partial_nv.length] = {
-	name: "fanwenpang",
-	value: 3011
-}
-partial_nv[partial_nv.length] = {
-	name: "caizitou",
-	value: 3012
-}
-partial_nv[partial_nv.length] = {
-	name: "jinzipang",
-	value: 3013
-}
-partial_nv[partial_nv.length] = {
-	name: "zhuzitou",
-	value: 3014
-}
-partial_nv[partial_nv.length] = {
-	name: "fanzitou",
-	value: 3015
-}
-partial_nv[partial_nv.length] = {
-	name: "baozipang",
-	value: 3016
-}
-partial_nv[partial_nv.length] = {
-	name: "quezipang",
-	value: 3017
-}
-partial_nv[partial_nv.length] = {
-	name: "pieheng",
-	value: 3018
-}
-partial_nv[partial_nv.length] = {
-	name: "p_ji",
-	value: 3019
-}
-partial_nv[partial_nv.length] = {
-	name: "cha",
-	value: 3020
-}
-partial_nv[partial_nv.length] = {
-	name: "p_er",
-	value: 3021
-}
-partial_nv[partial_nv.length] = {
-	name: "p_bi",
-	value: 3022
-}
-partial_nv[partial_nv.length] = {
-	name: "p_nine",
-	value: 3023
-}
-partial_nv[partial_nv.length] = {
-	name: "p_ren",
-	value: 3024
-}
-partial_nv[partial_nv.length] = {
-	name: "pieshu",
-	value: 3025
-}
-partial_nv[partial_nv.length] = {
-	name: "p_eight",
-	value: 3026
-}
-partial_nv[partial_nv.length] = {
-	name: "liangpie",
-	value: 3027
-}
-partial_nv[partial_nv.length] = {
-	name: "p_xi",
-	value: 3028
-}
-partial_nv[partial_nv.length] = {
-	name: "p_chuan",
-	value: 3029
-}
-partial_nv[partial_nv.length] = {
-	name: "p_tuoziyou",
-	value: 3030
-}
-partial_nv[partial_nv.length] = {
-	name: "p_wan",
-	value: 3031
-}
-partial_nv[partial_nv.length] = {
-	name: "p_fan",
-	value: 3032
-}
-partial_nv[partial_nv.length] = {
-	name: "p_jige",
-	value: 3033
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yue",
-	value: 3034
-}
-partial_nv[partial_nv.length] = {
-	name: "p_bai",
-	value: 3035
-}
-partial_nv[partial_nv.length] = {
-	name: "p_jin",
-	value: 3036
-}
-partial_nv[partial_nv.length] = {
-	name: "p_najiu",
-	value: 3037
-}
-partial_nv[partial_nv.length] = {
-	name: "p_she",
-	value: 3038
-}
-partial_nv[partial_nv.length] = {
-	name: "p_thousand",
-	value: 3039
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yao",
-	value: 3040
-}
-partial_nv[partial_nv.length] = {
-	name: "p_qiu",
-	value: 3041
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yanzili",
-	value: 3042
-}
-partial_nv[partial_nv.length] = {
-	name: "p_rengui",
-	value: 3043
-}
-partial_nv[partial_nv.length] = {
-	name: "p_niu",
-	value: 3044
-}
-partial_nv[partial_nv.length] = {
-	name: "p_jie",
-	value: 3045
-}
-partial_nv[partial_nv.length] = {
-	name: "p_fen",
-	value: 3046
-}
-partial_nv[partial_nv.length] = {
-	name: "p_angzizuo",
-	value: 3047
-}
-partial_nv[partial_nv.length] = {
-	name: "p_maozizuo",
-	value: 3048
-}
-partial_nv[partial_nv.length] = {
-	name: "p_fu",
-	value: 3049
-}
-partial_nv[partial_nv.length] = {
-	name: "p_qian",
-	value: 3050
-}
-partial_nv[partial_nv.length] = {
-	name: "p_wu",
-	value: 3051
-}
-partial_nv[partial_nv.length] = {
-	name: "p_lun",
-	value: 3052
-}
-partial_nv[partial_nv.length] = {
-	name: "p_shao",
-	value: 3053
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhao",
-	value: 3054
-}
-partial_nv[partial_nv.length] = {
-	name: "p_cang",
-	value: 3055
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yun",
-	value: 3056
-}
-partial_nv[partial_nv.length] = {
-	name: "p_shi",
-	value: 3057
-}
-partial_nv[partial_nv.length] = {
-	name: "p_wuya",
-	value: 3058
-}
-partial_nv[partial_nv.length] = {
-	name: "p_chang",
-	value: 3059
-}
-partial_nv[partial_nv.length] = {
-	name: "p_niuwuwei",
-	value: 3060
-}
-partial_nv[partial_nv.length] = {
-	name: "p_he",
-	value: 3061
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zha",
-	value: 3062
-}
-partial_nv[partial_nv.length] = {
-	name: "p_ling",
-	value: 3063
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yong",
-	value: 3064
-}
-partial_nv[partial_nv.length] = {
-	name: "p_di",
-	value: 3065
-}
-partial_nv[partial_nv.length] = {
-	name: "p_shizu",
-	value: 3066
-}
-partial_nv[partial_nv.length] = {
-	name: "p_erya",
-	value: 3067
-}
-partial_nv[partial_nv.length] = {
-	name: "p_fanzhi",
-	value: 3068
-}
-partial_nv[partial_nv.length] = {
-	name: "p_jintian",
-	value: 3069
-}
-partial_nv[partial_nv.length] = {
-	name: "p_ce",
-	value: 3070
-}
-partial_nv[partial_nv.length] = {
-	name: "p_niaowuheng",
-	value: 3071
-}
-partial_nv[partial_nv.length] = {
-	name: "p_qi",
-	value: 3072
-}
-partial_nv[partial_nv.length] = {
-	name: "p_gou",
-	value: 3073
-}
-partial_nv[partial_nv.length] = {
-	name: "p_mao",
-	value: 3074
-}
-partial_nv[partial_nv.length] = {
-	name: "p_pi",
-	value: 3075
-}
-partial_nv[partial_nv.length] = {
-	name: "p_gong",
-	value: 3076
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yizidi",
-	value: 3077
-}
-partial_nv[partial_nv.length] = {
-	name: "p_wuyou",
-	value: 3078
-}
-partial_nv[partial_nv.length] = {
-	name: "p_hu",
-	value: 3079
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhizizuo",
-	value: 3080
-}
-partial_nv[partial_nv.length] = {
-	name: "p_pian",
-	value: 3081
-}
-partial_nv[partial_nv.length] = {
-	name: "zhouzikuang",
-	value: 3082
-}
-partial_nv[partial_nv.length] = {
-	name: "p_gua",
-	value: 3083
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yedian",
-	value: 3084
-}
-partial_nv[partial_nv.length] = {
-	name: "p_sheng",
-	value: 3085
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhaotou",
-	value: 3086
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zheng",
-	value: 3087
-}
-partial_nv[partial_nv.length] = {
-	name: "p_liuzidi",
-	value: 3088
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhutouban",
-	value: 3089
-}
-partial_nv[partial_nv.length] = {
-	name: "p_fa",
-	value: 3090
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zi",
-	value: 3091
-}
-partial_nv[partial_nv.length] = {
-	name: "p_xiangzikuang",
-	value: 3092
-}
-partial_nv[partial_nv.length] = {
-	name: "p_xiezizuo",
-	value: 3093
-}
-partial_nv[partial_nv.length] = {
-	name: "p_gangwa",
-	value: 3094
-}
-partial_nv[partial_nv.length] = {
-	name: "p_baizizuo",
-	value: 3095
-}
-partial_nv[partial_nv.length] = {
-	name: "p_duanzizuo",
-	value: 3096
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhuizili",
-	value: 3097
-}
-partial_nv[partial_nv.length] = {
-	name: "p_mian",
-	value: 3098
-}
-partial_nv[partial_nv.length] = {
-	name: "p_maoshangzuo",
-	value: 3099
-}
-partial_nv[partial_nv.length] = {
-	name: "p_paiyouli",
-	value: 3100
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhu",
-	value: 3101
-}
-partial_nv[partial_nv.length] = {
-	name: "p_huan",
-	value: 3102
-}
-partial_nv[partial_nv.length] = {
-	name: "p_shiqu",
-	value: 3103
-}
-partial_nv[partial_nv.length] = {
-	name: "p_shen",
-	value: 3104
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhou",
-	value: 3105
-}
-partial_nv[partial_nv.length] = {
-	name: "p_shou",
-	value: 3106
-}
-partial_nv[partial_nv.length] = {
-	name: "p_wo",
-	value: 3107
-}
-partial_nv[partial_nv.length] = {
-	name: "p_jiu",
-	value: 3108
-}
-partial_nv[partial_nv.length] = {
-	name: "piedian",
-	value: 3109
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zhong",
-	value: 3110
-}
-partial_nv[partial_nv.length] = {
-	name: "p_cheng",
-	value: 3111
-}
-partial_nv[partial_nv.length] = {
-	name: "p_beizitou",
-	value: 3112
-}
-partial_nv[partial_nv.length] = {
-	name: "aozikuang",
-	value: 3113
-}
-partial_nv[partial_nv.length] = {
-	name: "p_xidian",
-	value: 3114
-}
-partial_nv[partial_nv.length] = {
-	name: "p_gui",
-	value: 3115
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yu",
-	value: 3116
-}
-partial_nv[partial_nv.length] = {
-	name: "p_chui",
-	value: 3117
-}
-partial_nv[partial_nv.length] = {
-	name: "p_xiang",
-	value: 3118
-}
-partial_nv[partial_nv.length] = {
-	name: "p_juzidi",
-	value: 3119
-}
-partial_nv[partial_nv.length] = {
-	name: "p_dan",
-	value: 3120
-}
-partial_nv[partial_nv.length] = {
-	name: "p_zimei",
-	value: 3121
-}
-partial_nv[partial_nv.length] = {
-	name: "p_ju",
-	value: 3122
-}
-partial_nv[partial_nv.length] = {
-	name: "p_le",
-	value: 3123
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yinzizuo",
-	value: 3124
-}
-partial_nv[partial_nv.length] = {
-	name: "p_cong",
-	value: 3125
-}
-partial_nv[partial_nv.length] = {
-	name: "p_xun",
-	value: 3126
-}
-partial_nv[partial_nv.length] = {
-	name: "p_yushangzuo",
-	value: 3127
-}
-partial_nv[partial_nv.length] = {
-	name: "liuzitou",
-	value: 4001
-}
-partial_nv[partial_nv.length] = {
-	name: "liangdianshui",
-	value: 4002
-}
-partial_nv[partial_nv.length] = {
-	name: "lanzitou",
-	value: 4003
-}
-partial_nv[partial_nv.length] = {
-	name: "yanzipang",
-	value: 4004
-}
-partial_nv[partial_nv.length] = {
-	name: "baogaitou",
-	value: 4005
-}
-partial_nv[partial_nv.length] = {
-	name: "sandianshui",
-	value: 4006
-}
-partial_nv[partial_nv.length] = {
-	name: "zouzhidi",
-	value: 4007
-}
-partial_nv[partial_nv.length] = {
-	name: "huozipang",
-	value: 4008
-}
-partial_nv[partial_nv.length] = {
-	name: "sidiandi",
-	value: 4009
-}
-partial_nv[partial_nv.length] = {
-	name: "shizipang",
-	value: 4010
-}
-partial_nv[partial_nv.length] = {
-	name: "bingzitou",
-	value: 4011
-}
-partial_nv[partial_nv.length] = {
-	name: "buyipang",
-	value: 4012
-}
-partial_nv[partial_nv.length] = {
-	name: "pieweiyang",
-	value: 4013
-}
-partial_nv[partial_nv.length] = {
-	name: "yangzitou",
-	value: 4014
-}
-partial_nv[partial_nv.length] = {
-	name: "jinzidi",
-	value: 4015
-}
-partial_nv[partial_nv.length] = {
-	name: "shuxinpang",
-	value: 4016
-}
-partial_nv[partial_nv.length] = {
-	name: "d_zhi",
-	value: 4017
-}
-partial_nv[partial_nv.length] = {
-	name: "d_men",
-	value: 4018
-}
-partial_nv[partial_nv.length] = {
-	name: "d_yi",
-	value: 4019
-}
-partial_nv[partial_nv.length] = {
-	name: "d_lingzidi",
-	value: 4020
-}
-partial_nv[partial_nv.length] = {
-	name: "d_ld_sl",
-	value: 4021
-}
-partial_nv[partial_nv.length] = {
-	name: "d_guang",
-	value: 4022
-}
-partial_nv[partial_nv.length] = {
-	name: "d_wang",
-	value: 4023
-}
-partial_nv[partial_nv.length] = {
-	name: "d_fang",
-	value: 4024
-}
-partial_nv[partial_nv.length] = {
-	name: "d_wei",
-	value: 4025
-}
-partial_nv[partial_nv.length] = {
-	name: "d_wen",
-	value: 4026
-}
-partial_nv[partial_nv.length] = {
-	name: "d_mi",
-	value: 4027
-}
-partial_nv[partial_nv.length] = {
-	name: "d_zhou",
-	value: 4028
-}
-partial_nv[partial_nv.length] = {
-	name: "d_xingzitou",
-	value: 4029
-}
-partial_nv[partial_nv.length] = {
-	name: "d_tou",
-	value: 4030
-}
-partial_nv[partial_nv.length] = {
-	name: "d_kang",
-	value: 4031
-}
-partial_nv[partial_nv.length] = {
-	name: "d_dou",
-	value: 4032
-}
-partial_nv[partial_nv.length] = {
-	name: "d_hu",
-	value: 4033
-}
-partial_nv[partial_nv.length] = {
-	name: "d_xin",
-	value: 4034
-}
-partial_nv[partial_nv.length] = {
-	name: "d_zhu",
-	value: 4035
-}
-partial_nv[partial_nv.length] = {
-	name: "d_li",
-	value: 4036
-}
-partial_nv[partial_nv.length] = {
-	name: "d_ban",
-	value: 4037
-}
-partial_nv[partial_nv.length] = {
-	name: "d_panzizuo",
-	value: 4038
-}
-partial_nv[partial_nv.length] = {
-	name: "xuezitou",
-	value: 4039
-}
-partial_nv[partial_nv.length] = {
-	name: "d_lan",
-	value: 4040
-}
-partial_nv[partial_nv.length] = {
-	name: "d_yong",
-	value: 4041
-}
-partial_nv[partial_nv.length] = {
-	name: "d_yifu",
-	value: 4042
-}
-partial_nv[partial_nv.length] = {
-	name: "d_bianzitou",
-	value: 4043
-}
-partial_nv[partial_nv.length] = {
-	name: "d_jiao",
-	value: 4044
-}
-partial_nv[partial_nv.length] = {
-	name: "d_hai",
-	value: 4045
-}
-partial_nv[partial_nv.length] = {
-	name: "d_chongzitou",
-	value: 4046
-}
-partial_nv[partial_nv.length] = {
-	name: "d_shi",
-	value: 4047
-}
-partial_nv[partial_nv.length] = {
-	name: "d_guan",
-	value: 4048
-}
-partial_nv[partial_nv.length] = {
-	name: "d_juanzitou",
-	value: 4049
-}
-partial_nv[partial_nv.length] = {
-	name: "d_yang",
-	value: 4050
-}
-partial_nv[partial_nv.length] = {
-	name: "d_xinzidi",
-	value: 4051
-}
-partial_nv[partial_nv.length] = {
-	name: "d_yan",
-	value: 4052
-}
-partial_nv[partial_nv.length] = {
-	name: "d_yiye",
-	value: 4053
-}
-partial_nv[partial_nv.length] = {
-	name: "d_ni",
-	value: 4054
-}
-partial_nv[partial_nv.length] = {
-	name: "d_dianpie",
-	value: 4055
-}
-partial_nv[partial_nv.length] = {
-	name: "d_liang",
-	value: 4056
-}
-partial_nv[partial_nv.length] = {
-	name: "d_jizitou",
-	value: 4057
-}
-partial_nv[partial_nv.length] = {
-	name: "d_jian",
-	value: 4058
-}
-partial_nv[partial_nv.length] = {
-	name: "d_langzizuo",
-	value: 4059
-}
-partial_nv[partial_nv.length] = {
-	name: "d_chan",
-	value: 4060
-}
-partial_nv[partial_nv.length] = {
-	name: "d_gezili",
-	value: 4061
-}
-partial_nv[partial_nv.length] = {
-	name: "d_zu",
-	value: 4062
-}
-partial_nv[partial_nv.length] = {
-	name: "d_bizizuo",
-	value: 4063
-}
-partial_nv[partial_nv.length] = {
-	name: "d_rong",
-	value: 4064
-}
-partial_nv[partial_nv.length] = {
-	name: "d_shenziyou",
-	value: 4065
-}
-partial_nv[partial_nv.length] = {
-	name: "d_nong",
-	value: 4066
-}
-partial_nv[partial_nv.length] = {
-	name: "fanzipang",
-	value: 5001
-}
-partial_nv[partial_nv.length] = {
-	name: "xiongzikuang",
-	value: 5002
-}
-partial_nv[partial_nv.length] = {
-	name: "danerpang",
-	value: 5003
-}
-partial_nv[partial_nv.length] = {
-	name: "zuoerpang",
-	value: 5004
-}
-partial_nv[partial_nv.length] = {
-	name: "youerpang",
-	value: 5005
-}
-partial_nv[partial_nv.length] = {
-	name: "sigong",
-	value: 5006
-}
-partial_nv[partial_nv.length] = {
-	name: "jianzidi",
-	value: 5007
-}
-partial_nv[partial_nv.length] = {
-	name: "luzitou",
-	value: 5008
-}
-partial_nv[partial_nv.length] = {
-	name: "xunzitou",
-	value: 5009
-}
-partial_nv[partial_nv.length] = {
-	name: "jiaosipang",
-	value: 5010
-}
-partial_nv[partial_nv.length] = {
-	name: "youzipang",
-	value: 5011
-}
-partial_nv[partial_nv.length] = {
-	name: "sanzhe",
-	value: 5012
-}
-partial_nv[partial_nv.length] = {
-	name: "shuxindi",
-	value: 5013
-}
-partial_nv[partial_nv.length] = {
-	name: "dengzitou",
-	value: 5014
-}
-partial_nv[partial_nv.length] = {
-	name: "jianzili",
-	value: 5015
-}
-partial_nv[partial_nv.length] = {
-	name: "kenzitou",
-	value: 5016
-}
-partial_nv[partial_nv.length] = {
-	name: "yi",
-	value: 5017
-}
-partial_nv[partial_nv.length] = {
-	name: "z_you",
-	value: 5018
-}
-partial_nv[partial_nv.length] = {
-	name: "z_li",
-	value: 5019
-}
-partial_nv[partial_nv.length] = {
-	name: "z_zuokai",
-	value: 5020
-}
-partial_nv[partial_nv.length] = {
-	name: "z_dao",
-	value: 5021
-}
-partial_nv[partial_nv.length] = {
-	name: "z_nai",
-	value: 5022
-}
-partial_nv[partial_nv.length] = {
-	name: "cangzidi",
-	value: 5023
-}
-partial_nv[partial_nv.length] = {
-	name: "z_gong",
-	value: 5024
-}
-partial_nv[partial_nv.length] = {
-	name: "z_zi",
-	value: 5025
-}
-partial_nv[partial_nv.length] = {
-	name: "shutidian",
-	value: 5026
-}
-partial_nv[partial_nv.length] = {
-	name: "z_shouzizuo",
-	value: 5027
-}
-partial_nv[partial_nv.length] = {
-	name: "z_ye",
-	value: 5028
-}
-partial_nv[partial_nv.length] = {
-	name: "z_xunziyou",
-	value: 5029
-}
-partial_nv[partial_nv.length] = {
-	name: "z_ji",
-	value: 5030
-}
-partial_nv[partial_nv.length] = {
-	name: "z_shizitou",
-	value: 5031
-}
-partial_nv[partial_nv.length] = {
-	name: "z_le",
-	value: 5032
-}
-partial_nv[partial_nv.length] = {
-	name: "z_nv",
-	value: 5033
-}
-partial_nv[partial_nv.length] = {
-	name: "z_siziban",
-	value: 5034
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yangziyou",
-	value: 5035
-}
-partial_nv[partial_nv.length] = {
-	name: "z_ban",
-	value: 5036
-}
-partial_nv[partial_nv.length] = {
-	name: "z_xiao",
-	value: 5037
-}
-partial_nv[partial_nv.length] = {
-	name: "z_ma",
-	value: 5038
-}
-partial_nv[partial_nv.length] = {
-	name: "z_xuechuheng",
-	value: 5039
-}
-partial_nv[partial_nv.length] = {
-	name: "z_ba",
-	value: 5040
-}
-partial_nv[partial_nv.length] = {
-	name: "z_shui",
-	value: 5041
-}
-partial_nv[partial_nv.length] = {
-	name: "z_jueziyou",
-	value: 5042
-}
-partial_nv[partial_nv.length] = {
-	name: "z_nazizuo",
-	value: 5043
-}
-partial_nv[partial_nv.length] = {
-	name: "z_chi",
-	value: 5044
-}
-partial_nv[partial_nv.length] = {
-	name: "z_si",
-	value: 5045
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yijing",
-	value: 5046
-}
-partial_nv[partial_nv.length] = {
-	name: "z_xi",
-	value: 5047
-}
-partial_nv[partial_nv.length] = {
-	name: "z_chou",
-	value: 5048
-}
-partial_nv[partial_nv.length] = {
-	name: "z_meizitou",
-	value: 5049
-}
-partial_nv[partial_nv.length] = {
-	name: "z_baoziyou",
-	value: 5050
-}
-partial_nv[partial_nv.length] = {
-	name: "z_mu",
-	value: 5051
-}
-partial_nv[partial_nv.length] = {
-	name: "z_fu",
-	value: 5052
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yu",
-	value: 5053
-}
-partial_nv[partial_nv.length] = {
-	name: "z_siyi",
-	value: 5054
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yiziyou",
-	value: 5055
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yin",
-	value: 5056
-}
-partial_nv[partial_nv.length] = {
-	name: "z_jizizuo",
-	value: 5057
-}
-partial_nv[partial_nv.length] = {
-	name: "z_jingziyou",
-	value: 5058
-}
-partial_nv[partial_nv.length] = {
-	name: "z_fa",
-	value: 5059
-}
-partial_nv[partial_nv.length] = {
-	name: "z_sangzidi",
-	value: 5060
-}
-partial_nv[partial_nv.length] = {
-	name: "z_dianshui",
-	value: 5061
-}
-partial_nv[partial_nv.length] = {
-	name: "z_lishu",
-	value: 5062
-}
-partial_nv[partial_nv.length] = {
-	name: "z_dizidi",
-	value: 5063
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yongzitou",
-	value: 5064
-}
-partial_nv[partial_nv.length] = {
-	name: "z_mao",
-	value: 5065
-}
-partial_nv[partial_nv.length] = {
-	name: "z_eti",
-	value: 5066
-}
-partial_nv[partial_nv.length] = {
-	name: "z_min",
-	value: 5067
-}
-partial_nv[partial_nv.length] = {
-	name: "z_houzitou",
-	value: 5068
-}
-partial_nv[partial_nv.length] = {
-	name: "z_tangzili",
-	value: 5069
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yongzili",
-	value: 5070
-}
-partial_nv[partial_nv.length] = {
-	name: "z_luzhongsh",
-	value: 5071
-}
-partial_nv[partial_nv.length] = {
-	name: "z_liangyoush",
-	value: 5072
-}
-partial_nv[partial_nv.length] = {
-	name: "z_fangzidi",
-	value: 5073
-}
-partial_nv[partial_nv.length] = {
-	name: "z_shuzizuo",
-	value: 5074
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yuanzitou",
-	value: 5075
-}
-partial_nv[partial_nv.length] = {
-	name: "z_cheng",
-	value: 5076
-}
-partial_nv[partial_nv.length] = {
-	name: "z_shutidd",
-	value: 5077
-}
-partial_nv[partial_nv.length] = {
-	name: "z_jishangyou",
-	value: 5078
-}
-partial_nv[partial_nv.length] = {
-	name: "z_jiajian",
-	value: 5079
-}
-partial_nv[partial_nv.length] = {
-	name: "feizikuang",
-	value: 5080
-}
-partial_nv[partial_nv.length] = {
-	name: "z_shu",
-	value: 5081
-}
-partial_nv[partial_nv.length] = {
-	name: "z_dingxiazuo",
-	value: 5082
-}
-partial_nv[partial_nv.length] = {
-	name: "z_chiyoush",
-	value: 5083
-}
-partial_nv[partial_nv.length] = {
-	name: "z_yushangyou",
-	value: 5084
-}
-partial_nv[partial_nv.length] = {
-	name: "z_chu",
-	value: 5085
+partial_nv = {
+	1001: "jiangzikuang",
+	1002: "caozitou",
+	1003: "youzishen",
+	1004: "tishoupang",
+	1005: "shizikuang",
+	1006: "laozitou",
+	1007: "chaozipang",
+	1008: "h_ten",
+	1009: "h_chang",
+	1010: "h_ding",
+	1011: "h_two",
+	1012: "h_gan",
+	1013: "h_gong",
+	1014: "h_qiaoziyou",
+	1015: "h_hengpie",
+	1016: "h_wan",
+	1017: "h_che",
+	1018: "h_cun",
+	1019: "h_zhang",
+	1020: "h_three",
+	1021: "h_and",
+	1022: "h_tu",
+	1023: "h_kai",
+	1024: "h_yun",
+	1025: "h_shi",
+	1026: "h_stone",
+	1027: "h_mu",
+	1028: "h_da",
+	1029: "h_quan",
+	1030: "h_zaizitou",
+	1031: "h_kui",
+	1032: "h_dai",
+	1033: "h_ya",
+	1034: "h_ge",
+	1035: "h_wuzidi",
+	1036: "h_xia",
+	1037: "h_cai",
+	1038: "h_qu",
+	1039: "h_gu",
+	1040: "h_wei",
+	1041: "h_zhuan",
+	1042: "h_five",
+	1043: "h_xingziyou",
+	1044: "h_wang",
+	1045: "h_yu",
+	1046: "h_mugou",
+	1047: "h_kai",
+	1048: "h_tian",
+	1049: "h_yushi",
+	1050: "h_jing",
+	1051: "h_piecao",
+	1052: "h_piefeng",
+	1053: "h_qingzitou",
+	1054: "h_yuan",
+	1055: "h_fu",
+	1056: "h_zhi",
+	1057: "h_bu",
+	1058: "h_ju",
+	1059: "h_tun",
+	1060: "h_ben",
+	1061: "h_ke",
+	1062: "h_yuzidi",
+	1063: "h_budai",
+	1064: "h_dong",
+	1065: "h_zheng",
+	1066: "h_ping",
+	1067: "h_shiren",
+	1068: "h_jida",
+	1069: "h_fengzitou",
+	1070: "h_fengzidi",
+	1071: "h_mo",
+	1072: "h_long",
+	1073: "h_you",
+	1074: "h_jianziyou",
+	1075: "h_ye",
+	1076: "h_erduo",
+	1077: "h_erqie",
+	1078: "h_wuxu",
+	1079: "h_qiangzitou",
+	1080: "h_chen",
+	1081: "h_cizizuo",
+	1082: "h_shu",
+	1083: "h_yushui",
+	1084: "h_tai",
+	1085: "h_zhiyu",
+	1086: "h_weilai",
+	1087: "h_xizitou",
+	1088: "h_li",
+	1089: "h_jinxia",
+	1090: "h_shushi",
+	1091: "h_zhan",
+	1092: "h_shijie",
+	1093: "h_cheng",
+	1094: "h_jia",
+	1095: "h_jiangyouxia",
+	1096: "h_wuyou",
+	1097: "h_gewudian",
+	1098: "h_ganku",
+	1099: "h_qizitou",
+	1100: "h_caoheng",
+	1101: "h_daizitou",
+	1102: "h_bing",
+	1103: "h_xiwuzhe",
+	1104: "chengzikuang",
+	1105: "h_baiziyou",
+	1106: "h_geng",
+	1107: "h_liang",
+	1108: "h_yangzizh",
+	1109: "h_xi",
+	1110: "h_jiziyou",
+	1111: "h_yi",
+	1112: "h_gengzizuo",
+	1113: "h_feng",
+	1114: "zaizikuang",
+	1115: "h_fudu",
+	1116: "h_chenxing",
+	1117: "h_yazhou",
+	1118: "h_dingwugou",
+	1119: "h_dou",
+	1120: "h_youxin",
+	1121: "h_hengxiapie",
+	1122: "h_sizizuo",
+	1123: "h_zhizhu",
+	1124: "h_dunti",
+	1125: "h_seven",
+	1126: "h_wa",
+	1127: "h_qiu",
+	1128: "h_jieziyou",
+	1129: "h_yuezili",
+	1130: "h_huizitou",
+	1131: "h_benzitou",
+	1132: "h_sanhls",
+	1133: "h_qinzizuo",
+	1134: "h_caozitou",
+	1135: "h_hsishu",
+	1136: "h_liaoyoush",
+	1137: "h_yinzizhong",
+	1138: "zangzikuang",
+	1139: "h_nangzitou",
+	1140: "h_nue",
+	1141: "h_gai",
+	1142: "h_wu",
+	1143: "h_shixue",
+	1144: "h_chi",
+	1145: "h_yuwuheng",
+	1146: "h_jimei",
+	1147: "h_guazizhong",
+	1148: "h_jian",
+	2001: "shangzitou",
+	2002: "lidaopang",
+	2003: "tongzikuang",
+	2004: "s_kou",
+	2005: "guangzitou",
+	2006: "jiangzipang",
+	2007: "minzidi",
+	2008: "huzitou",
+	2009: "zuzipang",
+	2010: "s_bu",
+	2011: "s_jin",
+	2012: "s_beizizuo",
+	2013: "s_ri",
+	2014: "s_shupie",
+	2015: "s_zhi",
+	2016: "s_bei",
+	2017: "s_xiao",
+	2018: "s_shao",
+	2019: "s_shan",
+	2020: "s_gang",
+	2021: "s_zhong",
+	2022: "s_jian",
+	2023: "s_shaowud",
+	2024: "s_liangshu",
+	2025: "s_mu",
+	2026: "s_qie",
+	2027: "s_you",
+	2028: "s_tian",
+	2029: "s_shen",
+	2030: "s_nei",
+	2031: "s_yue",
+	2032: "s_jia",
+	2033: "s_yang",
+	2034: "s_juzitou",
+	2035: "s_zhan",
+	2036: "s_dianzitou",
+	2037: "s_siwuzhe",
+	2038: "s_shi",
+	2039: "s_zouzidi",
+	2040: "s_guanzidi",
+	2041: "s_guanzitou",
+	2042: "s_gezidi",
+	2043: "s_chong",
+	2044: "s_li",
+	2045: "s_daori",
+	2046: "s_ye",
+	2047: "s_guizitou",
+	2048: "s_guzitou",
+	2049: "s_bianzili",
+	2050: "s_yong",
+	2051: "s_fei",
+	2052: "s_hguankou",
+	2053: "s_guo",
+	2054: "s_dian",
+	2055: "s_shuzizuo",
+	2056: "s_chuan",
+	2057: "s_yu",
+	2058: "s_danzidi",
+	2059: "s_heizitou",
+	2060: "s_zengzizh",
+	2061: "s_dingxiayou",
+	2062: "s_dianshui",
+	2063: "s_mianzidi",
+	3001: "danrenpang",
+	3002: "weizitou",
+	3003: "baozitou",
+	3004: "fengzitou",
+	3005: "tubaogai",
+	3006: "shuangrenpang",
+	3007: "sanpie",
+	3008: "fanquanpang",
+	3009: "zhewen",
+	3010: "shichi",
+	3011: "fanwenpang",
+	3012: "caizitou",
+	3013: "jinzipang",
+	3014: "zhuzitou",
+	3015: "fanzitou",
+	3016: "baozipang",
+	3017: "quezipang",
+	3018: "pieheng",
+	3019: "p_ji",
+	3020: "cha",
+	3021: "p_er",
+	3022: "p_bi",
+	3023: "p_nine",
+	3024: "p_ren",
+	3025: "pieshu",
+	3026: "p_eight",
+	3027: "liangpie",
+	3028: "p_xi",
+	3029: "p_chuan",
+	3030: "p_tuoziyou",
+	3031: "p_wan",
+	3032: "p_fan",
+	3033: "p_jige",
+	3034: "p_yue",
+	3035: "p_bai",
+	3036: "p_jin",
+	3037: "p_najiu",
+	3038: "p_she",
+	3039: "p_thousand",
+	3040: "p_yao",
+	3041: "p_qiu",
+	3042: "p_yanzili",
+	3043: "p_rengui",
+	3044: "p_niu",
+	3045: "p_jie",
+	3046: "p_fen",
+	3047: "p_angzizuo",
+	3048: "p_maozizuo",
+	3049: "p_fu",
+	3050: "p_qian",
+	3051: "p_wu",
+	3052: "p_lun",
+	3053: "p_shao",
+	3054: "p_zhao",
+	3055: "p_cang",
+	3056: "p_yun",
+	3057: "p_shi",
+	3058: "p_wuya",
+	3059: "p_chang",
+	3060: "p_niuwuwei",
+	3061: "p_he",
+	3062: "p_zha",
+	3063: "p_ling",
+	3064: "p_yong",
+	3065: "p_di",
+	3066: "p_shizu",
+	3067: "p_erya",
+	3068: "p_fanzhi",
+	3069: "p_jintian",
+	3070: "p_ce",
+	3071: "p_niaowuheng",
+	3072: "p_qi",
+	3073: "p_gou",
+	3074: "p_mao",
+	3075: "p_pi",
+	3076: "p_gong",
+	3077: "p_yizidi",
+	3078: "p_wuyou",
+	3079: "p_hu",
+	3080: "p_zhizizuo",
+	3081: "p_pian",
+	3082: "zhouzikuang",
+	3083: "p_gua",
+	3084: "p_yedian",
+	3085: "p_sheng",
+	3086: "p_zhaotou",
+	3087: "p_zheng",
+	3088: "p_liuzidi",
+	3089: "p_zhutouban",
+	3090: "p_fa",
+	3091: "p_zi",
+	3092: "p_xiangzikuang",
+	3093: "p_xiezizuo",
+	3094: "p_gangwa",
+	3095: "p_baizizuo",
+	3096: "p_duanzizuo",
+	3097: "p_zhuizili",
+	3098: "p_mian",
+	3099: "p_maoshangzuo",
+	3100: "p_paiyouli",
+	3101: "p_zhu",
+	3102: "p_huan",
+	3103: "p_shiqu",
+	3104: "p_shen",
+	3105: "p_zhou",
+	3106: "p_shou",
+	3107: "p_wo",
+	3108: "p_jiu",
+	3109: "piedian",
+	3110: "p_zhong",
+	3111: "p_cheng",
+	3112: "p_beizitou",
+	3113: "aozikuang",
+	3114: "p_xidian",
+	3115: "p_gui",
+	3116: "p_yu",
+	3117: "p_chui",
+	3118: "p_xiang",
+	3119: "p_juzidi",
+	3120: "p_dan",
+	3121: "p_zimei",
+	3122: "p_ju",
+	3123: "p_le",
+	3124: "p_yinzizuo",
+	3125: "p_cong",
+	3126: "p_xun",
+	3127: "p_yushangzuo",
+	4001: "liuzitou",
+	4002: "liangdianshui",
+	4003: "lanzitou",
+	4004: "yanzipang",
+	4005: "baogaitou",
+	4006: "sandianshui",
+	4007: "zouzhidi",
+	4008: "huozipang",
+	4009: "sidiandi",
+	4010: "shizipang",
+	4011: "bingzitou",
+	4012: "buyipang",
+	4013: "pieweiyang",
+	4014: "yangzitou",
+	4015: "jinzidi",
+	4016: "shuxinpang",
+	4017: "d_zhi",
+	4018: "d_men",
+	4019: "d_yi",
+	4020: "d_lingzidi",
+	4021: "d_ld_sl",
+	4022: "d_guang",
+	4023: "d_wang",
+	4024: "d_fang",
+	4025: "d_wei",
+	4026: "d_wen",
+	4027: "d_mi",
+	4028: "d_zhou",
+	4029: "d_xingzitou",
+	4030: "d_tou",
+	4031: "d_kang",
+	4032: "d_dou",
+	4033: "d_hu",
+	4034: "d_xin",
+	4035: "d_zhu",
+	4036: "d_li",
+	4037: "d_ban",
+	4038: "d_panzizuo",
+	4039: "xuezitou",
+	4040: "d_lan",
+	4041: "d_yong",
+	4042: "d_yifu",
+	4043: "d_bianzitou",
+	4044: "d_jiao",
+	4045: "d_hai",
+	4046: "d_chongzitou",
+	4047: "d_shi",
+	4048: "d_guan",
+	4049: "d_juanzitou",
+	4050: "d_yang",
+	4051: "d_xinzidi",
+	4052: "d_yan",
+	4053: "d_yiye",
+	4054: "d_ni",
+	4055: "d_dianpie",
+	4056: "d_liang",
+	4057: "d_jizitou",
+	4058: "d_jian",
+	4059: "d_langzizuo",
+	4060: "d_chan",
+	4061: "d_gezili",
+	4062: "d_zu",
+	4063: "d_bizizuo",
+	4064: "d_rong",
+	4065: "d_shenziyou",
+	4066: "d_nong",
+	5001: "fanzipang",
+	5002: "xiongzikuang",
+	5003: "danerpang",
+	5004: "zuoerpang",
+	5005: "youerpang",
+	5006: "sigong",
+	5007: "jianzidi",
+	5008: "luzitou",
+	5009: "xunzitou",
+	5010: "jiaosipang",
+	5011: "youzipang",
+	5012: "sanzhe",
+	5013: "shuxindi",
+	5014: "dengzitou",
+	5015: "jianzili",
+	5016: "kenzitou",
+	5017: "yi",
+	5018: "z_you",
+	5019: "z_li",
+	5020: "z_zuokai",
+	5021: "z_dao",
+	5022: "z_nai",
+	5023: "cangzidi",
+	5024: "z_gong",
+	5025: "z_zi",
+	5026: "shutidian",
+	5027: "z_shouzizuo",
+	5028: "z_ye",
+	5029: "z_xunziyou",
+	5030: "z_ji",
+	5031: "z_shizitou",
+	5032: "z_le",
+	5033: "z_nv",
+	5034: "z_siziban",
+	5035: "z_yangziyou",
+	5036: "z_ban",
+	5037: "z_xiao",
+	5038: "z_ma",
+	5039: "z_xuechuheng",
+	5040: "z_ba",
+	5041: "z_shui",
+	5042: "z_jueziyou",
+	5043: "z_nazizuo",
+	5044: "z_chi",
+	5045: "z_si",
+	5046: "z_yijing",
+	5047: "z_xi",
+	5048: "z_chou",
+	5049: "z_meizitou",
+	5050: "z_baoziyou",
+	5051: "z_mu",
+	5052: "z_fu",
+	5053: "z_yu",
+	5054: "z_siyi",
+	5055: "z_yiziyou",
+	5056: "z_yin",
+	5057: "z_jizizuo",
+	5058: "z_jingziyou",
+	5059: "z_fa",
+	5060: "z_sangzidi",
+	5061: "z_dianshui",
+	5062: "z_lishu",
+	5063: "z_dizidi",
+	5064: "z_yongzitou",
+	5065: "z_mao",
+	5066: "z_eti",
+	5067: "z_min",
+	5068: "z_houzitou",
+	5069: "z_tangzili",
+	5070: "z_yongzili",
+	5071: "z_luzhongsh",
+	5072: "z_liangyoush",
+	5073: "z_fangzidi",
+	5074: "z_shuzizuo",
+	5075: "z_yuanzitou",
+	5076: "z_cheng",
+	5077: "z_shutidd",
+	5078: "z_jishangyou",
+	5079: "z_jiajian",
+	5080: "feizikuang",
+	5081: "z_shu",
+	5082: "z_dingxiazuo",
+	5083: "z_chiyoush",
+	5084: "z_yushangyou",
+	5085: "z_chu",
 }
