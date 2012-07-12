@@ -8,6 +8,7 @@
 <script language="javascript" src="js/partials.js"></script>
 <script language="javascript" src="js/keymap.js"></script>
 <script language="javascript" src="js/charset.js"></script>
+<script language="javascript" src="js/partial_nv.js"></script>
 <script type="text/javascript">
 
 function isUndefined(v)
@@ -32,6 +33,11 @@ function pattnBelongsTo(pattn, pattns)
 	return !pattnNotBelongsTo(pattn, pattns);
 }
 
+function isPartial(later)
+{
+	return later > 1000;
+}
+
 function isCodeACount(c)
 {
 	return c >= '1' && c <= '5';
@@ -41,6 +47,12 @@ function StrokeIndex()
 {
 	this.laterIndex = 0;
 	this.partIndex = 0;
+}
+
+StrokeIndex.prototype.set = function (l_idx, p_idx)
+{
+	this.laterIndex = l_idx;
+	this.partIndex = p_idx;
 }
 
 function isStrokeIndexEqual(si1, si2)
@@ -55,10 +67,10 @@ function getNextStrokeIndex(later, now)
 {
 	var nxt = new StrokeIndex();
 	var ltr = later[now.laterIndex];
-	if (lrt > 1000) {
+	if (isPartial(ltr)) {
 		nxt.laterIndex = now.laterIndex;
 		nxt.partIndex = now.partIndex + 1;
-		var part = partial_strokes[partial_nv[ltr]];
+		var part = getPartialStrokesByIndex(ltr);
 		if (isUndefined(part[nxt.partIndex])) {
 			nxt.laterIndex = now.laterIndex + 1;
 			nxt.partIndex = 0;
@@ -76,8 +88,7 @@ function getNextStrokeIndex(later, now)
 function add_repeater(repeaters, later_index, partial_index)
 {
 	var pfirst = new StrokeIndex();
-	pfirst.laterIndex = later_index;
-	pfirst.partIndex = partial_index;
+	pfirst.set(later_index, partial_index);
 
 	repeaters[repeaters.length].pos_start = pfirst;
 	repeaters[repeaters.length].pos_now = pfirst;
@@ -106,6 +117,11 @@ function getRepeaterIterateStatus(later, repeaters, count)
 	}
 }
 
+function getPartialStrokesByIndex(idx)
+{
+	return partial_strokes[partial_nv[idx]];
+}
+
 function getStrokeByIndex(later, idx)
 {
 	var ltr = later[idx.laterIndex];
@@ -114,8 +130,8 @@ function getStrokeByIndex(later, idx)
 		return null;
 	}
 
-	if (ltr > 1000) {
-		var part = partial_strokes[partial_nv[ltr]];
+	if (isPartial(ltr)) {
+		var part = getPartialStrokesByIndex(ltr);
 		if (isUndefined(part) || isUndefined(part[idx.partIndex])) {
 			return null;
 		} else {
@@ -130,24 +146,27 @@ function getStrokeByIndex(later, idx)
 	}
 }
 
+function isStrokeEqual(s1, s2)
+{
+	if (s1 == null || s2 == null)
+		return false;
+	return s1 == s2;
+}
+
 function checkForNextStroke(later, repeaters)
 {
 	var rfirst, rnxt;
-	var si_first;
-	var si_nxt;
-	var s_first;
-	var s_nxt;
-	var i;
+	var si_first, si_nxt;
+	var s_first, s_nxt;
 
 	rfirst = repeaters[0];
 	si_first = getNextStrokeIndex(rfirst.pos_now);
 	s_first = getStrokeByIndex(later, si_first);
-	for (i = 1; i < repeaters.length;) {
+	for (var i = 1; i < repeaters.length;) {
 		rnxt = repeaters[i];
 		si_nxt = getNextStrokeIndex(rnxt.pos_now);
 		s_nxt = getStrokeByIndex(later, si_nxt);
-		if (s_first != null && s_nxt != null
-				&& s_first == s_nxt) {
+		if (isStrokeEqual(s_first, s_nxt)) {
 			rnxt.pos_now = si_nxt;
 			i++;
 		} else {
@@ -157,119 +176,143 @@ function checkForNextStroke(later, repeaters)
 	rfirst.pos_now = si_first;
 }
 
+function findStrokeInPartial(part, from, strokes)
+{
+	var idx = (from < 0 ? 0 : from);
+	var len = part.length;
+	for (; idx < len; idx++) {
+		if (pattnBelongsTo(part[idx], strokes)) {
+			return idx;
+		}
+	}
+	return -1;
+}
+
+function findScodeInLater(later, si_idx, strokes)
+{
+	var l_idx = si_idx.laterIndex;
+	var p_idx = si_idx.partIndex;
+	var later_len = later.length;
+
+	/* search from last l_idx+1 */
+	for (; l_idx < later_len; l_idx++) {
+		var found = false;
+		var ltr = later[l_idx];
+		if (isPartial(ltr)) {
+			var part = getPartialStrokesByIndex(ltr);
+			p_idx = findStrokeInPartial(part, p_idx, strokes);
+			if (p_idx != -1) {
+				found = true;
+			} else {
+				p_idx = 0;
+			}
+		} else {
+			p_idx = 0;
+			if (pattnBelongsTo(ltr, strokes)) {
+				found = true;
+			}
+		}
+
+		if (found) {
+			si_idx.set(l_idx, p_idx);
+			return true;
+		}
+	}
+	return false;
+}
+
+function getRepeaters(later, si_idx, strokes)
+{
+	var l_idx = si_idx.laterIndex;
+	var p_idx = si_idx.partIndex;
+	var repeaters = new Array();
+
+	for (; l_idx < later_len; l_idx++) {
+		var ltr = later[l_idx];
+		if (isPartial(ltr)) {
+			var part = getPartialStrokesByIndex(ltr);
+			var part_len = part.length;
+			for (; p_idx < part_len; p_idx++) {
+				if (pattnBelongsTo(part[p_idx], strokes)) {
+					add_repeater(repeaters, l_idx, p_idx);
+				}
+			}
+			p_idx = 0;
+		} else {
+			if (pattnBelongsTo(ltr, strokes)) {
+				/* p_idx equals to 0; */
+				add_repeater(repeaters, l_idx, p_idx);
+			}
+		}
+	}
+	return repeaters;
+}
+
+function checkForCountScode(later, repeaters, count)
+{
+	var stat = 0;
+	while (repeaters.length >= count) {
+		checkForNextStroke(later, repeaters);
+		stat = getRepeaterIterateStatus(later, repeaters, count);
+		if (stat == 1) {
+			return true;
+		} else if (stat == -1) {
+			return false;
+		} else {
+			continue;
+		}
+	}
+}
+
+function findCountScodeInLater(later, si_idx, strokes, count)
+{
+	var later_len = later.length;
+
+	/* 1. search for all cnow */
+	var repeaters = getRepeaters(later, si_idx, strokes);;
+
+	/* 2. check for later strokes */
+	var isOk = checkForCountScode(later, repeaters, count);
+
+	/* 3. set back l_idx & p_idx */
+	if (isOk) {
+		/* not really the last, there maybe more than
+		 	`count' number of same partials */
+		var si_last = repeaters[count-1].pos_now;
+		si_idx = si_last;
+		return true;
+	} else {
+		return false;
+	}
+}
+
 function laterInMapping(later, scode)
 {
 	var cnow = 0;
 	var cprv = 0;
-	var strokes;
-	var s_idx = 0;
-	var l_idx = 0;
-	var p_idx = 0;
+	var si_idx = new StrokeIndex();
 	var scode_len = scode.length;
-	var later_len = later.length;
-/*
-	if (scode_len > later_len)
-		return false;
-*/
-	for (; s_idx < scode_len; s_idx++) {
+
+	for (var s_idx = 0; s_idx < scode_len; s_idx++) {
 		cprv = cnow;
 		cnow = scode.charAt(s_idx).toUpperCase();
 		if (isCodeACount(cnow)) {
 			continue;
 		} else {
 			/* strokes is asured to be exist */
-			strokes = stroke_maps[cnow];
+			var strokes = stroke_maps[cnow];
+			var found = false;
 			if (isCodeACount(cprv)) {
 				/* search for count cnow in later */
 				/* it's been asured that
-				   cnow is not a number */
-				var count = cprv;
-				/* 1. search for all cnow */
-				var repeaters = new Array();
-				var l_idx2 = l_idx;
-				var p_idx2 = p_idx;
-				for (; l_idx2 < later_len; l_idx2++) {
-					var ltr = later[l_idx2];
-					if (ltr > 1000) {
-						var part = partial_strokes[partial_nv[ltr]];
-						var part_len = part.length;
-						for (; p_idx2 < part_len; p_idx2++) {
-							if (pattnBelongsTo(part[p_idx2], strokes)) {
-								add_repeater(repeaters, l_idx2, p_idx2);
-							}
-						}
-						p_idx2 = 0;
-					} else {
-						if (pattnBelongsTo(ltr, strokes)) {
-							add_repeater(repeaters, l_idx2, 0);
-						}
-					}
-				}
-
-				/* 2. check for later strokes */
-				var isOk = false;
-				var stat = false;
-				while (repeaters.length >= count) {
-					checkForNextStroke(later, repeaters);
-					stat = getRepeaterIterateStatus(later, repeaters, count);
-					if (stat == 1) {
-						isOk = true;
-						break;
-					} else if (stat == -1) {
-						return false;
-					} else {
-						continue;
-					}
-				}
-
-				/* 3. set back l_idx & p_idx */
-				if (isOk) {
-					/* not really the last, there maybe more than
-					 	`count' number of same partials */
-					var si_last = repeaters[count-1].pos_now;
-					l_idx = si_last.laterIndex;
-					p_idx = si_last.partIndex;
-				} else {
-					return false;
-				}
-
+	   				cnow is not a number */
+				found = findCountScodeInLater(later, si_idx, strokes, cprv); 
 			} else {
 				/* search for cnow in later */
-				/* search from last l_idx+1 */
-				for (; l_idx < later_len; l_idx++) {
-					var found = false;
-					var ltr = later[l_idx];
-					if (ltr > 1000) {
-						var part = partial_strokes[partial_nv[ltr]];
-						var part_len = part.length;
-						for (; p_idx < part_len; p_idx++) {
-							if (pattnBelongsTo(part[p_idx], strokes)) {
-								found = true;
-								break;
-							}
-						}
-						if (p_idx >= part_len) {
-							p_idx = 0;
-						} else {
-							p_idx++;
-						}
-					} else {
-						if (pattnBelongsTo(ltr, strokes)) {
-							found = true;
-						}
-					}
-					if (found) {
-						break;
-					}
-				}
-				if (l_idx >= later_len) {
-					return false;
-				} else {
-					if (p_idx == 0) {
-					/* search from next partial next time */
-						l_idx++;
-					}
-				}
+				found = findScodeInLater(later, si_idx, strokes);
+			}
+			if (!found) {
+				return false;
 			}
 		}
 	}
