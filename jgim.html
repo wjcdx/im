@@ -32,33 +32,245 @@ function pattnBelongsTo(pattn, pattns)
 	return !pattnNotBelongsTo(pattn, pattns);
 }
 
+function isCodeACount(c)
+{
+	return c >= '1' && c <= '5';
+}
+
+function StrokeIndex()
+{
+	this.laterIndex = 0;
+	this.partIndex = 0;
+}
+
+function isStrokeIndexEqual(si1, si2)
+{
+	if (si1 == null || si2 == null)
+		return false;
+	return si1.laterIndex == si2.laterIndex
+		&& si1.partIndex == si2.partIndex;
+}
+
+function getNextStrokeIndex(later, now)
+{
+	var nxt = new StrokeIndex();
+	var ltr = later[now.laterIndex];
+	if (lrt > 1000) {
+		nxt.laterIndex = now.laterIndex;
+		nxt.partIndex = now.partIndex + 1;
+		var part = partial_strokes[partial_nv[ltr]];
+		if (isUndefined(part[nxt.partIndex])) {
+			nxt.laterIndex = now.laterIndex + 1;
+			nxt.partIndex = 0;
+		}
+	} else {
+		nxt.laterIndex = now.laterIndex + 1;
+		nxt.partIndex = 0;
+	}
+	if (isUndefined(later[nxt.laterIndex])) {
+		return null;
+	}
+	return nxt;
+}
+
+function add_repeater(repeaters, later_index, partial_index)
+{
+	var pfirst = new StrokeIndex();
+	pfirst.laterIndex = later_index;
+	pfirst.partIndex = partial_index;
+
+	repeaters[repeaters.length].pos_start = pfirst;
+	repeaters[repeaters.length].pos_now = pfirst;
+}
+
+function getRepeaterIterateStatus(later, repeaters, count)
+{
+	var c = 0;
+	if (repeaters.length < count) {
+		return -1;
+	}
+	for (var i in repeaters) {
+		if (i == 0) {
+			continue;
+		}
+		var rprv = repeaters[i-1];
+		var rnow = repeaters[i];
+		if (isStrokeIndexEqual(getNextStrokeIndex(later, rprv.pos_now), rnow.pos_start)) {
+			c++;
+		}
+	}
+	if ((c+1) >= count) {
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
+function getStrokeByIndex(later, idx)
+{
+	var ltr = later[idx.laterIndex];
+
+	if (isUndefined(ltr)) {
+		return null;
+	}
+
+	if (ltr > 1000) {
+		var part = partial_strokes[partial_nv[ltr]];
+		if (isUndefined(part) || isUndefined(part[idx.partIndex])) {
+			return null;
+		} else {
+			return part[idx.partIndex];
+		}
+	} else {
+		if (idx.partIndex != 0) {
+			return null;
+		} else {
+			return ltr;
+		}
+	}
+}
+
+function checkForNextStroke(later, repeaters)
+{
+	var rfirst, rnxt;
+	var si_first;
+	var si_nxt;
+	var s_first;
+	var s_nxt;
+	var i;
+
+	rfirst = repeaters[0];
+	si_first = getNextStrokeIndex(rfirst.pos_now);
+	s_first = getStrokeByIndex(later, si_first);
+	for (i = 1; i < repeaters.length;) {
+		rnxt = repeaters[i];
+		si_nxt = getNextStrokeIndex(rnxt.pos_now);
+		s_nxt = getStrokeByIndex(later, si_nxt);
+		if (s_first != null && s_nxt != null
+				&& s_first == s_nxt) {
+			rnxt.pos_now = si_nxt;
+			i++;
+		} else {
+			repeaters.splice(i, 1);
+		}
+	}
+	rfirst.pos_now = si_first;
+}
+
 function laterInMapping(later, scode)
 {
-	var c;
-	var pattns;
+	var cnow = 0;
+	var cprv = 0;
+	var strokes;
 	var s_idx = 0;
 	var l_idx = 0;
+	var p_idx = 0;
 	var scode_len = scode.length;
 	var later_len = later.length;
-
+/*
 	if (scode_len > later_len)
 		return false;
-
+*/
 	for (; s_idx < scode_len; s_idx++) {
-		c = scode.charAt(s_idx).toUpperCase();
-		/* pattns is asured to be exist */
-		pattns = bushou_maps[c];
-		/* search from last l_idx+1 */
-		for (; l_idx < later_len; l_idx++) {
-			if (pattnBelongsTo(later[l_idx], pattns)) {
-				break;
-			}
-		}
-		if (l_idx >= later_len) {
-			return false;
+		cprv = cnow;
+		cnow = scode.charAt(s_idx).toUpperCase();
+		if (isCodeACount(cnow)) {
+			continue;
 		} else {
-			/* search from next partial next time */
-			l_idx++;
+			/* strokes is asured to be exist */
+			strokes = stroke_maps[cnow];
+			if (isCodeACount(cprv)) {
+				/* search for count cnow in later */
+				/* it's been asured that
+				   cnow is not a number */
+				var count = cprv;
+				/* 1. search for all cnow */
+				var repeaters = new Array();
+				var l_idx2 = l_idx;
+				var p_idx2 = p_idx;
+				for (; l_idx2 < later_len; l_idx2++) {
+					var ltr = later[l_idx2];
+					if (ltr > 1000) {
+						var part = partial_strokes[partial_nv[ltr]];
+						var part_len = part.length;
+						for (; p_idx2 < part_len; p_idx2++) {
+							if (pattnBelongsTo(part[p_idx2], strokes)) {
+								add_repeater(repeaters, l_idx2, p_idx2);
+							}
+						}
+						p_idx2 = 0;
+					} else {
+						if (pattnBelongsTo(ltr, strokes)) {
+							add_repeater(repeaters, l_idx2, 0);
+						}
+					}
+				}
+
+				/* 2. check for later strokes */
+				var isOk = false;
+				var stat = false;
+				while (repeaters.length >= count) {
+					checkForNextStroke(later, repeaters);
+					stat = getRepeaterIterateStatus(later, repeaters, count);
+					if (stat == 1) {
+						isOk = true;
+						break;
+					} else if (stat == -1) {
+						return false;
+					} else {
+						continue;
+					}
+				}
+
+				/* 3. set back l_idx & p_idx */
+				if (isOk) {
+					/* not really the last, there maybe more than
+					 	`count' number of same partials */
+					var si_last = repeaters[count-1].pos_now;
+					l_idx = si_last.laterIndex;
+					p_idx = si_last.partIndex;
+				} else {
+					return false;
+				}
+
+			} else {
+				/* search for cnow in later */
+				/* search from last l_idx+1 */
+				for (; l_idx < later_len; l_idx++) {
+					var found = false;
+					var ltr = later[l_idx];
+					if (ltr > 1000) {
+						var part = partial_strokes[partial_nv[ltr]];
+						var part_len = part.length;
+						for (; p_idx < part_len; p_idx++) {
+							if (pattnBelongsTo(part[p_idx], strokes)) {
+								found = true;
+								break;
+							}
+						}
+						if (p_idx >= part_len) {
+							p_idx = 0;
+						} else {
+							p_idx++;
+						}
+					} else {
+						if (pattnBelongsTo(ltr, strokes)) {
+							found = true;
+						}
+					}
+					if (found) {
+						break;
+					}
+				}
+				if (l_idx >= later_len) {
+					return false;
+				} else {
+					if (p_idx == 0) {
+					/* search from next partial next time */
+						l_idx++;
+					}
+				}
+			}
 		}
 	}
 	return true;
@@ -66,10 +278,19 @@ function laterInMapping(later, scode)
 
 function scodeNotInLaterMap(scode)
 {
-	var c;
+	var cnow = 0;
+	var cprv = 0;
 	for (var i = scode.length-1; i >= 0; i--) {
-		c = scode.charAt(i).toUpperCase();
-		if (isUndefined(bushou_maps[c])) {
+		cnow = cprv;
+		cnow = scode.charAt(i).toUpperCase();
+		if (isCodeACount(cnow)) {
+			if (isCodeACount(cprv)) {
+				return true;
+			} else {
+				continue;
+			}
+		}
+		if (isUndefined(stroke_maps[cnow])) {
 			return true;
 		}
 	}
