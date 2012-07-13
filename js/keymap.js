@@ -35,7 +35,7 @@ var stroke_maps = {
 	'B': [ti],
 	'J': [shugou],
 	'I': [hengzhepie],
-	'V': [shuwanhenggou],
+	'W': [shuwanhenggou],
 	'O': [henggou],
 	'N': [shuzheheng, shuzheti, piezheheng, piezhedian, wanshugou, nagou,
 			hengzheshuzheheng, hengzheshuzheti, hengzhenagou, shuzhehengzheshu,
