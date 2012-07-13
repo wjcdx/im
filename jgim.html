@@ -59,14 +59,20 @@ function isStrokeIndexEqual(si1, si2)
 {
 	if (si1 == null || si2 == null)
 		return false;
-	return si1.laterIndex == si2.laterIndex
-		&& si1.partIndex == si2.partIndex;
+	return (si1.laterIndex == si2.laterIndex
+		&& si1.partIndex == si2.partIndex);
 }
 
 function getNextStrokeIndex(later, now)
 {
+	var ltr;
 	var nxt = new StrokeIndex();
-	var ltr = later[now.laterIndex];
+
+	if (now == null) {
+		return null;
+	}
+
+	ltr = later[now.laterIndex];
 	if (isPartial(ltr)) {
 		nxt.laterIndex = now.laterIndex;
 		nxt.partIndex = now.partIndex + 1;
@@ -85,38 +91,6 @@ function getNextStrokeIndex(later, now)
 	return nxt;
 }
 
-function add_repeater(repeaters, later_index, partial_index)
-{
-	var pfirst = new StrokeIndex();
-	pfirst.set(later_index, partial_index);
-
-	repeaters[repeaters.length].pos_start = pfirst;
-	repeaters[repeaters.length].pos_now = pfirst;
-}
-
-function getRepeaterIterateStatus(later, repeaters, count)
-{
-	var c = 0;
-	if (repeaters.length < count) {
-		return -1;
-	}
-	for (var i in repeaters) {
-		if (i == 0) {
-			continue;
-		}
-		var rprv = repeaters[i-1];
-		var rnow = repeaters[i];
-		if (isStrokeIndexEqual(getNextStrokeIndex(later, rprv.pos_now), rnow.pos_start)) {
-			c++;
-		}
-	}
-	if ((c+1) >= count) {
-		return 1;
-	} else {
-		return 0;
-	}
-}
-
 function getPartialStrokesByIndex(idx)
 {
 	return partial_strokes[partial_nv[idx]];
@@ -124,12 +98,13 @@ function getPartialStrokesByIndex(idx)
 
 function getStrokeByIndex(later, idx)
 {
-	var ltr = later[idx.laterIndex];
+	if (idx == null)
+		return null;
 
+	var ltr = later[idx.laterIndex];
 	if (isUndefined(ltr)) {
 		return null;
 	}
-
 	if (isPartial(ltr)) {
 		var part = getPartialStrokesByIndex(ltr);
 		if (isUndefined(part) || isUndefined(part[idx.partIndex])) {
@@ -138,11 +113,7 @@ function getStrokeByIndex(later, idx)
 			return part[idx.partIndex];
 		}
 	} else {
-		if (idx.partIndex != 0) {
-			return null;
-		} else {
-			return ltr;
-		}
+		return ltr;
 	}
 }
 
@@ -151,29 +122,6 @@ function isStrokeEqual(s1, s2)
 	if (s1 == null || s2 == null)
 		return false;
 	return s1 == s2;
-}
-
-function checkForNextStroke(later, repeaters)
-{
-	var rfirst, rnxt;
-	var si_first, si_nxt;
-	var s_first, s_nxt;
-
-	rfirst = repeaters[0];
-	si_first = getNextStrokeIndex(rfirst.pos_now);
-	s_first = getStrokeByIndex(later, si_first);
-	for (var i = 1; i < repeaters.length;) {
-		rnxt = repeaters[i];
-		si_nxt = getNextStrokeIndex(rnxt.pos_now);
-		s_nxt = getStrokeByIndex(later, si_nxt);
-		if (isStrokeEqual(s_first, s_nxt)) {
-			rnxt.pos_now = si_nxt;
-			i++;
-		} else {
-			repeaters.splice(i, 1);
-		}
-	}
-	rfirst.pos_now = si_first;
 }
 
 function findStrokeInPartial(part, from, strokes)
@@ -188,10 +136,10 @@ function findStrokeInPartial(part, from, strokes)
 	return -1;
 }
 
-function findScodeInLater(later, si_idx, strokes)
+function findScodeInLater(later, si_from, strokes)
 {
-	var l_idx = si_idx.laterIndex;
-	var p_idx = si_idx.partIndex;
+	var l_idx = si_from.laterIndex;
+	var p_idx = si_from.partIndex;
 	var later_len = later.length;
 
 	/* search from last l_idx+1 */
@@ -207,24 +155,35 @@ function findScodeInLater(later, si_idx, strokes)
 				p_idx = 0;
 			}
 		} else {
-			p_idx = 0;
+			/* p_idx = 0; */
 			if (pattnBelongsTo(ltr, strokes)) {
 				found = true;
 			}
 		}
 
 		if (found) {
-			si_idx.set(l_idx, p_idx);
+			si_from.set(l_idx, p_idx);
 			return true;
 		}
 	}
+	si_from = null;
 	return false;
+}
+
+function add_repeater(repeaters, later_index, partial_index)
+{
+	var pfirst = new StrokeIndex();
+	pfirst.set(later_index, partial_index);
+
+	repeaters[repeaters.length].pos_start = pfirst;
+	repeaters[repeaters.length].pos_now = pfirst;
 }
 
 function getRepeaters(later, si_idx, strokes)
 {
 	var l_idx = si_idx.laterIndex;
 	var p_idx = si_idx.partIndex;
+	var later_len = later.length;
 	var repeaters = new Array();
 
 	for (; l_idx < later_len; l_idx++) {
@@ -248,26 +207,76 @@ function getRepeaters(later, si_idx, strokes)
 	return repeaters;
 }
 
+/**
+ * return value:
+ * 0: go on iterate;
+ * 1: iterate end succeeded;
+ * -1: iterate end failed;
+ */
+function getRepeaterStatus(later, repeaters, count)
+{
+	var c = 0;
+
+	if (repeaters.length < count)
+		return -1;
+
+	/* compare first count repeaters */
+	for (var i = 1; i <= count; i++) {
+		var rprv = repeaters[i-1];
+		var rnow = repeaters[i];
+		if (isStrokeIndexEqual(getNextStrokeIndex(later, rprv.pos_now), rnow.pos_start)) {
+			c++;
+		}
+	}
+	if ((c+1) == count) {
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
+function iterateRepeaters(later, repeaters)
+{
+	var rfirst, rnxt;
+	var si_first, si_nxt;
+	var s_first, s_nxt;
+
+	if (repeaters.length <= 1)
+		return;
+
+	rfirst = repeaters[0];
+	si_first = getNextStrokeIndex(rfirst.pos_now);
+	s_first = getStrokeByIndex(later, si_first);
+	for (var i = 1; i < repeaters.length; ) {
+		rnxt = repeaters[i];
+		si_nxt = getNextStrokeIndex(rnxt.pos_now);
+		s_nxt = getStrokeByIndex(later, si_nxt);
+		if (isStrokeEqual(s_first, s_nxt)) {
+			rnxt.pos_now = si_nxt;
+			i++;
+		} else {
+			repeaters.splice(i, 1);
+		}
+	}
+	rfirst.pos_now = si_first;
+}
+
 function checkForCountScode(later, repeaters, count)
 {
 	var stat = 0;
-	while (repeaters.length >= count) {
-		checkForNextStroke(later, repeaters);
-		stat = getRepeaterIterateStatus(later, repeaters, count);
+	while (true) {
+		stat = getRepeaterStatus(later, repeaters, count);
 		if (stat == 1) {
 			return true;
 		} else if (stat == -1) {
 			return false;
-		} else {
-			continue;
 		}
+		iterateRepeaters(later, repeaters);
 	}
 }
 
 function findCountScodeInLater(later, si_idx, strokes, count)
 {
-	var later_len = later.length;
-
 	/* 1. search for all cnow */
 	var repeaters = getRepeaters(later, si_idx, strokes);;
 
@@ -282,16 +291,17 @@ function findCountScodeInLater(later, si_idx, strokes, count)
 		si_idx = si_last;
 		return true;
 	} else {
+		si_idx = null;
 		return false;
 	}
 }
 
-function laterInMapping(later, scode)
+function scodeMatchesLater(later, scode)
 {
 	var cnow = 0;
 	var cprv = 0;
-	var si_idx = new StrokeIndex();
 	var scode_len = scode.length;
+	var si_idx = new StrokeIndex();
 
 	for (var s_idx = 0; s_idx < scode_len; s_idx++) {
 		cprv = cnow;
@@ -312,6 +322,11 @@ function laterInMapping(later, scode)
 				found = findScodeInLater(later, si_idx, strokes);
 			}
 			if (!found) {
+				return false;
+			}
+			/* search from next stroke next time */
+			si_idx = getNextStrokeIndex(later, si_idx);
+			if (si_idx == null) {
 				return false;
 			}
 		}
@@ -363,7 +378,7 @@ function scode_change()
 		}
 		if (scode.length == 1) {
 			candidates[candidates.length] = c;
-		} else if (laterInMapping(c.later, scode.substring(1))) {
+		} else if (scodeMatchesLater(c.later, scode.substring(1))) {
 			candidates[candidates.length] = c;
 		}
 	}
