@@ -173,12 +173,12 @@ function findScodeInLater(later, si_from, strokes)
 function add_repeater(repeaters, later_index, partial_index)
 {
 	var i = repeaters.length;
-	var pfirst = new StrokeIndex();
-	pfirst.set(later_index, partial_index);
+	var si = new StrokeIndex();
+	si.set(later_index, partial_index);
 
 	repeaters[i] = new Object();
-	repeaters[i].pos_start = pfirst;
-	repeaters[i].pos_now = pfirst;
+	repeaters[i].pos_start = si;
+	repeaters[i].pos_now = si;
 }
 
 function getRepeaters(later, si_idx, strokes)
@@ -226,7 +226,9 @@ function getRepeaterStatus(later, si_idx, repeaters, count)
 	for (var i = 1; i < len; i++) {
 		var rprv = repeaters[i-1];
 		var rnow = repeaters[i];
-		if (isStrokeIndexEqual(getNextStrokeIndex(later, rprv.pos_now), rnow.pos_start)) {
+		var si_prvnxt = getNextStrokeIndex(later, rprv.pos_now);
+		var si_nowstart = rnow.pos_start;
+		if (isStrokeIndexEqual(si_prvnxt, si_nowstart)) {
 			c++;
 			si_idx = rnow.pos_now;
 		} else {
@@ -249,7 +251,7 @@ function getSameNextRepNumber(later, r_idx, repeaters)
 	var s_this, s_cmp;
 
 	r_this = repeaters[r_idx];
-	si_this = getNextStrokeIndex(r_this.pos_now);
+	si_this = getNextStrokeIndex(later, r_this.pos_now);
 	s_this = getStrokeByIndex(later, si_this);
 	if (r_this == null || si_this == null || s_this == null) {
 		return c;
@@ -258,9 +260,9 @@ function getSameNextRepNumber(later, r_idx, repeaters)
 		if (i == r_idx)
 			continue;
 		r_cmp = repeaters[i];
-		si_cmp = getNextStrokeIndex(r_cmp.pos_now);
+		si_cmp = getNextStrokeIndex(later, r_cmp.pos_now);
 		s_cmp = getStrokeByIndex(later, si_cmp);
-		if (isStrokeEqual(s_first, s_cmp)) {
+		if (isStrokeEqual(s_this, s_cmp)) {
 			c++;
 		}
 	}
@@ -271,9 +273,9 @@ function setRepeatersNext(later, repeaters)
 {
 	var rpt;
 	var si;
-	for (var i = 0; i < repeaters.length; ) {
+	for (var i in repeaters) {
 		rpt = repeaters[i];
-		si = getNextStrokeIndex(rnxt.pos_now);
+		si = getNextStrokeIndex(later, rpt.pos_now);
 		rpt.pos_now = si;
 	}
 }
@@ -419,7 +421,7 @@ function scode_change()
 		if (pattnNotBelongsTo(c.first, patterns)) {
 			continue;
 		}
-		if (c.char == "百") {
+		if (c.char == "官") {
 			var debug = "debug";
 		}
 		if (scode.length == 1) {
