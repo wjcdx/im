@@ -215,7 +215,7 @@ function getRepeaters(later, si_idx, strokes)
  * 1: iterate end succeeded;
  * -1: iterate end failed;
  */
-function getRepeaterStatus(later, repeaters, count)
+function getRepeaterStatus(later, si_idx, repeaters, count)
 {
 	var c = 0;
 	var len = repeaters.length;
@@ -228,13 +228,17 @@ function getRepeaterStatus(later, repeaters, count)
 		var rnow = repeaters[i];
 		if (isStrokeIndexEqual(getNextStrokeIndex(later, rprv.pos_now), rnow.pos_start)) {
 			c++;
+			si_idx = rnow.pos_now;
+		} else {
+			c = 0;
+		}
+
+		if ((c+1) >= count) {
+			return 1;
 		}
 	}
-	if ((c+1) >= count) {
-		return 1;
-	} else {
-		return 0;
-	}
+	si_idx = null;
+	return 0;
 }
 
 function getSameNextRepNumber(later, r_idx, repeaters)
@@ -294,11 +298,11 @@ function iterateRepeaters(later, repeaters, count)
 	setRepeatersNext(later, repeaters);
 }
 
-function checkForCountScode(later, repeaters, count)
+function checkForCountScode(later, si_idx, repeaters, count)
 {
 	var stat = 0;
 	while (true) {
-		stat = getRepeaterStatus(later, repeaters, count);
+		stat = getRepeaterStatus(later, si_idx, repeaters, count);
 		if (stat == 1) {
 			return true;
 		} else if (stat == -1) {
@@ -314,14 +318,12 @@ function findCountScodeInLater(later, si_idx, strokes, count)
 	var repeaters = getRepeaters(later, si_idx, strokes);;
 
 	/* 2. check for later strokes */
-	var isOk = checkForCountScode(later, repeaters, count);
+	var si = new StrokeIndex();
+	var isOk = checkForCountScode(later, si, repeaters, count);
 
 	/* 3. set back l_idx & p_idx */
 	if (isOk) {
-		/* not really the last, there maybe more than
-		 	`count' number of same partials */
-		var si_last = repeaters[count-1].pos_now;
-		si_idx = si_last;
+		si_idx = si;
 		return true;
 	} else {
 		si_idx = null;
