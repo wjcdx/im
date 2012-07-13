@@ -389,12 +389,19 @@ function scodeNotInLaterMap(scode)
 	return false;
 }
 
+function setCandNumber(no)
+{
+	document.getElementById("cand_number").value = no;
+}
+
 function scode_change()
 {
 	var input = document.getElementById("input");
 	var candi = document.getElementById("candidates");
 	var scode = input.value;
 	var patterns = pattern_maps[scode.charAt(0).toUpperCase()];
+
+	setCandNumber(0);
 	if (isUndefined(patterns)) {
 		candi.value = "No first pattern.";
 		return;
@@ -410,7 +417,7 @@ function scode_change()
 		if (pattnNotBelongsTo(c.first, patterns)) {
 			continue;
 		}
-		if (c.char == "是") {
+		if (c.char == "百") {
 			var debug = "debug";
 		}
 		if (scode.length == 1) {
@@ -419,6 +426,8 @@ function scode_change()
 			candidates[candidates.length] = c;
 		}
 	}
+
+	setCandNumber(candidates.length);
 	var candi_chars = "";
 	for (var i in candidates) {
 		var c = candidates[i];
@@ -434,7 +443,8 @@ function scode_change()
 <body>
 	Input: <input type="text" id='input' onkeyup="scode_change()"><br /><br />
 	Candidates: <br />
-	<textarea  id="candidates" style="width: 250px; height: 230px;">
+	Number: <input type="text" id='cand_number'><br />
+	<textarea  id="candidates" style="width: 400px; height: 450px;">
 	</textarea>
 </body>
 
