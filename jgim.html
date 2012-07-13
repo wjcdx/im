@@ -172,11 +172,13 @@ function findScodeInLater(later, si_from, strokes)
 
 function add_repeater(repeaters, later_index, partial_index)
 {
+	var i = repeaters.length;
 	var pfirst = new StrokeIndex();
 	pfirst.set(later_index, partial_index);
 
-	repeaters[repeaters.length].pos_start = pfirst;
-	repeaters[repeaters.length].pos_now = pfirst;
+	repeaters[i] = new Object();
+	repeaters[i].pos_start = pfirst;
+	repeaters[i].pos_now = pfirst;
 }
 
 function getRepeaters(later, si_idx, strokes)
@@ -216,26 +218,63 @@ function getRepeaters(later, si_idx, strokes)
 function getRepeaterStatus(later, repeaters, count)
 {
 	var c = 0;
+	var len = repeaters.length;
 
-	if (repeaters.length < count)
+	if (len < count)
 		return -1;
 
-	/* compare first count repeaters */
-	for (var i = 1; i <= count; i++) {
+	for (var i = 1; i < len; i++) {
 		var rprv = repeaters[i-1];
 		var rnow = repeaters[i];
 		if (isStrokeIndexEqual(getNextStrokeIndex(later, rprv.pos_now), rnow.pos_start)) {
 			c++;
 		}
 	}
-	if ((c+1) == count) {
+	if ((c+1) >= count) {
 		return 1;
 	} else {
 		return 0;
 	}
 }
 
-function iterateRepeaters(later, repeaters)
+function getSameNextRepNumber(later, r_idx, repeaters)
+{
+	var c = 0;
+	var r_this, r_cmp;
+	var si_this, si_cmp;
+	var s_this, s_cmp;
+
+	r_this = repeaters[r_idx];
+	si_this = getNextStrokeIndex(r_this.pos_now);
+	s_this = getStrokeByIndex(later, si_this);
+	if (r_this == null || si_this == null || s_this == null) {
+		return c;
+	}
+	for (var i = 0; i < repeaters.length; i++) {
+		if (i == r_idx)
+			continue;
+		r_cmp = repeaters[i];
+		si_cmp = getNextStrokeIndex(r_cmp.pos_now);
+		s_cmp = getStrokeByIndex(later, si_cmp);
+		if (isStrokeEqual(s_first, s_cmp)) {
+			c++;
+		}
+	}
+	return c;
+}
+
+function setRepeatersNext(later, repeaters)
+{
+	var rpt;
+	var si;
+	for (var i = 0; i < repeaters.length; ) {
+		rpt = repeaters[i];
+		si = getNextStrokeIndex(rnxt.pos_now);
+		rpt.pos_now = si;
+	}
+}
+
+function iterateRepeaters(later, repeaters, count)
 {
 	var rfirst, rnxt;
 	var si_first, si_nxt;
@@ -244,21 +283,15 @@ function iterateRepeaters(later, repeaters)
 	if (repeaters.length <= 1)
 		return;
 
-	rfirst = repeaters[0];
-	si_first = getNextStrokeIndex(rfirst.pos_now);
-	s_first = getStrokeByIndex(later, si_first);
-	for (var i = 1; i < repeaters.length; ) {
-		rnxt = repeaters[i];
-		si_nxt = getNextStrokeIndex(rnxt.pos_now);
-		s_nxt = getStrokeByIndex(later, si_nxt);
-		if (isStrokeEqual(s_first, s_nxt)) {
-			rnxt.pos_now = si_nxt;
+	for (var i = 0; i < repeaters.length; ) {
+		var c = getSameNextRepNumber(later, i, repeaters);
+		if ((c+1) >= count) {
 			i++;
 		} else {
 			repeaters.splice(i, 1);
 		}
 	}
-	rfirst.pos_now = si_first;
+	setRepeatersNext(later, repeaters);
 }
 
 function checkForCountScode(later, repeaters, count)
@@ -271,7 +304,7 @@ function checkForCountScode(later, repeaters, count)
 		} else if (stat == -1) {
 			return false;
 		}
-		iterateRepeaters(later, repeaters);
+		iterateRepeaters(later, repeaters, count);
 	}
 }
 
@@ -312,6 +345,10 @@ function scodeMatchesLater(later, scode)
 			/* strokes is asured to be exist */
 			var strokes = stroke_maps[cnow];
 			var found = false;
+
+			if (si_idx == null) {
+				return false;
+			}
 			if (isCodeACount(cprv)) {
 				/* search for count cnow in later */
 				/* it's been asured that
@@ -326,9 +363,6 @@ function scodeMatchesLater(later, scode)
 			}
 			/* search from next stroke next time */
 			si_idx = getNextStrokeIndex(later, si_idx);
-			if (si_idx == null) {
-				return false;
-			}
 		}
 	}
 	return true;
@@ -339,7 +373,7 @@ function scodeNotInLaterMap(scode)
 	var cnow = 0;
 	var cprv = 0;
 	for (var i = scode.length-1; i >= 0; i--) {
-		cnow = cprv;
+		cprv = cnow;
 		cnow = scode.charAt(i).toUpperCase();
 		if (isCodeACount(cnow)) {
 			if (isCodeACount(cprv)) {
@@ -375,6 +409,9 @@ function scode_change()
 		var c = Characters[i];
 		if (pattnNotBelongsTo(c.first, patterns)) {
 			continue;
+		}
+		if (c.char == "是") {
+			var debug = "debug";
 		}
 		if (scode.length == 1) {
 			candidates[candidates.length] = c;
