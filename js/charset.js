@@ -2250,7 +2250,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "西",
 	first: pattern_single,
-	later: [heng, shu, hengzheshugou, pie, shuzheheng, heng]
+	later: [heng, shu, hengzheshu, pie, shuzheheng, heng]
 }
 Characters[Characters.length] = {
 	char: "压",

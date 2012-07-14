@@ -230,7 +230,7 @@ function getRepeaterStatus(later, si_idx, repeaters, count)
 		var si_nowstart = rnow.pos_start;
 		if (isStrokeIndexEqual(si_prvnxt, si_nowstart)) {
 			c++;
-			si_idx = rnow.pos_now;
+			si_idx.set(rnow.pos_now.laterIndex, rnow.pos_now.partIndex);
 		} else {
 			c = 0;
 		}
@@ -320,12 +320,10 @@ function findCountScodeInLater(later, si_idx, strokes, count)
 	var repeaters = getRepeaters(later, si_idx, strokes);;
 
 	/* 2. check for later strokes */
-	var si = new StrokeIndex();
-	var isOk = checkForCountScode(later, si, repeaters, count);
+	var isOk = checkForCountScode(later, si_idx, repeaters, count);
 
 	/* 3. set back l_idx & p_idx */
 	if (isOk) {
-		si_idx = si;
 		return true;
 	} else {
 		si_idx = null;
@@ -421,7 +419,7 @@ function scode_change()
 		if (pattnNotBelongsTo(c.first, patterns)) {
 			continue;
 		}
-		if (c.char == "官") {
+		if (c.char == "兰") {
 			var debug = "debug";
 		}
 		if (scode.length == 1) {
