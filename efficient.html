@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript" src="js/pattern.js"></script>
+<script language="javascript" src="js/stroke.js"></script>
+<script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/keymap.js"></script>
+<script language="javascript" src="js/charset.js"></script>
+<script language="javascript" src="js/partial_nv.js"></script>
+<script language="javascript" src="js/im.js"></script>
+
+<script type="text/javascript">
+
+function CharStat()
+{
+	this.rpt = 0;
+	this.codes = new Array();
+}
+
+function CodeStat()
+{
+	this.code = "";
+	this.cond = new Array();
+}
+
+function CodeLengthStat()
+{
+	this.codeLen = 0;
+	this.totalRpt = 0;
+	this.totalChar = 0;
+	this.charSign = new Array(Characters.length);
+	this.emptyCodeNo = 0;
+	this.totalCodeNo = 0;
+}
+
+function initPatternChars(pc)
+{
+	for (var p in pattern_maps) {
+		pc.push(p);
+	}
+}
+
+function initStrokeChars(sc)
+{
+	for (var s in stroke_maps) {
+		sc.push(s);
+	}
+	for (var i='1'; i <= '5'; i++) {
+		sc.push(i);
+	}
+}
+
+function getCand4Scode(cond, scode)
+{
+	var patterns = pattern_maps[scode.charAt(0).toUpperCase()];
+
+	if (isUndefined(patterns)) {
+		cand = null;
+		return;
+	}
+	if (scodeNotInLaterMap(scode.substring(1))) {
+		cand = null;
+		return;
+	}
+
+	for (var i in Characters) {
+		var c = Characters[i];
+		if (pattnNotBelongsTo(c.first, patterns)) {
+			continue;
+		}
+		if (scode.length == 1) {
+			cand.push(c);
+		} else if (scodeMatchesLater(c.later, scode.substring(1))) {
+			cand.push(c);
+		}
+	}
+}
+
+function print_scode_stat(codeStat)
+{
+	var str = "";
+	if (codeStat = null)
+		return;
+	for (var i in codeStat.cand) {
+		var c = codeStat.cand[i];
+		str += c.char + " ";
+	}
+	document.write("<tr>");
+	document.write("<td></td>");
+	document.write("<td>" + codeStat.code + "</td>");
+	document.write("<td>" + str + "</td>");
+	document.write("</tr>");
+}
+
+functon add_cscode_stat(codeStat, codeLenStat)
+{
+	if (codeStat = null)
+		return;
+	codeLenStat.totalRpt += codeStat.cand.length;
+	codeLenStat.totalCodeNo++;
+	if (codeStat.cand.length == 0) {
+		codeLenStat.emptyCodeNo++;
+	}
+}
+
+function statCountStrokes(scode, count, strokChars, codeStat, codeLenStat)
+{
+	if (count > 0) {
+		for (var i in strkChars) {
+			scode += strkChars[i];
+			statCountStrokes(scode, count-1, strokChars, codeStat);
+		}
+	} else { /* count == 0 */
+		/* certain scode */
+		/* 1. get candinate chars of the scode */
+		getCand4Scode(codeStat.cand, scode);
+		/* 2. print stats for scode */
+		codeStat.code = scode;
+		print_scode_stat(codeStat);
+		/* 3. add stats for count scode */
+		add_cscode_stat(codeStat, codeLenStat);
+	}
+}
+
+function print_cscode_stat(codeLenStat)
+{
+	document.write("<tr>");
+	document.write("<td></td>");
+	document.write("<td>" + "" + "</td>");
+	document.write("<td>" + "" + "</td>");
+	document.write("</tr>");
+}
+
+function stat_print()
+{
+	var patnChars = new Array();
+	var strkChars = new Array();
+	var scode = "";
+
+	initPatternChars(patnChars);
+	initStrokeChars(strkChars);
+
+	for (var i = 2; i <= 10; i++) {
+		var codeLenStat = new CodeLengthStat();
+		for (var j in patnChars) {
+			var codeStat = new CodeStat();
+			scode += patnChars[i];
+			statCountStrokes(scode, count, strkChars, codeStat, codeLenStat);
+		}
+		/* print stats for count scode */
+		print_cscode_stat(codeLenStat);
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td>No</td>
+			<td></td>
+			<td>number used</td>
+			<td>ratio(total: " + total + ")</td>
+		</tr>
+		<script type="text/javascript">
+			stat_print();
+		</script>
+	</table>
+</body>
+
+</html>
