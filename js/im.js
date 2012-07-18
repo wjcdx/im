@@ -211,6 +211,14 @@ function getRepeaterStatus(later, si_idx, repeaters, count)
 	if (len < count)
 		return -1;
 
+	/* length == 1 */
+	if (len == 1 && count == 1) {
+		var si = repeaters[0].pos_now;
+		si_idx.set(si.laterIndex, si.partIndex);
+		return 1;
+	}
+
+	/* length > 1 */
 	for (var i = 1; i < len; i++) {
 		var rprv = repeaters[i-1];
 		var rnow = repeaters[i];

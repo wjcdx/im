@@ -11,6 +11,15 @@
 <script language="javascript" src="js/partial_nv.js"></script>
 <script language="javascript" src="js/im.js"></script>
 
+<style>
+	table {
+ 		border: 1px dashed black;
+	}
+	td {
+ 		border-top: 1px dashed black;
+	}
+</style>
+
 <script type="text/javascript">
 
 function CharStat()
@@ -125,21 +134,20 @@ function add_cscode_stat(codeStat, codeLenStat)
 	}
 }
 
-function statCountStrokes(scode, count, strkChars, codeStat, codeLenStat)
+function statCountStrokes(scode, count, strkChars, codeLenStat)
 {
 	if (count > 0) {
 		for (var i in strkChars) {
 			var code = scode + strkChars[i];
-			statCountStrokes(code, count-1, strkChars, codeStat, codeLenStat);
+			statCountStrokes(code, count-1, strkChars, codeLenStat);
 		}
 	} else { /* count == 0 */
 		/* certain scode */
+		var codeStat = new CodeStat();
 		codeStat.code = scode;
-		/* 1. get candinate chars of the scode */
+		
 		getCand4Scode(codeStat.cand, scode);
-		/* 2. print stats for scode */
 		print_scode_stat(codeStat, codeLenStat.totalCodeNo);
-		/* 3. add stats for count scode */
 		add_cscode_stat(codeStat, codeLenStat);
 	}
 }
@@ -148,10 +156,16 @@ function print_cscode_stat(codeLenStat)
 {
 	document.write("<tr>");
 	document.write("<td></td>");
-	document.write("<td>Code Length: &nbsp;" + codeLenStat.codeLen + "</td>");
-	document.write("<td>Ratio(char covered): &nbsp;" + codeLenStat.totalCharNo/Characters.length + "</td>");
-	document.write("<td>Ratio(average repeat): &nbsp;" + codeLenStat.totalRptNo/codeLenStat.totalCodeNo + "</td>");
-	document.write("<td>Ratio(empty code): &nbsp;" + codeLenStat.emptyCodeNo/codeLenStat.totalCodeNo + "</td>");
+	document.write("<td>Code Length: " + codeLenStat.codeLen + "</td>");
+	document.write("<td>Ratio(char covered): " + codeLenStat.totalCharNo
+			+ " / " + Characters.length + " = "
+			+ codeLenStat.totalCharNo/Characters.length + "</td>");
+	document.write("<td>Ratio(average repeat): "
+			+ codeLenStat.totalRptNo + " / " + codeLenStat.totalCodeNo + " = "
+			+ codeLenStat.totalRptNo/codeLenStat.totalCodeNo + "</td>");
+	document.write("<td>Ratio(empty code): " + codeLenStat.emptyCodeNo
+			+ " / " + codeLenStat.totalCodeNo + " = "
+			+ codeLenStat.emptyCodeNo/codeLenStat.totalCodeNo + "</td>");
 	document.write("</tr>");
 }
 
@@ -168,10 +182,9 @@ function stat_print()
 		codeLenStat.codeLen = i;
 		/* iterate all patterns */
 		for (var j in patnChars) {
-			var codeStat = new CodeStat();
 			var scode = "" + patnChars[j];
 			/* iterate all strokes count times */
-			statCountStrokes(scode, i, strkChars, codeStat, codeLenStat);
+			statCountStrokes(scode, i, strkChars, codeLenStat);
 		}
 		/* print stats for count scode */
 		print_cscode_stat(codeLenStat);
