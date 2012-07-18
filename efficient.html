@@ -125,11 +125,12 @@ function add_cscode_stat(codeStat, codeLenStat)
 
 	var csign = codeLenStat.charSign;
 	for (var i in codeStat.cand) {
-		if (isUndefined(csign[i])) {
-			csign[i] = 1;
+		var cidx = codeStat.cand[i];
+		if (isUndefined(csign[cidx])) {
+			csign[cidx] = 1;
 			codeLenStat.totalCharNo++;
 		} else {
-			csign[i]++;
+			csign[cidx]++;
 		}
 	}
 }
