@@ -14,6 +14,7 @@
 BEGIN {
 	for (i in ARGV) {
 		print "ARGV["i"]="ARGV[i]
+		printf "%03d\n", 5
 	}
 }
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript" src="js/pattern.js"></script>
+<script language="javascript" src="js/stroke.js"></script>
+<script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/keymap.js"></script>
+<script language="javascript" src="js/charset.js"></script>
+<script language="javascript" src="js/partial_nv.js"></script>
+<script language="javascript" src="js/pattern_nv.js"></script>
+<script language="javascript" src="js/stroke_nv.js"></script>
+<script language="javascript" src="js/pattern_abbr.js"></script>
+<script language="javascript" src="js/stroke_abbr.js"></script>
+<script type="text/javascript">
+
+function print_head(c)
+{
+	document.write("<br />");
+	document.write(c.char + "&nbsp;");
+	document.write(pattern_abbrs[c.first]);
+}
+
+function print_stroke(s)
+{
+	document.write("'" + stroke_abbrs[s]);
+}
+
+function print_partial(p)
+{
+	for (var s in p)
+		print_stroke(p[s]);
+}
+
+function print_chars_abbrs()
+{
+	for (var i in Characters) {
+		var c = Characters[i];
+		if (c.char == "扎") {
+			var wjcdx = "debug";
+		}
+		print_head(c);
+		for (var j in c.later) {
+			var s = c.later[j];
+			if (s > 1000) {
+				var p = partial_strokes[partial_nv[s]];
+				print_partial(p);
+			} else {
+				print_stroke(s);
+			}
+		}
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		print_chars_abbrs();
+	</script>
+</body>
+
+</html>
