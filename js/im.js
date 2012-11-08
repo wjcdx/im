@@ -293,6 +293,7 @@ function iterateRepeaters(later, repeaters, count)
 			repeaters.splice(i, 1);
 		}
 	}
+	//forward every repeaters
 	setRepeatersNext(later, repeaters);
 }
 
