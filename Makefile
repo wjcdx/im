@@ -34,3 +34,8 @@ stroke_abbr:
 
 abbrs: pattern_abbr stroke_abbr
 
+TRIE_AWK = scripts/trie.awk
+
+trie:
+	$(TRIE_AWK) data/allabbrs.dat data/dict.utf8.xh 100
+	
