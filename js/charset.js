@@ -1396,7 +1396,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "书",
 	first: pattern_single,
-	later: [hengzheshu, hengzheshu, shu, dian]
+	later: [hengzheshu, hengzheshugou, shu, dian]
 }
 Characters[Characters.length] = {
 	char: "幻",
