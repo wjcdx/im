@@ -11394,12 +11394,12 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "零",
 	first: pattern_ud_up_1_down_1_down_big,
-	later: [h_yushi, p_ling]
+	later: [h_yushui, p_ling]
 }
 Characters[Characters.length] = {
 	char: "雾",
 	first: pattern_ud_up_1_down_2,
-	later: [h_yushi, zhewen, z_li]
+	later: [h_yushui, zhewen, z_li]
 }
 Characters[Characters.length] = {
 	char: "雹",
@@ -12857,7 +12857,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "霜",
 	first: pattern_ud_up_1_down_2,
-	later: [h_yushi, h_mu, s_mu]
+	later: [h_yushui, h_mu, s_mu]
 }
 Characters[Characters.length] = {
 	char: "霞",
@@ -13050,12 +13050,12 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "霸",
 	first: pattern_ud_up_1_down_2,
-	later: [h_yushi, h_caoheng, s_gezidi, p_yue]
+	later: [h_yushui, h_caoheng, s_gezidi, p_yue]
 }
 Characters[Characters.length] = {
 	char: "露",
 	first: pattern_ud_up_1_down_many,
-	later: [h_yushi, s_kou, s_zhi, zhewen, s_kou]
+	later: [h_yushui, s_kou, s_zhi, zhewen, s_kou]
 }
 
 /* 二十二画 */
