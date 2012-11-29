@@ -1321,7 +1321,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "户",
 	first: pattern_single,
-	later: [pie, hengzheshu, heng, pie]
+	later: [dian, hengzheshu, heng, pie]
 }
 Characters[Characters.length] = {
 	char: "认",
