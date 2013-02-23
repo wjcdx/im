@@ -602,7 +602,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "了",
 	first: pattern_single,
-	later: [henggou, shugou]
+	later: [z_le]
 	}
 Characters[Characters.length] = {
 	char: "力",
@@ -1006,7 +1006,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "巨",
 	first: pattern_round_left,
-	later: [jiangzikuang, z_zuokai]
+	later: [h_ju]
 }
 Characters[Characters.length] = {
 	char: "牙",
@@ -2265,7 +2265,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "在",
 	first: pattern_round_left_up,
-	later: [h_hengpie, h_zaizitou]
+	later: [h_zaizitou, h_tu]
 }
 Characters[Characters.length] = {
 	char: "有",
@@ -2664,12 +2664,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "向",
-	first: pattern_single,
+	first: pattern_round_up,
 	later: [pie, shu, hengzheshugou, shu, hengzheshu, heng]
 }
 Characters[Characters.length] = {
 	char: "似",
-	first: pattern_lr_left_1_right_1_right_big,
+	first: pattern_lr_left_1_right_2,
 	later: [danrenpang, shutidian, p_ren]
 }
 Characters[Characters.length] = {
@@ -5803,7 +5803,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "试",
-	first: pattern_lr_left_1_right_1_right_big,
+	first: pattern_lr_left_1_right_2,
 	later: [yanzipang, shizikuang, h_gong]
 }
 Characters[Characters.length] = {
@@ -7060,7 +7060,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "亮",
-	first: pattern_lr_left_middle_right,
+	first: pattern_ud_up_middle_down,
 	later: [liuzitou, s_kou, tubaogai, p_ji]
 }
 Characters[Characters.length] = {
@@ -8857,7 +8857,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "案",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_2_down_1,
 	later: [baogaitou, z_nv, h_mu]
 }
 Characters[Characters.length] = {
@@ -12175,7 +12175,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "豪",
-	first: pattern_lr_left_middle_right,
+	first: pattern_ud_up_middle_down,
 	later: [liuzitou, s_kou, tubaogai, h_zhizhu]
 }
 Characters[Characters.length] = {
