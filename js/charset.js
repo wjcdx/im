@@ -14,7 +14,7 @@
 
 var partial_strokes = {
 	/* 横起 */
-	h_one           : [heng],  /* 二 */
+	h_one           : [heng],  /* 一 */
 	h_two           : [heng, heng],  /* 二 */
 	h_three         : [heng, heng, heng],  /* 三 */
 	h_five          : [heng, shu, hengzheshu, heng],  /* 五 */
@@ -273,8 +273,6 @@ var partial_strokes = {
 	s_dingxiayou    : [shu, heng, shu, hengzheshu],  /* 鼎，下右 */
 	s_dianshui      : [shu, dian, ti, pie, dian],  /* 犀，里上 */
 	s_beizizuo      : [shu, heng, ti],  /* 北，左边 */
-
-
 	s_gezidi        : [shu, hengzheshu, heng, heng, shu],  /* 革，下面 */
 
 	/* 撇起 */
@@ -3563,7 +3561,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "严",
 	first: pattern_single,
-	later: [h_yang]
+	later: [h_yan]
 }
 Characters[Characters.length] = {
 	char: "芦",
@@ -3668,7 +3666,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "辰",
 	first: pattern_single,
-	later: [h_chengxing]
+	later: [h_chenxing]
 }
 Characters[Characters.length] = {
 	char: "励",
@@ -12880,7 +12878,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "凝",
-	first: pattern_lr_left_1_right_1,
+	first: pattern_lr_left_1_right_2,
 	later: [d_liangdianshui, p_bi, p_shi, z_yongzitou, z_xuanyouxia]
 }
 Characters[Characters.length] = {
@@ -13268,7 +13266,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "皿",
 	first: pattern_single,
-	later: [s_s_minzidi]
+	later: [s_minzidi]
 }
 Characters[Characters.length] = {
 	char: "凹",
