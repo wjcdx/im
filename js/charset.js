@@ -6275,7 +6275,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "挪",
-	first: pattern_lr_left_middle_right,
+	first: pattern_lr_left_1_right_heng_2,
 	later: [h_tishoupang, z_nazizuo, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -6715,7 +6715,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "哪",
-	first: pattern_lr_left_middle_right,
+	first: pattern_lr_left_1_right_shu_2,
 	later: [s_kou, z_nazizuo, z_youerpang]
 }
 Characters[Characters.length] = {
