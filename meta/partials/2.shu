@@ -22,7 +22,6 @@ var s_tian          = 0,  /* 田 */
 var s_you           = 0,  /* 由 */
 var s_dian          = 0,  /* 电 */
 var s_shi           = 0,  /* 史 */
-var s_zhiyou		= 0,  /* 只 */
 var s_yang          = 0,  /* 央 */
 var s_tu			= 0,  /* 凸 */
 var s_ao			= 0,  /* 凹 */
@@ -32,18 +31,12 @@ var s_dang			= 0,  /* 当 */
 var s_chong         = 0,  /* 虫 */
 var s_qu			= 0,  /* 曲 */
 var s_rou			= 0,  /* 肉 */
-var s_xian			= 0,  /* 县 */
 var s_li            = 0,  /* 里 */
 var s_zu            = 0,  /* 足 */
 var s_chuan         = 0,  /* 串 */
 var s_xiaoxiang		= 0,  /* 肖 */
-var s_fei			= 0,  /* 非 */
-var s_ju			= 0,  /* 具 */
 var s_guo           = 0,  /* 果 */
-var s_dianxing		= 0,  /* 典,型 */
 var s_yu            = 0,  /* 禺 */
-
-
 
 var s_tongzikuang	= 0,  /* 同 */
 var s_lidaopang		= 0,  /* 刚 */
@@ -70,7 +63,6 @@ var s_yangwutou		= 0,  /* 奂，下边 */
 var s_mianzidi		= 0,  /* 免，下边 */
 var s_hguankou      = 0,  /* 衰，中间，横贯口 */
 var s_danzidi       = 0,  /* 单，下部 */
-var s_mianfzidi		= 0,  /* 面，粉下部 */
 var s_tuzidi		= 0,  /* 兔，下边 */
 var s_heizitou      = 0,  /* 黑，上部 */
 var s_zengzizh      = 0,  /* 曾，中间 */

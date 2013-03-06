@@ -1,6 +1,6 @@
 /* 键盘映射表 */
 var pattern_maps = {
-	'F': [pattern_lr_left_1_right_1_left_big, pattern_lr_left_1_right_1_right_big],
+	'F': [pattern_lr_left_1_right_1],
 	'R': [pattern_lr_left_1_right_2],
 	'V': [pattern_lr_left_1_right_many],
 	'M': [pattern_lr_left_2_right_2, pattern_lr_left_middle_right, pattern_lr_left_2_right_1,

@@ -25,24 +25,19 @@ var d_yiye          = 0,  /* 亦 */
 var d_jiao          = 0,  /* 交 */
 var d_yifu          = 0,  /* 衣 */
 var d_chan          = 0,  /* 产 */
-var d_chong			= 0,  /* 充 */
 var d_yang          = 0,  /* 羊 */
 var d_bing          = 0,  /* 并 */
 var d_guan          = 0,  /* 关 */
 var d_mi            = 0,  /* 米 */
 var d_zhou          = 0,  /* 州 */
-var d_xing          = 0,  /* 兴 */
 var d_nong          = 0,  /* 农 */
 var d_hai           = 0,  /* 亥 */
-var d_yan           = 0,  /* 言 */
 var d_di			= 0,  /* 弟 */
 var d_liang         = 0,  /* 良 */
 var d_dan			= 0,  /* 单 */
 var d_jian          = 0,  /* 兼 */
 
-
-
-var d_ld_sl         = 0,  /* 冬 */
+var d_ldsl         = 0,  /* 冬 */
 var d_xingzitou     = 0,  /* 兴，上面，不带横 */
 var d_jinzidi		= 0,  /* 今，下边 */
 var d_liangdianshui	= 0,  /* 次 */

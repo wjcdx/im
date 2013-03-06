@@ -27,12 +27,10 @@ var z_chi           = 0,  /* 尺 */
 var z_chou          = 0,  /* 丑 */
 var z_ba            = 0,  /* 巴 */
 var z_ban           = 0,  /* 办 */
-var z_yun			= 0,  /* 允 */
 var z_yu            = 0,  /* 予 */
 var z_shuben		= 0,  /* 书，本 */
 var z_min           = 0,  /* 民 */
 var z_chu           = 0,  /* 出 */
-var z_fa            = 0,  /* 发 */
 var z_mao           = 0,  /* 矛 */
 var z_mu            = 0,  /* 母 */
 var z_yin           = 0,  /* 尹 */
@@ -41,7 +39,6 @@ var z_yuming        = 0,  /* 聿 */
 var z_su			= 0,  /* 肃 */
 var z_lishu         = 0,  /* 隶，属 */
 var z_chengdan		= 0,  /* 承 */
-
 
 var z_cangzidi		= 0,  /* 仓，下部 */
 var z_xiongzikuang	= 0,  /* 画, 下框 */

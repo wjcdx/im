@@ -6,7 +6,6 @@
 <script language="javascript" src="js/pattern.js"></script>
 <script language="javascript" src="js/stroke.js"></script>
 <script language="javascript" src="js/partials.js"></script>
-<script language="javascript" src="js/keymap.js"></script>
 <script language="javascript" src="js/charset.js"></script>
 <script language="javascript" src="js/partial_nv.js"></script>
 <script language="javascript" src="js/pattern_nv.js"></script>
@@ -50,6 +49,10 @@ var total_chars = Characters.length;
 var pattern_stat = new Array();
 function stat_pattern()
 {
+	for (var i in pattern_nv) {
+		pattern_stat[i] = 0;
+	}
+
 	for (var i in Characters) {
 		var c = Characters[i];
 		add_one(pattern_stat, c.first);
