@@ -54,8 +54,13 @@ var pattern_ud_up_heng_many_down_1 			= 115;
 var pattern_ud_up_shu_many_down_1 			= 116;
 var pattern_ud_up_heng_many_down_heng_many		= 117;
 var pattern_ud_up_heng_many_down_shu_many		= 118;
+var pattern_ud_up_heng_many_down_wei_many		= 118;
 var pattern_ud_up_shu_many_down_heng_many		= 119;
 var pattern_ud_up_shu_many_down_shu_many		= 120;
+var pattern_ud_up_shu_many_down_wei_many		= 120;
+var pattern_ud_up_wei_many_down_heng_many		= 119;
+var pattern_ud_up_wei_many_down_shu_many		= 120;
+var pattern_ud_up_wei_many_down_wei_many		= 120;
 
 /* 结构型：独体 */
 var pattern_single 							= 201;
