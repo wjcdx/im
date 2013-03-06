@@ -6325,7 +6325,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "荒",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_1_down_2,
 	later: [h_caozitou, d_wang, p_liuzidi]
 }
 Characters[Characters.length] = {
@@ -7405,7 +7405,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "举",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_2_down_1,
 	later: [d_yingzidi, p_eight, h_fengzidi]
 }
 Characters[Characters.length] = {
@@ -8877,12 +8877,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "害",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_1_down_2,
 	later: [d_baogaitou, h_feng, s_kou]
 }
 Characters[Characters.length] = {
 	char: "宽",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_1_down_2,
 	later: [d_baogaitou, h_caozitou, s_jian]
 }
 Characters[Characters.length] = {
@@ -8897,7 +8897,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "宴",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_1_down_2,
 	later: [d_baogaitou, s_ri, z_nv]
 }
 Characters[Characters.length] = {
@@ -9894,7 +9894,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "兽",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_2_down_1,
 	later: [d_lanzitou, s_tian, heng, s_kou]
 }
 Characters[Characters.length] = {
@@ -12170,7 +12170,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "箩",
-	first: pattern_ud_up_middle_down,
+	first: pattern_ud_up_1_down_2,
 	later: [p_zhuzitou, s_siwuzhe, p_xi]
 }
 Characters[Characters.length] = {
