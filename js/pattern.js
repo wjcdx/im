@@ -15,7 +15,10 @@ var pattern_lr_left_1_right_heng_many		= 13;
 var pattern_lr_left_1_right_shu_many 		= 14;
 var pattern_lr_left_heng_many_right_1 		= 15;
 var pattern_lr_left_shu_many_right_1 		= 16;
-var pattern_lr_left_many_right_many 		= 17;
+var pattern_lr_left_heng_many_right_heng_many	= 17;
+var pattern_lr_left_heng_many_right_shu_many	= 18;
+var pattern_lr_left_shu_many_right_heng_many	= 19;
+var pattern_lr_left_shu_many_right_shu_many		= 20;
 
 /* 结构型：上下 */
 var pattern_ud_up_1_down_1					= 101;
@@ -34,7 +37,10 @@ var pattern_ud_up_1_down_heng_many 			= 113;
 var pattern_ud_up_1_down_shu_many 			= 114;
 var pattern_ud_up_heng_many_down_1 			= 115;
 var pattern_ud_up_shu_many_down_1 			= 116;
-var pattern_ud_up_many_down_many 			= 117;
+var pattern_ud_up_heng_many_down_heng_many		= 117;
+var pattern_ud_up_heng_many_down_shu_many		= 118;
+var pattern_ud_up_shu_many_down_heng_many		= 119;
+var pattern_ud_up_shu_many_down_shu_many		= 120;
 
 /* 结构型：独体 */
 var pattern_single 							= 201;
