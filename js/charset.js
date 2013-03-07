@@ -352,7 +352,6 @@ var partial_strokes = {
 
 	p_shao          : [pie, hengzheshugou, dian],  /* 勺 */
 
-	p_badian		: [pie, dian],  /* 只，下部 */
 	p_pieheng		: [pie, heng],  /* 乞，上部 */
 	p_danrenpang	: [pie, shu],  /* 化 */
 	p_baozitou		: [pie, hengzheshugou],  /* 包 */
