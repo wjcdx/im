@@ -2169,7 +2169,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "动",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_two, z_sigong, z_li]
 }
 Characters[Characters.length] = {
@@ -2799,7 +2799,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "创",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, z_cangzidi, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -3481,12 +3481,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "却",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_tu, z_sigong, z_danerpang]
 }
 Characters[Characters.length] = {
 	char: "劫",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_tu, z_sigong, z_li]
 }
 Characters[Characters.length] = {
@@ -3631,7 +3631,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "励",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_chang, h_wan, z_li]
 }
 Characters[Characters.length] = {
@@ -3806,7 +3806,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "别",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, z_li, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -3846,7 +3846,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "乱",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_thousand, s_kou, shuwanhenggou]
 }
 Characters[Characters.length] = {
@@ -4016,7 +4016,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "邻",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, d_lingzidi, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -4486,7 +4486,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "劲",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [z_jingzitou, h_gong, z_li]
 }
 Characters[Characters.length] = {
@@ -5008,7 +5008,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "到",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_zhizitou, h_tu, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -5018,7 +5018,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "叔",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_shang, z_xiao, z_you]
 }
 Characters[Characters.length] = {
@@ -5188,7 +5188,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "凯",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_shan, z_ji, p_ji]
 }
 Characters[Characters.length] = {
@@ -5248,7 +5248,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "刮",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_thousand, s_kou, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -5428,7 +5428,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "乳",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_caizitou, z_zi, shuwanhenggou]
 }
 Characters[Characters.length] = {
@@ -5593,7 +5593,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剂",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_wen, p_dao, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -5623,7 +5623,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "刻",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_haizitou, p_ren, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -5643,7 +5643,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "郑",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_lanzitou, h_tian, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -5968,7 +5968,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "刷",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [z_shi, s_jin, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -6155,7 +6155,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "封",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_tu, h_tu, h_cun]
 }
 Characters[Characters.length] = {
@@ -6345,12 +6345,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "故",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_ten, s_kou, p_fanwenpang]
 }
 Characters[Characters.length] = {
 	char: "胡",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_ten, s_kou, p_yue]
 }
 Characters[Characters.length] = {
@@ -6525,7 +6525,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "战",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_shangzitou, s_kou, h_ge]
 }
 Characters[Characters.length] = {
@@ -6555,7 +6555,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "削",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_guangzitou, p_yue, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -6620,7 +6620,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "趴",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, p_eight]
 }
 Characters[Characters.length] = {
@@ -6980,12 +6980,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "叙",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, h_yuzidi, z_you]
 }
 Characters[Characters.length] = {
 	char: "剑",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, heng, d_yingzidi, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -7285,7 +7285,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剃",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_lanzitou, z_dizidi, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -7737,7 +7737,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "顽",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_two, p_er, h_ye]
 }
 Characters[Characters.length] = {
@@ -7827,7 +7827,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "都",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_laozitou, s_ri, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -8072,7 +8072,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "顾",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_chang, z_eti, h_ye]
 }
 Characters[Characters.length] = {
@@ -8097,7 +8097,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "致",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_zhizitou, h_tu, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -8287,7 +8287,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "敌",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_thousand, s_kou, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -8487,7 +8487,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颂",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, z_sigong, h_ye]
 }
 Characters[Characters.length] = {
@@ -8662,7 +8662,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剖",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_li, s_kou, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -8672,7 +8672,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "部",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_li, s_kou, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -8702,7 +8702,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "瓶",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_lanzitou, h_kai, h_wa]
 }
 Characters[Characters.length] = {
@@ -9012,7 +9012,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剥",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [z_luzitou, z_dianshui, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -9027,7 +9027,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剧",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [z_shi, h_ten, s_kou, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -9189,7 +9189,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "教",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_laozitou, z_zi, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -9249,7 +9249,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "勒",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_caoheng, s_gezidi, z_li]
 }
 Characters[Characters.length] = {
@@ -9469,12 +9469,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "距",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, h_ju]
 }
 Characters[Characters.length] = {
 	char: "跃",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, p_yao]
 }
 Characters[Characters.length] = {
@@ -9544,7 +9544,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "甜",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_thousand, s_kou, h_ganku]
 }
 Characters[Characters.length] = {
@@ -9589,7 +9589,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "敏",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_pieheng, z_mu, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -9669,7 +9669,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "斜",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, h_yuzidi, d_dou]
 }
 Characters[Characters.length] = {
@@ -9679,7 +9679,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鸽",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, heng, s_kou, p_niao]
 }
 Characters[Characters.length] = {
@@ -9694,12 +9694,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "彩",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_caizitou, h_mu, p_sanpie]
 }
 Characters[Characters.length] = {
 	char: "领",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, d_lingzidi, h_ye]
 }
 Characters[Characters.length] = {
@@ -9884,7 +9884,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "断",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [d_mi, shuzheheng, p_jin]
 }
 Characters[Characters.length] = {
@@ -10114,7 +10114,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颈",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [z_jingzitou, h_gong, h_ye]
 }
 Characters[Characters.length] = {
@@ -10301,12 +10301,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "斯",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_qizitou, p_eight, p_jin]
 }
 Characters[Characters.length] = {
 	char: "期",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_qizitou, p_eight, p_yue]
 }
 Characters[Characters.length] = {
@@ -10321,7 +10321,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "散",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_gongzitou, p_yue, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -10351,7 +10351,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "敬",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_caozitou, p_baozitou, s_kou, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -10486,7 +10486,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "雄",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_hengpie, z_sigong, p_quezipang]
 }
 Characters[Characters.length] = {
@@ -10521,7 +10521,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "敞",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_guangzitou, s_tongzikuang, s_kou, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -10586,12 +10586,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "践",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, h_zhan]
 }
 Characters[Characters.length] = {
 	char: "跌",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, p_shiqu]
 }
 Characters[Characters.length] = {
@@ -10876,7 +10876,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "舒",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, h_gan, s_kou, z_yu]
 }
 Characters[Characters.length] = {
@@ -11243,7 +11243,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "魂",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_two, z_sigong, p_gui]
 }
 Characters[Characters.length] = {
@@ -11323,12 +11323,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "勤",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_caoheng, s_jinzidi, z_li]
 }
 Characters[Characters.length] = {
 	char: "鹊",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_gongzitou, s_ri, p_niao]
 }
 Characters[Characters.length] = {
@@ -11368,7 +11368,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "献",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_ten, s_tongzikuang, d_xinzidi, h_quan]
 }
 Characters[Characters.length] = {
@@ -11563,7 +11563,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "跟",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, z_henziyou]
 }
 Characters[Characters.length] = {
@@ -11653,7 +11653,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "愁",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_ud_up_2_down_1,
 	later: [p_he, d_huo, d_xin]
 }
 Characters[Characters.length] = {
@@ -11748,7 +11748,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "触",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_weizitou, p_yong, s_chong]
 }
 Characters[Characters.length] = {
@@ -11773,7 +11773,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "新",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_li, h_mugou, p_jin]
 }
 Characters[Characters.length] = {
@@ -11793,7 +11793,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "数",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_mi, z_nv, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -12532,7 +12532,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "影",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_ri, d_liuzitou, s_kou, z_xiao, p_sanpie]
 }
 Characters[Characters.length] = {
@@ -12667,7 +12667,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颜",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [d_chan, p_sanpie, h_ye]
 }
 Characters[Characters.length] = {
@@ -12702,7 +12702,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "额",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [d_baogaitou, p_zhewen, s_kou, h_ye]
 }
 Characters[Characters.length] = {
@@ -12794,7 +12794,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "默",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_heizitou, d_sidiandi, h_quan]
 }
 Characters[Characters.length] = {
@@ -12829,7 +12829,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "雕",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [p_zhouzikuang, h_tu, s_kou, p_quezipang]
 }
 Characters[Characters.length] = {
@@ -13700,7 +13700,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "刨",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [p_baozitou, z_si, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -13832,7 +13832,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "卦",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_tu, h_tu, s_bu]
 }
 Characters[Characters.length] = {
@@ -13957,7 +13957,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "郁",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_hengpie, p_yue, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -14097,12 +14097,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "刽",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, h_two, z_sigong, s_lidaopang]
 }
 Characters[Characters.length] = {
 	char: "刹",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_chadian, h_mugou, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -14374,7 +14374,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "荆",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_caozitou, h_kai, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -14479,7 +14479,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鸥",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [h_jiangzikuang, p_chadian, p_niao]
 }
 Characters[Characters.length] = {
@@ -14529,7 +14529,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "勋",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_bei, z_li]
 }
 Characters[Characters.length] = {
@@ -15001,7 +15001,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剔",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_ri, p_wuyao, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -15156,7 +15156,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颁",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_eight, z_dao, h_ye]
 }
 Characters[Characters.length] = {
@@ -15353,7 +15353,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "麸",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_qingzitou, p_zhewen, h_fu]
 }
 Characters[Characters.length] = {
@@ -15383,7 +15383,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "赦",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_tu, p_chizidi, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -15428,7 +15428,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "勘",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_qizitou, p_eight, shuzheheng, z_li]
 }
 Characters[Characters.length] = {
@@ -15598,7 +15598,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "趾",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, s_zhi, s_zhi]
 }
 Characters[Characters.length] = {
@@ -15793,7 +15793,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "敛",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_ren, heng, d_yingzidi, heng, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -16003,7 +16003,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "尉",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [z_shi, h_two, z_xiao, h_cun]
 }
 Characters[Characters.length] = {
@@ -16023,7 +16023,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颇",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [p_pizipang, z_you, h_ye]
 }
 Characters[Characters.length] = {
@@ -16300,7 +16300,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鹃",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_kou, p_yue, p_niao]
 }
 Characters[Characters.length] = {
@@ -16597,7 +16597,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鹉",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_wuzikuang, s_zhi, p_niao]
 }
 Characters[Characters.length] = {
@@ -16617,7 +16617,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "斟",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_qizitou, p_eight, shuzheheng, d_dou]
 }
 Characters[Characters.length] = {
@@ -16627,7 +16627,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "靶",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_caoheng, s_gezidi, z_ba]
 }
 Characters[Characters.length] = {
@@ -16712,7 +16712,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "频",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_zhi, s_shaowud, h_ye]
 }
 Characters[Characters.length] = {
@@ -16842,7 +16842,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颓",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_he, p_ji, h_ye]
 }
 Characters[Characters.length] = {
@@ -16877,12 +16877,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鹏",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_heng_2_right_1,
 	later: [p_yue, p_yue, p_niao]
 }
 Characters[Characters.length] = {
 	char: "肄",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_bi, p_shi, z_yuming]
 }
 Characters[Characters.length] = {
@@ -16892,7 +16892,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "颖",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_bi, p_he, h_ye]
 }
 Characters[Characters.length] = {
@@ -17032,7 +17032,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "剿",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [z_sanzhe, s_guo, s_lidaopang]
 }
 
@@ -17139,7 +17139,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "雌",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_heng_2_right_1,
 	later: [s_zhi, p_bi, p_quezipang]
 }
 Characters[Characters.length] = {
@@ -17366,7 +17366,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "敷",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_fudu, d_fang, p_fanwenpang]
 }
 Characters[Characters.length] = {
@@ -17581,7 +17581,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鹤",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_1_right_1,
 	later: [d_tubaogai, p_quezipang, p_niao]
 }
 Characters[Characters.length] = {
@@ -17668,7 +17668,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "瓢",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [h_xiwuzhe, h_two, z_xiao, p_gua]
 }
 Characters[Characters.length] = {
@@ -17728,7 +17728,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "鹦",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [s_bei, s_bei, z_nv, p_niao]
 }
 Characters[Characters.length] = {
@@ -17920,7 +17920,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "魏",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [p_he, z_nv, p_gui]
 }
 Characters[Characters.length] = {
@@ -18027,12 +18027,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "璧",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_ud_up_2_down_1,
 	later: [z_shi, s_kou, d_li, h_ten, h_yu]
 }
 Characters[Characters.length] = {
 	char: "戳",
-	first: pattern_lr_left_2_right_1,
+	first: pattern_lr_left_shu_2_right_1,
 	later: [z_xi, z_xi, p_quezipang, h_ge]
 }
 
