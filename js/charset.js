@@ -250,7 +250,6 @@ var partial_strokes = {
 	s_mianzidi		: [shu, hengzheshu, heng, pie, shuwanhenggou],  /* 免，下边 */
 	s_hguankou      : [shu, hengzheshu, heng, heng],  /* 衰，中间，横贯口 */
 	s_danzidi       : [shu, hengzheshu, heng, heng, heng, shu],  /* 单，下部 */
-	s_mianfzidi		: [shu, hengzheshu, shu, shu, heng, heng, heng],  /* 面，粉下部 */
 	s_tuzidi		: [shu, hengzheshu, heng, pie, shuwanhenggou, dian],  /* 兔，下边 */
 	s_heizitou      : [shu, hengzheshu, dian, pie, heng, shu, heng, heng],  /* 黑，上部 */
 	s_zengzizh      : [shu, hengzheshu, shu, dian, pie, heng],  /* 曾，中间 */
@@ -16574,8 +16573,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "缅",
-	first: pattern_lr_left_1_right_shu_2,
-	later: [z_jiaosipang, h_hengxiapie, s_mianfzidi]
+	first: pattern_lr_left_1_right_1,
+	later: [z_jiaosipang, h_mian]
 }
 Characters[Characters.length] = {
 	char: "缆",
