@@ -443,7 +443,6 @@ var partial_strokes = {
 	d_zhou          : [dian, pie, dian, shu, dian, shu],  /* 州 */
 	d_nong          : [dian, henggou, pie, shuzheti, pie, na],  /* 农 */
 	d_hai           : [dian, heng, piezheheng, pie, pie, dian],  /* 亥 */
-	d_yan           : [dian, heng, heng, heng, shu, hengzheshu, heng],  /* 言 */
 	d_di			: [dian, pie, hengzheshu, heng, shuzhehengzheshugou, shu, pie],  /* 弟 */
 	d_liang         : [dian, hengzheshu, heng, heng, shuzheti, pie, na],  /* 良 */
 	d_dan			: [dian, pie, shu, hengzheshu, heng, heng, heng, shu],  /* 单 */
@@ -521,7 +520,6 @@ var partial_strokes = {
 	z_shuben		: [hengzheshu, hengzheshugou, shu, dian],  /* 书，本 */
 	z_min           : [hengzheshu, heng, shuzheti, heng, nagou],  /* 民 */
 	z_chu           : [shuzheheng, shu, shu, shuzheheng, shu],  /* 出 */
-	z_fa            : [shuzheheng, pie, hengzhepie, na, dian],  /* 发 */
 	z_mao           : [hengzhepie, dian, henggou, shugou, pie],  /* 矛 */
 	z_mu            : [piezheheng, hengzheshugou, heng, dian, dian],  /* 母 */
 	z_yin           : [hengzheshu, heng, heng, pie],  /* 尹 */
@@ -2118,8 +2116,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "发",
-	first: pattern_single,
-	later: [z_fa]
+	first: pattern_round_left_up,
+	later: [z_fazipang, z_you]
 }
 Characters[Characters.length] = {
 	char: "孕",
@@ -2400,8 +2398,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "死",
-	first: pattern_single,
-	later: [h_si]
+	first: pattern_ud_up_1_down_2,
+	later: [heng, p_xi, p_bi]
 }
 Characters[Characters.length] = {
 	char: "成",
@@ -3617,8 +3615,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "豆",
-	first: pattern_single,
-	later: [h_dou]
+	first: pattern_ud_up_2_down_1,
+	later: [heng, s_kou, d_qianzitou]
 }
 Characters[Characters.length] = {
 	char: "两",
@@ -4117,8 +4115,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "言",
-	first: pattern_single,
-	later: [d_yan]
+	first: pattern_ud_up_middle_down,
+	later: [d_liuzitou, h_two, s_kou]
 }
 Characters[Characters.length] = {
 	char: "冻",
