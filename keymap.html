@@ -6,6 +6,7 @@
 <script language="javascript" src="js/pattern.js"></script>
 <script language="javascript" src="js/stroke.js"></script>
 <script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/keymap.js"></script>
 <script language="javascript" src="js/charset.js"></script>
 <script language="javascript" src="js/partial_nv.js"></script>
 <script language="javascript" src="js/pattern_nv.js"></script>
@@ -14,48 +15,18 @@
 <script language="javascript" src="js/stroke_abbr.js"></script>
 <script type="text/javascript">
 
-function print_head(c, seq)
+function print_head(key, pattern)
 {
 	document.write("<br />");
-	document.write(c.char + "&nbsp;" + seq + "&nbsp;");
-	document.write(pattern_abbrs[c.first]);
+	document.write("XhKeyMapPair('" + (new String(key)).toLowerCase() + "', \"" + pattern_abbrs[pattern] + "\"),");
 }
 
-function print_stroke(s)
+function print_keymaps()
 {
-	document.write("'" + stroke_abbrs[s]);
-}
-
-function print_partial(p)
-{
-	for (var s in p)
-		print_stroke(p[s]);
-}
-
-function print_split()
-{
-	document.write("'B01");
-}
-
-function print_chars_abbrs()
-{
-	var seq = 100;
-	for (var i in Characters) {
-		var c = Characters[i];
-		if (c.char == "扎") {
-			var wjcdx = "debug";
-		}
-		print_head(c, seq++);
-		for (var j in c.later) {
-			var s = c.later[j];
-			if (j > 0)
-				print_split();
-			if (s > 1000) {
-				var p = partial_strokes[partial_nv[s]];
-				print_partial(p);
-			} else {
-				print_stroke(s);
-			}
+	for (var i in pattern_maps) {
+		var ptns = pattern_maps[i];
+		for (var j in ptns) {
+			print_head(i, ptns[j]);
 		}
 	}
 }
@@ -66,7 +37,7 @@ function print_chars_abbrs()
 
 <body>
 	<script type="text/javascript">
-		print_chars_abbrs();
+		print_keymaps();
 	</script>
 </body>
 

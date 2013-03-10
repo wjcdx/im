@@ -27,10 +27,10 @@ stroke_nv:
 	$(NAMVAL_AWK) js/stroke.js js/stroke_nv.js 1 var stroke_nv 2 4
 
 pattern_abbr:
-	$(ABBR_AWK) js/pattern.js js/pattern_abbr.js 1 var pattern_abbrs P 4
+	$(ABBR_AWK) js/pattern.js js/pattern_abbr.js 1 var pattern_abbrs P 4 3
 
 stroke_abbr:
-	$(ABBR_AWK) js/stroke.js js/stroke_abbr.js 1 var stroke_abbrs S 4
+	$(ABBR_AWK) js/stroke.js js/stroke_abbr.js 1 var stroke_abbrs S 4 2
 
 abbrs: pattern_abbr stroke_abbr
 

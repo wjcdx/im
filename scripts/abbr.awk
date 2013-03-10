@@ -8,6 +8,7 @@
 # ARGV[5]: struct name
 # ARGV[6]: name field number
 # ARGV[7]: value field number
+# ARGV[8]: biggest number of digits in a seq-number
 
 
 
@@ -25,6 +26,7 @@ BEGIN {
 	struct = ARGV[5];
 	prefix = ARGV[6];
 	vfn = strtonum(ARGV[7]);
+	dnum = ARGV[8];
 	ARGC=2;
 	print FOUT, ARGC;
 	printf "" > FOUT;
@@ -42,7 +44,7 @@ BEGIN {
 		next;
 	}
 
-	printf "\t%d: \"%s%02d\",\n", $vfn, prefix, $vfn >> FOUT;
+	printf "\t%d: \"%s%0" dnum "d\",\n", $vfn, prefix, $vfn >> FOUT;
 }
 
 END {

@@ -627,7 +627,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "七",
 	first: pattern_single,
-	later: [heng, shuwanhenggou]
+	later: [h_seven]
 }
 Characters[Characters.length] = {
 	char: "卜",
@@ -729,7 +729,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "才",
 	first: pattern_single,
-	later: [heng, shugou, pie]
+	later: [h_cai]
 	}
 Characters[Characters.length] = {
 	char: "寸",
