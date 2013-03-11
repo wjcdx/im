@@ -13299,7 +13299,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "夷",
 	first: pattern_single,
-	later: [heng, hengzheshu, heng, shuzhehengzheshugou, pie, na]
+	later: [h_yi]
 }
 Characters[Characters.length] = {
 	char: "吁",
