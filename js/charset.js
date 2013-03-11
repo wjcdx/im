@@ -2339,7 +2339,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "百",
-	first: pattern_ud_up_1_down_1,
+	first: pattern_single,
 	later: [h_hundred]
 }
 Characters[Characters.length] = {
@@ -2469,7 +2469,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "当",
-	first: pattern_ud_up_1_down_1,
+	first: pattern_single,
 	later: [s_dang]
 }
 Characters[Characters.length] = {
@@ -12770,7 +12770,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "餐",
 	first: pattern_ud_up_heng_2_down_shu_2,
-	later: [d_shangzitou, p_xi, z_you, p_ren, d_liang]
+	later: [s_shangzitou, p_xi, z_you, p_ren, d_liang]
 }
 Characters[Characters.length] = {
 	char: "嘴",
