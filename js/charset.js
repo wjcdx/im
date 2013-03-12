@@ -80,7 +80,7 @@ var partial_strokes = {
 	h_xi            : [heng, shu, hengzheshu, pie, shuzheheng, heng],  /* 西 */
 	h_hundred		: [heng, pie, shu, hengzheshu, heng, heng],  /* 百 */
 	h_erqie         : [heng, pie, shu, hengzheshugou, shu, shu],  /* 而 */
-	h_ye            : [heng, pie, shu, hengzheshu, pie, na],  /* 页 */
+	h_ye            : [heng, pie, shu, hengzheshu, pie, dian],  /* 页 */
 	h_si			: [heng, pie, hengzhepie, dian, pie, shuwanhenggou],  /* 死 */
 	h_cheng         : [heng, pie, hengzheshugou, nagou, pie, dian],  /* 成 */
 	h_jia           : [heng, dian, pie, heng, pie, na],  /* 夹 */
@@ -266,7 +266,7 @@ var partial_strokes = {
 	p_ge			: [pie, na, shu],  /* 个 */
 	p_jiuyuan		: [pie, hengzhepie, na],  /* 久 */
 	p_fan           : [pie, hengzheshuwanhenggou, dian],  /* 凡 */
-	p_jige          : [pie, hengzheshuzhehengzhepie],  /* 及，格 */
+	p_jige          : [pie, hengzheshuzhehengzhepie, na],  /* 及，格 */
 	p_xi            : [pie, hengzhepie, dian],  /* 夕 */
 	p_wan           : [pie, hengzheshuwanhenggou],  /* 丸 */
 	p_me			: [pie, piezheheng, dian],  /* 么 */
@@ -4663,7 +4663,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "者",
-	first: pattern_round_right_up,
+	first: pattern_round_left_up,
 	later: [h_laozitou, s_ri]
 }
 Characters[Characters.length] = {
@@ -5239,7 +5239,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "物",
 	first: pattern_lr_left_1_right_1,
-	later: [p_niu, p_wu]
+	later: [p_niu, p_wuyao]
 }
 Characters[Characters.length] = {
 	char: "乖",
@@ -6715,7 +6715,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "哪",
-	first: pattern_lr_left_1_right_shu_2,
+	first: pattern_lr_left_1_right_heng_2,
 	later: [s_kou, z_nazizuo, z_youerpang]
 }
 Characters[Characters.length] = {
@@ -11378,12 +11378,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "楚",
-	first: pattern_ud_up_shu_2_down_1,
+	first: pattern_ud_up_heng_2_down_1,
 	later: [h_mu, h_mu, z_xuanyouxia]
 }
 Characters[Characters.length] = {
 	char: "想",
-	first: pattern_ud_up_shu_2_down_1,
+	first: pattern_ud_up_heng_2_down_1,
 	later: [h_mu, s_mu, d_xin]
 }
 Characters[Characters.length] = {
@@ -15909,7 +15909,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "淫",
 	first: pattern_lr_left_1_right_shu_2,
-	later: [d_sandianshui, p_caizitou, p_ren]
+	later: [d_sandianshui, p_caizitou, p_rengui]
 }
 Characters[Characters.length] = {
 	char: "淳",
