@@ -268,7 +268,7 @@ var partial_strokes = {
 	p_fan           : [pie, hengzheshuwanhenggou, dian],  /* 凡 */
 	p_jige          : [pie, hengzheshuzhehengzhepie, na],  /* 及，格 */
 	p_xi            : [pie, hengzhepie, dian],  /* 夕 */
-	p_wan           : [pie, hengzheshuwanhenggou],  /* 丸 */
+	p_wan           : [pie, hengzheshuwanhenggou, dian],  /* 丸 */
 	p_me			: [pie, piezheheng, dian],  /* 么 */
 	p_bi            : [pie, shuwanhenggou],  /* 匕 */
 	p_wu            : [pie, heng, heng, shu],  /* 午 */
@@ -517,7 +517,7 @@ var partial_strokes = {
 	z_fu            : [hengzheshu, heng, shuzhehengzheshugou, pie, shu],  /* 弗 */
 	z_yuming        : [hengzheshu, heng, heng, heng, heng, shu],  /* 聿 */
 	z_su			: [hengzheshu, heng, heng, shu, pie, shu, pie, dian],  /* 肃 */
-	z_lishu         : [hengzheshu, heng, heng, heng, shugou, dian, ti, pie, na],  /* 隶，属 */
+	z_lishu         : [hengzheshu, heng, heng, shugou, dian, ti, pie, na],  /* 隶，属 */
 	z_chengdan		: [hengzhepie, shugou, heng, heng, heng, hengzhepie, pie, na],  /* 承 */
 
 	z_cangzidi		: [hengzheshugou, shuwanhenggou],  /* 仓，下部 */
@@ -2559,7 +2559,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "刚",
-	first: pattern_lr_left_1_right_1,
+	first: pattern_lr_left_wei_2_right_1,
 	later: [s_tongzikuang, p_chadian, s_lidaopang]
 }
 Characters[Characters.length] = {
@@ -10317,7 +10317,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "联",
 	first: pattern_lr_left_1_right_shu_2,
-	later: [h_erduo, d_lanzitou, h_kai]
+	later: [h_erduo, d_lanzitou, h_tian]
 }
 Characters[Characters.length] = {
 	char: "散",
@@ -12507,7 +12507,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "霉",
-	first: pattern_ud_up_1_down_heng_2,
+	first: pattern_ud_up_1_down_shu_2,
 	later: [h_yushui, p_pieheng, z_mu]
 }
 Characters[Characters.length] = {
