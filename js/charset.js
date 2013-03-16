@@ -5272,7 +5272,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "佳",
 	first: pattern_lr_left_1_right_shu_2,
-	later: [p_ren, h_tu, h_tu]
+	later: [p_danrenpang, h_tu, h_tu]
 }
 Characters[Characters.length] = {
 	char: "侍",
