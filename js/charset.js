@@ -10865,7 +10865,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "循",
 	first: pattern_lr_left_1_right_wei_2,
-	later: [p_shuangrenpang, p_fanzitou, h_ten, s_mu]
+	later: [p_shuangrenpang, p_fanzipang, h_ten, s_mu]
 }
 Characters[Characters.length] = {
 	char: "艇",
