@@ -12044,7 +12044,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "榴",
 	first: pattern_lr_left_1_right_shu_2,
-	later: [h_tishoupang, p_maozizuo, z_dao, s_tian]
+	later: [h_mu, p_maoshangzuo, z_dao, s_tian]
 }
 Characters[Characters.length] = {
 	char: "榜",
