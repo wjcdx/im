@@ -1,6 +1,6 @@
 /* 键盘映射表 */
 var pattern_maps = {
-	'F': [pattern_lr_left_1_right_1],
+	'V': [pattern_lr_left_1_right_1],
 	'R': [
 			pattern_lr_left_middle_right,
 			pattern_lr_left_1_right_heng_2,
@@ -18,7 +18,7 @@ var pattern_maps = {
 			pattern_lr_left_shu_many_right_heng_many,
 			pattern_lr_left_wei_many_right_heng_many,
 		],
-	'V': [
+	'F': [
 			pattern_lr_left_1_right_shu_2,
 			pattern_lr_left_1_right_wei_2,
 			pattern_lr_left_1_right_shu_many,
@@ -59,13 +59,13 @@ var pattern_maps = {
 			pattern_ud_up_shu_many_down_wei_many,
 			pattern_ud_up_wei_many_down_shu_many,
 		 ],
-	'S': [
+	'Z': [
 			pattern_pin,
 			pattern_ud_up_1_down_heng_2,
 			pattern_ud_up_1_down_wei_2,
 			pattern_ud_up_1_down_heng_many,
 		 ],
-	'Z': [
+	'L': [
 			pattern_ud_up_heng_2_down_1,
 			pattern_ud_up_wei_2_down_1,
 			pattern_ud_up_heng_many_down_1,
@@ -82,9 +82,9 @@ var pattern_maps = {
 	
 	'D': [pattern_single],
 
-	'E': [pattern_round_left_up],
+	'T': [pattern_round_left_up],
 	'C': [pattern_round_left_down],
-	'X': [
+	'O': [
 			pattern_round_whole,
 			pattern_round_up,
 			pattern_round_down,
@@ -101,17 +101,17 @@ var bushou_maps = {};
 var stroke_maps = {
 	'G': [heng],
 	'H': [shu],
-	'T': [pie],
-	'Y': [na],
-	'U': [dian],
+	'E': [pie],
+	'U': [na],
+	'W': [dian],
 	'K': [hengzheshu],
-	'L': [hengzheshugou],
+	'N': [hengzheshugou],
 	'B': [ti],
 	'J': [shugou],
 	'I': [hengzhepie],
-	'W': [shuwanhenggou],
-	'O': [henggou],
-	'N': [shuzheheng, shuzheti, piezheheng, piezhedian, wanshugou, nagou,
+	'X': [shuwanhenggou],
+	'Y': [henggou],
+	'S': [shuzheheng, shuzheti, piezheheng, piezhedian, wanshugou, nagou,
 			hengzheshuzheheng, hengzheshuzheti, hengzhenagou, shuzhehengzheshu,
 			shuzhehengzhepie, hengzheshuzhehengzheshu, hengzheshuzhehengzhepie,
 			hengzheshuwanhenggou, hengzhepiezhewanshugou, shuzhehengzheshugou,

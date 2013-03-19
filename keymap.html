@@ -15,10 +15,15 @@
 <script language="javascript" src="js/stroke_abbr.js"></script>
 <script type="text/javascript">
 
-function print_head(key, pattern)
+function print_line()
 {
 	document.write("<br />");
-	document.write("XhKeyMapPair('" + (new String(key)).toLowerCase() + "', \"" + pattern_abbrs[pattern] + "\"),");
+}
+
+function print_head(key, abbrs, item)
+{
+	print_line();
+	document.write("XhKeyMapPair('" + (new String(key)).toLowerCase() + "', \"" + abbrs[item] + "\"),");
 }
 
 function print_keymaps()
@@ -26,7 +31,15 @@ function print_keymaps()
 	for (var i in pattern_maps) {
 		var ptns = pattern_maps[i];
 		for (var j in ptns) {
-			print_head(i, ptns[j]);
+			print_head(i, pattern_abbrs, ptns[j]);
+		}
+	}
+	
+	print_line();
+	for (var i in stroke_maps) {
+		var stks = stroke_maps[i];
+		for (var j in stks) {
+			print_head(i, stroke_abbrs, stks[j]);
 		}
 	}
 }
