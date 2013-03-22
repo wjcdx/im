@@ -1,7 +1,7 @@
 /* 键盘映射表 */
 var pattern_maps = {
-	'V': [pattern_lr_left_1_right_1],
-	'R': [
+	'F': [pattern_lr_left_1_right_1],
+	'T': [
 			pattern_lr_left_middle_right,
 			pattern_lr_left_1_right_heng_2,
 			pattern_lr_left_heng_2_right_1,
@@ -18,7 +18,7 @@ var pattern_maps = {
 			pattern_lr_left_shu_many_right_heng_many,
 			pattern_lr_left_wei_many_right_heng_many,
 		],
-	'F': [
+	'V': [
 			pattern_lr_left_1_right_shu_2,
 			pattern_lr_left_1_right_wei_2,
 			pattern_lr_left_1_right_shu_many,
@@ -34,7 +34,7 @@ var pattern_maps = {
 			pattern_lr_left_wei_many_right_shu_many,
 			pattern_lr_left_wei_many_right_wei_many,
 		 ],
-	'P': [
+	'X': [
 			pattern_lr_left_shu_2_right_1,
 			pattern_lr_left_wei_2_right_1,
 			pattern_lr_left_shu_many_right_1,
@@ -65,7 +65,7 @@ var pattern_maps = {
 			pattern_ud_up_1_down_wei_2,
 			pattern_ud_up_1_down_heng_many,
 		 ],
-	'L': [
+	'N': [
 			pattern_ud_up_heng_2_down_1,
 			pattern_ud_up_wei_2_down_1,
 			pattern_ud_up_heng_many_down_1,
@@ -82,9 +82,9 @@ var pattern_maps = {
 	
 	'D': [pattern_single],
 
-	'T': [pattern_round_left_up],
+	'W': [pattern_round_left_up],
 	'C': [pattern_round_left_down],
-	'O': [
+	'Y': [
 			pattern_round_whole,
 			pattern_round_up,
 			pattern_round_down,
@@ -102,15 +102,15 @@ var stroke_maps = {
 	'G': [heng],
 	'H': [shu],
 	'E': [pie],
-	'U': [na],
-	'W': [dian],
+	'R': [na],
+	'U': [dian],
 	'K': [hengzheshu],
-	'N': [hengzheshugou],
-	'B': [ti],
+	'L': [hengzheshugou],
+	'P': [ti],
 	'J': [shugou],
 	'I': [hengzhepie],
-	'X': [shuwanhenggou],
-	'Y': [henggou],
+	'B': [shuwanhenggou],
+	'O': [henggou],
 	'S': [shuzheheng, shuzheti, piezheheng, piezhedian, wanshugou, nagou,
 			hengzheshuzheheng, hengzheshuzheti, hengzhenagou, shuzhehengzheshu,
 			shuzhehengzhepie, hengzheshuzhehengzheshu, hengzheshuzhehengzhepie,
