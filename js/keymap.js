@@ -18,13 +18,13 @@ var pattern_maps = {
 			pattern_lr_left_shu_many_right_heng_many,
 			pattern_lr_left_wei_many_right_heng_many,
 		],
-	'V': [
+	'A': [
 			pattern_lr_left_1_right_shu_2,
 			pattern_lr_left_1_right_wei_2,
 			pattern_lr_left_1_right_shu_many,
 			pattern_lr_left_1_right_wei_many,
 		 ],
-	'M': [
+	'Y': [
 			pattern_lr_left_shu_2_right_shu_2,
 			pattern_lr_left_shu_2_right_wei_2,
 			pattern_lr_left_wei_2_right_shu_2,
@@ -41,7 +41,7 @@ var pattern_maps = {
 			pattern_lr_left_wei_many_right_1,
 		 ],
 
-	'A': [pattern_ud_up_1_down_1],
+	'N': [pattern_ud_up_1_down_1],
 	'Q': [
 			pattern_ud_up_middle_down,
 			pattern_ud_up_1_down_shu_2,
@@ -59,13 +59,13 @@ var pattern_maps = {
 			pattern_ud_up_shu_many_down_wei_many,
 			pattern_ud_up_wei_many_down_shu_many,
 		 ],
-	'Z': [
+	'V': [
 			pattern_pin,
 			pattern_ud_up_1_down_heng_2,
 			pattern_ud_up_1_down_wei_2,
 			pattern_ud_up_1_down_heng_many,
 		 ],
-	'N': [
+	'B': [
 			pattern_ud_up_heng_2_down_1,
 			pattern_ud_up_wei_2_down_1,
 			pattern_ud_up_heng_many_down_1,
@@ -84,7 +84,7 @@ var pattern_maps = {
 
 	'W': [pattern_round_left_up],
 	'C': [pattern_round_left_down],
-	'Y': [
+	'M': [
 			pattern_round_whole,
 			pattern_round_up,
 			pattern_round_down,
@@ -109,7 +109,7 @@ var stroke_maps = {
 	'P': [ti],
 	'J': [shugou],
 	'I': [hengzhepie],
-	'B': [shuwanhenggou],
+	'Z': [shuwanhenggou],
 	'O': [henggou],
 	'S': [shuzheheng, shuzheti, piezheheng, piezhedian, wanshugou, nagou,
 			hengzheshuzheheng, hengzheshuzheti, hengzhenagou, shuzhehengzheshu,

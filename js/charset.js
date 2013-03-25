@@ -1427,7 +1427,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "办",
 	first: pattern_single,
-	later: [d_ban]
+	later: [z_ban]
 }
 Characters[Characters.length] = {
 	char: "以",
@@ -2925,8 +2925,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "充",
-	first: pattern_ud_up_shu_2_down_1,
-	later: [d_liuzitou, z_sigong, p_er]
+	first: pattern_ud_up_1_down_1,
+	later: [d_chongzitou, p_er]
 }
 Characters[Characters.length] = {
 	char: "妄",
@@ -7236,7 +7236,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "迷",
-	first: pattern_round_left_up,
+	first: pattern_round_left_down,
 	later: [d_mi, d_zouzhidi]
 }
 Characters[Characters.length] = {
@@ -10026,7 +10026,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "宿",
 	first: pattern_ud_up_1_down_heng_2,
-	later: [d_baogaitou, p_danrenpang, heng, p_bai]
+	later: [d_baogaitou, p_danrenpang, h_hundred]
 }
 Characters[Characters.length] = {
 	char: "窑",
@@ -12387,7 +12387,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "缩",
 	first: pattern_lr_left_1_right_shu_2,
-	later: [z_jiaosipang, d_baogaitou, p_danrenpang, heng, p_bai]
+	later: [z_jiaosipang, d_baogaitou, p_danrenpang, h_hundred]
 }
 
 /* 十五画 */
@@ -14264,7 +14264,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "陌",
 	first: pattern_lr_left_1_right_1,
-	later: [z_zuoerpang, heng, p_bai]
+	later: [z_zuoerpang, h_hundred]
 }
 Characters[Characters.length] = {
 	char: "函",
