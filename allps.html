@@ -32,6 +32,11 @@ function print_partial(p)
 		print_stroke(p[s]);
 }
 
+function print_last_split()
+{
+	document.write("'B00");
+}
+
 function print_split()
 {
 	document.write("'B01");
@@ -47,8 +52,11 @@ function print_chars_abbrs()
 		}
 		print_head(c, seq++);
 		for (var j in c.later) {
+			if (j == c.later.length - 1)
+				print_last_split();
+			else
+				print_split();
 			var s = c.later[j];
-			print_split();
 			if (s > 1000) {
 				var p = partial_strokes[partial_nv[s]];
 				print_partial(p);

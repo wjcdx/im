@@ -8898,7 +8898,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "宾",
-	first: pattern_lr_left_1_right_1,
+	first: pattern_ud_up_1_down_shu_2,
 	later: [d_baogaitou, p_qiu, p_eight]
 }
 Characters[Characters.length] = {
