@@ -6126,7 +6126,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "珍",
-	first: pattern_lr_left_1_right_1,
+	first: pattern_lr_left_1_right_shu_2,
 	later: [h_wang, p_ren, p_sanpie]
 }
 Characters[Characters.length] = {
@@ -9401,7 +9401,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "雀",
 	first: pattern_ud_up_1_down_1,
-	later: [s_shao, p_quezipang]
+	later: [z_xiao, p_quezipang]
 }
 Characters[Characters.length] = {
 	char: "堂",
