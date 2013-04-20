@@ -176,6 +176,7 @@ var partial_strokes = {
 	h_hengjiatui	: [heng, pie, dian],  /* 六，去点, 横加腿 */
 	h_guazizhong    : [heng, pie, shu, hengzheshu, heng, heng, heng],  /* 寡，中部 */
 	h_nangzitou     : [heng, shu, hengzheshu, heng, shu],  /* 囊，最上 */
+	h_yazili		: [heng, shu, heng, dian],  /* 压，里面 */
 
 
 	/* 竖起 */
@@ -2316,7 +2317,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "压",
 	first: pattern_round_left_up,
-	later: [h_chang, h_tu, dian]
+	later: [h_chang, h_yazili]
 }
 Characters[Characters.length] = {
 	char: "厌",
@@ -8649,7 +8650,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "凉",
 	first: pattern_lr_left_1_right_shu_many,
-	later: [d_liangdianshui, d_liuzitou, z_xiao]
+	later: [d_liangdianshui, d_liuzitou, s_kou, z_xiao]
 }
 Characters[Characters.length] = {
 	char: "站",
@@ -11289,7 +11290,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "搬",
-	first: pattern_lr_left_1_right_wei_2,
+	first: pattern_lr_left_1_right_heng_2,
 	later: [h_tishoupang, p_zhou, p_ji, z_you]
 }
 Characters[Characters.length] = {
