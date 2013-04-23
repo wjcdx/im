@@ -85,8 +85,6 @@ var partial_strokes = {
 	h_wei           : [heng, heng, hengzheshugou, shu],  /* 韦 */
 	h_li            : [heng, shu, hengzheshu, heng, pie, na],  /* 吏 */
 	h_yi            : [heng, hengzheshu, heng, shuzhehengzheshugou, pie, na],  /* 夷 */
-	h_zou			: [heng, shu, heng, shu, heng, pie, na],  /* 走 */
-	h_chi           : [heng, shu, heng, pie, shugou, pie, dian],  /* 赤 */
 	h_yan           : [heng, shu, shu, dian, pie, heng, pie],  /* 严 */
 	h_qiu           : [heng, shugou, dian, ti, pie, na, dian],  /* 求 */
 	h_geng          : [heng, shu, hengzheshu, heng, heng, pie, na],  /* 更 */
@@ -95,8 +93,6 @@ var partial_strokes = {
 	h_liang         : [heng, shu, hengzheshugou, pie, dian, pie, dian],  /* 两 */
 	h_lai			: [heng, dian, pie, heng, shu, pie, na],  /* 来 */
 	h_fudu          : [heng, shu, hengzheshugou, heng, heng, shu, dian],  /* 甫 */
-	h_xingfu		: [heng, shu, heng, dian, pie, heng, heng, shu],  /* 幸, 福 */
-	h_zhijie		: [heng, shu, shu, hengzheshu, heng, heng, heng, heng],  /* 直，接 */
 	h_shiqing		: [heng, shu, hengzheshu, heng, hengzheshu, heng, heng, shugou],  /* 事，情 */
 	h_yushui        : [heng, shu, hengzheshugou, shu, dian, dian, dian, dian],  /* 雨 */
 	h_gexing		: [heng, shu, shu, heng, shu, hengzheshu, heng, heng, shu],  /* 革，新 */
@@ -208,15 +204,12 @@ var partial_strokes = {
 	s_tu			: [shu, heng, shu, hengzheshuzhehengzheshu, heng],  /* 凸 */
 	s_ao			: [shu, hengzheshuzheheng, shu, hengzheshu, heng],  /* 凹 */
 	s_minzidi		: [shu, hengzheshu, shu, shu, heng],  /* 监 */
-	s_guang			: [shu, dian, pie, heng, pie, shuwanhenggou],  /* 光 */
-	s_dang			: [shu, dian, pie, hengzheshu, heng, heng],  /* 当 */
 	s_chong         : [shu, hengzheshu, heng, shu, heng, dian],  /* 虫 */
 	s_qu			: [shu, hengzheshu, heng, shu, shu, heng],  /* 曲 */
 	s_rou			: [shu, hengzheshugou, pie, dian, pie, dian],  /* 肉 */
 	s_li            : [shu, hengzheshu, heng, heng, shu, heng, heng],  /* 里 */
 	s_zu            : [shu, hengzheshu, heng, shu, heng, pie, na],  /* 足 */
 	s_chuan         : [shu, hengzheshu, heng, shu, hengzheshu, heng, shu],  /* 串 */
-	s_xiaoxiang		: [shu, dian, pie, shu, hengzheshugou, heng, heng],  /* 肖 */
 	s_guo           : [shu, hengzheshu, heng, heng, heng, shu, pie, na],  /* 果 */
 	s_yu            : [shu, hengzheshu, heng, heng, shu, hengzheshugou, shu, heng, dian],  /* 禺 */
 	s_zuzipang		: [shu, hengzheshu, heng, shu, heng, shu, ti],  /* 跟，左边 */
@@ -412,7 +405,6 @@ var partial_strokes = {
 	d_zhu           : [dian, heng, heng, shu, heng],  /* 主 */
 	d_shi           : [dian, heng, shu, hengzheshugou, shu],  /* 市 */
 	d_li            : [dian, heng, dian, pie, heng],  /* 立 */
-	d_lan           : [dian, pie, heng, heng, heng],  /* 兰 */
 	d_ban           : [dian, pie, heng, heng, shu],  /* 半 */
 	d_tou           : [dian, dian, heng, pie, dian],  /* 头 */
 	d_bi			: [dian, shuwanhenggou, dian, dian, pie],  /* 必 */
@@ -489,7 +481,7 @@ var partial_strokes = {
 	z_cha			: [hengzhepie, na, dian],  /* 叉 */
 	z_ma            : [hengzheshu, shuzhehengzheshugou, heng],  /* 马 */
 	z_xiang			: [piezheheng, piezheheng, pie],  /* 乡 */
-	z_diao			: [hengzheshugou, heng],  /* 刁 */
+	z_diao			: [hengzheshugou, ti],  /* 刁 */
 	z_shui          : [shugou, hengzhepie, pie, na],  /* 水 */
 	z_chi           : [hengzheshu, heng, pie, na],  /* 尺 */
 	z_chou          : [hengzheshu, heng, shu, heng],  /* 丑 */
@@ -1942,8 +1934,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "兰",
-	first: pattern_single,
-	later: [d_lan]
+	first: pattern_ud_up_1_down_1,
+	later: [d_lanzitou, h_three]
 }
 Characters[Characters.length] = {
 	char: "半",
@@ -2449,13 +2441,13 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "光",
-	first: pattern_single,
-	later: [s_guang]
+	first: pattern_ud_up_1_down_1,
+	later: [s_guangzitou, h_wuzidi]
 }
 Characters[Characters.length] = {
 	char: "当",
-	first: pattern_single,
-	later: [s_dang]
+	first: pattern_ud_up_1_down_1,
+	later: [s_guangzitou, z_xunzitou]
 }
 Characters[Characters.length] = {
 	char: "早",
@@ -3331,8 +3323,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "走",
-	first: pattern_single,
-	later: [h_zou]
+	first: pattern_ud_up_1_down_1,
+	later: [h_tu, s_zouzidi]
 }
 Characters[Characters.length] = {
 	char: "抄",
@@ -3356,8 +3348,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "赤",
-	first: pattern_single,
-	later: [h_chi]
+	first: pattern_ud_up_1_down_1,
+	later: [h_tu, p_chizidi]
 }
 Characters[Characters.length] = {
 	char: "折",
@@ -4708,8 +4700,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "幸",
-	first: pattern_single,
-	later: [h_xingfu]
+	first: pattern_ud_up_middle_down,
+	later: [h_tu, d_lanzitou, h_gan]
 }
 Characters[Characters.length] = {
 	char: "招",
@@ -4788,8 +4780,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "直",
-	first: pattern_single,
-	later: [h_zhijie]
+	first: pattern_ud_up_1_down_1,
+	later: [h_ten, s_juzitou]
 }
 Characters[Characters.length] = {
 	char: "茄",
@@ -13560,8 +13552,8 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "肖",
-	first: pattern_single,
-	later: [s_xiaoxiang]
+	first: pattern_ud_up_1_down_1,
+	later: [s_guangzitou, p_yue]
 }
 Characters[Characters.length] = {
 	char: "吱",
