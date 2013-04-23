@@ -17681,7 +17681,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
 	char: "蹂",
-	first: pattern_lr_left_1right_shu_2,
+	first: pattern_lr_left_1_right_shu_2,
 	later: [s_zuzipang, z_mao, h_mu]
 }
 Characters[Characters.length] = {
