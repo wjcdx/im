@@ -218,6 +218,7 @@ var partial_strokes = {
 	s_xiaoxiang		: [shu, dian, pie, shu, hengzheshugou, heng, heng],  /* 肖 */
 	s_guo           : [shu, hengzheshu, heng, heng, heng, shu, pie, na],  /* 果 */
 	s_yu            : [shu, hengzheshu, heng, heng, shu, hengzheshugou, shu, heng, dian],  /* 禺 */
+	s_zuzipang		: [shu, hengzheshu, heng, shu, heng, shu, ti],  /* 跟，左边 */
 
 	s_tongzikuang	: [shu, hengzheshugou],  /* 同 */
 	s_lidaopang		: [shu, shugou],  /* 刚 */
