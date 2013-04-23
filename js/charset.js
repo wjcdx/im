@@ -17143,7 +17143,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "嘀",
 	first: pattern_lr_left_1_right_shu_2,
-	later: [s_kou, d_shangzitou, s_tongzikuang, h_gu]
+	later: [s_kou, d_shangzitou, s_tongzikuang, h_ten, s_kou]
 }
 Characters[Characters.length] = {
 	char: "幔",
