@@ -30,7 +30,7 @@ var d_nong          = 0,  /* 农 */
 var d_hai           = 0,  /* 亥 */
 var d_liang         = 0,  /* 良 */
 
-var d_ldsl         = 0,  /* 冬 */
+var d_ldsl			= 0,  /* 冬 */
 var d_xingzitou     = 0,  /* 兴，上面，不带横 */
 var d_jinzidi		= 0,  /* 今，下边 */
 var d_liangdianshui	= 0,  /* 次 */
@@ -60,7 +60,6 @@ var d_juanzitou     = 0,  /* 卷，上面 */
 var d_langzizuo		= 0,  /* 郎，左边 */
 var d_xinzidi       = 0,  /* 辛，去点横 */
 var d_shangzitou	= 0,  /* 商，上部 */
-var d_pieweiyang	= 0,  /* 差 */
 var d_qianzitou		= 0,  /* 前，上部 */
 var d_ni            = 0,  /* 逆，里面 */
 var d_dianpie       = 0,  /* 班，里面 */

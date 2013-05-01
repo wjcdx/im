@@ -160,6 +160,7 @@ var h_guazizhong     = 1155;  /* 寡，中部 */
 var h_nangzitou      = 1156;  /* 囊，最上 */
 var h_yazili         = 1157;  /* 压，里面 */
 var h_jianzishen     = 1158;  /* 兼 */
+var h_pieyangdi      = 1159;  /* 差, 中间 */
 /* 竖起 */
 var s_four           = 2001;  /* 四 */
 var s_bu             = 2002;  /* 卜 */
@@ -432,13 +433,12 @@ var d_juanzitou      = 4057;  /* 卷，上面 */
 var d_langzizuo      = 4058;  /* 郎，左边 */
 var d_xinzidi        = 4059;  /* 辛，去点横 */
 var d_shangzitou     = 4060;  /* 商，上部 */
-var d_pieweiyang     = 4061;  /* 差 */
-var d_qianzitou      = 4062;  /* 前，上部 */
-var d_ni             = 4063;  /* 逆，里面 */
-var d_dianpie        = 4064;  /* 班，里面 */
-var d_yizitou        = 4065;  /* 益，上部 */
-var d_gezili         = 4066;  /* 隔，右下里 */
-var d_bizizuo        = 4067;  /* 敝，左边 */
+var d_qianzitou      = 4061;  /* 前，上部 */
+var d_ni             = 4062;  /* 逆，里面 */
+var d_dianpie        = 4063;  /* 班，里面 */
+var d_yizitou        = 4064;  /* 益，上部 */
+var d_gezili         = 4065;  /* 隔，右下里 */
+var d_bizizuo        = 4066;  /* 敝，左边 */
 /* 折起 */
 var z_yi             = 5001;  /* 乙 */
 var z_le             = 5002;  /* 了 */

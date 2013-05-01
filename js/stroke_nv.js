@@ -33,4 +33,5 @@ stroke_nv = {
 	28: "hengzhepiezhewanshugou",
 	29: "shuzhehengzheshugou",
 	30: "hengzheshuzhehengzheshugou",
+	31: "duoheng",
 }

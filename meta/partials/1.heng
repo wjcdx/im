@@ -159,3 +159,4 @@ var h_guazizhong    = 0,  /* 寡，中部 */
 var h_nangzitou     = 0,  /* 囊，最上 */
 var h_yazili		= 0,  /* 压，里面 */
 var h_jianzishen	= 0,  /* 兼 */
+var h_pieyangdi		= 0,  /* 差, 中间 */

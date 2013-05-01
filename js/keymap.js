@@ -64,8 +64,8 @@ var pattern_maps = {
 			pattern_ud_up_1_down_heng_2,
 			pattern_ud_up_1_down_wei_2,
 			pattern_ud_up_1_down_heng_many,
-		 ],
-	'B': [
+	//	 ],
+	//'B': [
 			pattern_ud_up_heng_2_down_1,
 			pattern_ud_up_wei_2_down_1,
 			pattern_ud_up_heng_many_down_1,
@@ -100,6 +100,7 @@ var bushou_maps = {};
 
 var stroke_maps = {
 	'G': [heng],
+	'B': [duoheng],
 	'H': [shu],
 	'E': [pie],
 	'R': [na],

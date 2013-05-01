@@ -30,3 +30,4 @@ var hengzheshuwanhenggou            = 27;  /* 几，乙 */
 var hengzhepiezhewanshugou          = 28;  /* 阳 */
 var shuzhehengzheshugou             = 29;  /* 与，马 */
 var hengzheshuzhehengzheshugou      = 30;  /* 乃，杨 */
+var duoheng							= 31;  /* 日，多横 */
