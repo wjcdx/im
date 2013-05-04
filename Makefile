@@ -38,4 +38,13 @@ TRIE_AWK = scripts/trie.awk
 
 trie:
 	$(TRIE_AWK) data/allabbrs.dat data/dict.utf8.xh 100
+
+csea: cs ea
+
+ea:
+	scripts/char3k5_ea.awk data/3500.lst > js/char3k5_ea.js
+
+cs:
+	scripts/char8k3_cs.awk data/8300.lst > js/char8k3_cs.js
+
 	

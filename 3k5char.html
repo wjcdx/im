@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript" src="js/pattern.js"></script>
+<script language="javascript" src="js/stroke.js"></script>
+<script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/charset.js"></script>
+<script type="text/javascript">
+
+function print_head(c, seq)
+{
+	document.write(c.char + "<br />");
+}
+
+function print_chars_abbrs()
+{
+	for (var i in Characters) {
+		var c = Characters[i];
+		print_head(c);
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		print_chars_abbrs();
+	</script>
+</body>
+
+</html>

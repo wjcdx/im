@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript" src="js/pattern.js"></script>
+<script language="javascript" src="js/stroke.js"></script>
+<script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/charset.js"></script>
+<script language="javascript" src="js/partial_nv.js"></script>
+<script language="javascript" src="js/pattern_nv.js"></script>
+<script language="javascript" src="js/stroke_nv.js"></script>
+<script language="javascript" src="js/char3k5_ea.js"></script>
+<script language="javascript" src="js/char8k3_cs.js"></script>
+<script type="text/javascript">
+
+function find_in_3k5(c)
+{
+	for (var i in Characters) {
+		var ent = Characters[i];
+		if (ent.char == c)
+			return ent;
+	}
+	return null;
+}
+
+function print_nonexist_char(c)
+{
+	document.write("Characters[Characters.length] = {<br />");
+	document.write("&nbsp;&nbsp;&nbsp;char: \"" + c + "\",<br />");
+	document.write("&nbsp;&nbsp;&nbsp;first: pattern_,<br />");
+	document.write("&nbsp;&nbsp;&nbsp;later: [],<br />");
+	document.write("}<br />");
+}
+
+function print_existing_char(c)
+{
+	var ent = find_in_3k5(c);
+	if (ent == null)
+		return;
+
+	document.write("Characters[Characters.length] = {<br />");
+	document.write("&nbsp;&nbsp;&nbsp;char: \"" + c + "\",<br />");
+	document.write("&nbsp;&nbsp;&nbsp;first: " + pattern_nv[ent.first] + ",<br />");
+	document.write("&nbsp;&nbsp;&nbsp;later: [");
+	for (var i in ent.later) {
+		var s = ent.later[i];
+		if (i != 0) {
+			document.write(",&nbsp;");
+		}
+
+		if (s > 1000) {
+			document.write(partial_nv[s]);
+		} else {
+			document.write(stroke_nv[s]);
+		}
+	}
+	document.write("],<br />");
+	document.write("}<br />");
+}
+
+function print_full_charset()
+{
+	for (var i in Chars8k3) {
+		var c = Chars8k3[i];
+		if (Chars3k5[c] == undefined) {
+			print_nonexist_char(c);
+		} else {
+			print_existing_char(c);
+		}
+	}
+}
+
+</script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		print_full_charset();
+	</script>
+</body>
+
+</html>
