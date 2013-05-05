@@ -101,9 +101,12 @@ var partial_strokes = {
 	h_youxin        : [heng, shu, hengzheshu, pie, shuzheheng, heng, heng],  /* 酉，辛 */
 	h_wuxu          : [heng, pie, nagou, pie, dian],  /* 戊 */
 	h_wuzidi        : [heng, pie, shuwanhenggou],  /* 兀 */
+	h_yiyou			: [heng, nagou, dian],  /* 弋，游 */
+	h_nian			: [heng, shu, shu, heng],  /* 廿 */
+	h_mian			: [heng, shu, shuzheheng, hengzheshugou],  /* 丏 */
+	h_sa			: [heng, pie, shu, shu],  /* 卅 */
+	h_lei			: [duoheng, shu, pie, na],  /* 耒 */
 	
-	h_shubian		: [heng, pie, nagou, pie, dian, dian],  /* 戍, 边 */
-
 	h_tishoupang	: [heng, shugou, ti],  /* 提 */
 	h_caozitou		: [heng, shu, shu],  /* 草 */
 	h_jiangzikuang	: [heng, shuzheheng],  /* 匠 */
@@ -147,7 +150,6 @@ var partial_strokes = {
 	h_yangzizh      : [duoheng, pie, na],  /* 养，中部 */
 	h_yangzishen	: [duoheng, shu],  /* 羊，下部 */
 	h_jiziyou       : [heng, piezheheng, pie, shuwanhenggou],  /* 既，右边 */
-	h_gengzizuo     : [duoheng, shu, pie, na],  /* 耕，左边 */
 	h_zaizikuang	: [heng, shu, heng, nagou, pie, dian],  /* 栽，去木 */
 	h_hengxiapie    : [heng, pie],  /* 夏，最上 */
 	h_sizizuo       : [heng, shu, duoheng, piezheheng, dian],  /* 肆，左边 */
@@ -175,6 +177,7 @@ var partial_strokes = {
 	h_yazili		: [heng, shu, heng, dian],  /* 压，里面 */
 	h_jianzishen	: [heng, hengzheshu, duoheng, shu, shu, pie, na],  /* 兼 */
 	h_pieyangdi		: [duoheng, pie],  /* 差, 中间 */
+	h_youwudian		: [heng, pie, shuwanhenggou],  /* 尤，无点 */
 
 
 	/* 竖起 */
@@ -213,7 +216,8 @@ var partial_strokes = {
 	s_chuan         : [shu, hengzheshu, heng, shu, hengzheshu, heng, shu],  /* 串 */
 	s_guo           : [shu, hengzheshu, duoheng, shu, pie, na],  /* 果 */
 	s_yu            : [shu, hengzheshu, duoheng, shu, hengzheshugou, shu, heng, dian],  /* 禺 */
-	s_zuzipang		: [shu, hengzheshu, heng, shu, heng, shu, ti],  /* 跟，左边 */
+	s_ran			: [shu, hengzheshugou, shu, duoheng],  /* 冉 */
+	s_yeyao			: [shu, hengzheshu, duoheng, nagou, pie],  /* 曳，摇 */
 
 	s_tongzikuang	: [shu, hengzheshugou],  /* 同 */
 	s_lidaopang		: [shu, shugou],  /* 刚 */
@@ -250,6 +254,7 @@ var partial_strokes = {
 	s_mianzishen	: [shu, hengzheshu, heng, pie, shuwanhenggou],  /* 免, 下面 */
 	s_xiangzishen	: [shu, hengzheshu, heng, pie, wanshugou, pie, pie, pie, dian],  /* 象，下部 */
 	s_guizishen		: [shu, hengzheshu, duoheng, shuwanhenggou],  /* 龟, 下部 */
+	s_zuzipang		: [shu, hengzheshu, heng, shu, heng, shu, ti],  /* 跟，左边 */
 
 	/* 撇起 */
 	p_eight         : [pie, na],  /* 八 */
@@ -319,6 +324,7 @@ var partial_strokes = {
 	p_zhong         : [pie, heng, shu, hengzheshu, duoheng, shu, duoheng],  /* 重 */
 	p_gui           : [pie, shu, hengzheshu, duoheng, pie, shuwanhenggou, piezheheng, dian],  /* 鬼 */
 	p_yu            : [pie, shu, hengzheshu, heng, shu, hengzheshugou, shu, ti, dian],  /* 禹 */
+	p_yimai			: [pie, na],  /* 乂,麦 */
 
 	p_shao          : [pie, hengzheshugou, dian],  /* 勺 */
 
@@ -421,6 +427,8 @@ var partial_strokes = {
 	d_nong          : [dian, henggou, pie, shuzheti, pie, na],  /* 农 */
 	d_hai           : [dian, heng, piezheheng, pie, pie, dian],  /* 亥 */
 	d_liang         : [dian, hengzheshu, duoheng, shuzheti, pie, na],  /* 良 */
+	d_yatou			: [dian, pie, shu],  /* 丫，头 */
+	d_bian			: [dian, heng, shu, dian],  /* 卞 */
 	
 	d_ldsl			: [dian, dian],  /* 冬 */
 	d_xingzitou     : [dian, dian, pie],  /* 兴，上面，不带横 */
@@ -500,6 +508,14 @@ var partial_strokes = {
 	z_su			: [hengzheshu, duoheng, shu, pie, shu, pie, dian],  /* 肃 */
 	z_lishu         : [hengzheshu, duoheng, shugou, dian, ti, pie, na],  /* 隶，属 */
 	z_chengdan		: [hengzhepie, shugou, duoheng, hengzhepie, pie, na],  /* 承 */
+	z_nie			: [hengzheshugou, shuwanhenggou],  /* 乜 */
+	z_jiejue		: [hengzhepie, shugou, ti],  /* 孑孓 */
+	z_juejie		: [hengzhepie, shugou, na],  /* 孓孑 */
+	z_yao			: [piezheheng, piezheheng, dian],  /* 幺 */
+	z_guai			: [hengzheshu, heng, pie, na],  /* 夬 */
+	z_pan			: [shuzheheng, shu, heng, pie],  /* 爿 */
+	z_wu			: [shuzheheng, hengzheshugou, heng, pie],  /* 毋 */
+	z_gen			: [hengzheshu, duoheng, shuzheti, pie, na],  /* 艮 */
 
 	z_cangzidi		: [hengzheshugou, shuwanhenggou],  /* 仓，下部 */
 	z_xiongzikuang	: [shuzheheng, shu],  /* 画, 下框 */
@@ -508,14 +524,12 @@ var partial_strokes = {
 	z_youerpang		: [hengzhepiezhewanshugou, shu],  /* 那 */
 	z_danerpang		: [hengzheshugou, shu],  /* 印 */
 	z_shutidian		: [shuzheti, dian],  /* 以，左边 */
-	z_youzipang		: [piezheheng, piezheheng, dian],  /* 幼 */
 	z_xunzitou		: [hengzheshu, duoheng],  /* 寻 */
 	z_shouzizuo     : [shuzheti, shu],  /* 收，左边 */
 	z_xunziyou      : [hengzhenagou, heng, shu],  /* 讯，右边 */
 	z_jiaosipang	: [piezheheng, piezheheng, ti],  /* 红 */
 	z_siziban       : [piezheheng, piezheheng],  /* 丝，上一半 */
 	z_jianzidi		: [hengzheshuzhehengzhepie, na],  /* 建 */
-	z_jueziyou      : [hengzheshu, heng, pie, na],  /* 决，右边 */
 	z_sanzhe		: [piezhedian, piezhedian, piezhedian],  /* 巡 */
 	z_luanziyou		: [hengzheshugou, shu, dian],  /* 卵，右边 */
 	z_jizizuo       : [hengzheshu, duoheng, shuzheti, dian],  /* 即，左边 */
@@ -527,7 +541,6 @@ var partial_strokes = {
 	z_zhengzidi		: [hengzheshu, duoheng, shugou],  /* 争, 下部 */
 	z_luzitou		: [hengzheshu, duoheng],  /* 录 */
 	z_dianshui      : [shugou, dian, ti, pie, dian],  /* 泰，下面 */
-	z_henziyou		: [hengzheshu, duoheng, shuzheti, pie, na],  /* 很，右边 */
 	z_hanzili		: [hengzhepie, shugou, dian, ti, pie, dian],  /* 函，里面 */
 	z_zhaoziyou		: [shuwanhenggou, pie, dian],  /* 兆，右边 */
 	z_dizidi        : [hengzheshu, heng, shuzhehengzheshugou, shu, pie],  /* 第，下面 */
@@ -553,6 +566,9 @@ var partial_strokes = {
 	z_dingxiazuo    : [shuzhehengzheshu, heng, pie],  /* 鼎，下左 */
 	z_chiyoush      : [shuzheheng, shu, shu, heng],  /* 嗤，右上 */
 	z_yushangyou    : [hengzheshu, duoheng],  /* 舆，上右 */
+	z_gengzili		: [hengzheshu, duoheng, pie, na],  /* 庚，里面 */
+	z_chengzishang	: [hengzhepie, shugou, hengzhepie, pie, na],  /* 丞，上部 */
+	z_hanzili		: [hengzhepie, shugou, dian, ti, pie, dian],  /* 函，里面 */
 };
 
 /* 键盘映射表 */
@@ -12014,7 +12030,7 @@ Characters[Characters.length] = {
 Characters[Characters.length] = {
 	char: "蔑",
 	first: pattern_ud_up_middle_down,
-	later: [h_caozitou, s_siwuzhe, h_shubian]
+	later: [h_caozitou, s_siwuzhe, h_wuxu, dian]
 }
 Characters[Characters.length] = {
 	char: "模",
