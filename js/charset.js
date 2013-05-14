@@ -469,6 +469,7 @@ var partial_strokes = {
 	d_yizitou       : [dian, pie, heng, pie, dian],  /* 益，上部 */
 	d_gezili        : [dian, pie, heng, shu],  /* 隔，右下里 */
 	d_bizizuo       : [dian, pie, shu, hengzheshugou, shu, pie, dian],  /* 敝，左边 */
+	d_hezizuo		: [dian, henggou, pie, shu, dian, duoheng, shu, heng],  /* 鹤，左边 */
 
 	/* 折起 */
 	z_yi            : [hengzheshuwanhenggou],  /* 乙 */
