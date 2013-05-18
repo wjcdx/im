@@ -573,6 +573,7 @@ var partial_strokes = {
 	z_gengzili		: [hengzheshu, duoheng, pie, na],  /* 庚，里面 */
 	z_chengzishang	: [hengzhepie, shugou, hengzhepie, pie, na],  /* 丞，上部 */
 	z_hanzili		: [hengzhepie, shugou, dian, ti, pie, dian],  /* 函，里面 */
+	z_juzikuang		: [hengzheshu, heng, pie, hengzheshugou],  /* 局，去口，外框 */
 };
 
 /* 键盘映射表 */
