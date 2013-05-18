@@ -80,3 +80,6 @@ var pattern_round_left_right 				= 309; /* 巫 */
 
 /* 结构型：品字形及其他 */
 var pattern_pin 							= 401;
+
+var pattern_ignore							= 0;
+

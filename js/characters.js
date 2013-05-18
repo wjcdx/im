@@ -20945,7 +20945,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𠳐",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -29930,7 +29930,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥻗",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30410,7 +30410,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "氅",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30605,7 +30605,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "憩",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30615,22 +30615,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "篝",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "篥",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "篦",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "篪",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30640,7 +30640,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "盥",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30760,7 +30760,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "赟",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30820,12 +30820,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "壅",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "羲",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30835,7 +30835,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "瞥",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30905,17 +30905,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "褰",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "寰",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "窸",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30930,12 +30930,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "嬖",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "犟",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30950,7 +30950,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "颡",
-   first: pattern_,
+   first: pattern_lr_left_shu_2_right_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -30990,7 +30990,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "螫",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31005,12 +31005,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "觳",
-   first: pattern_,
+   first: pattern_lr_left_shu_2_right_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "罄",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31020,7 +31020,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "薹",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31035,22 +31035,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "薷",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "薰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藓",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藁",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31065,7 +31065,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "懋",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31075,7 +31075,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "翳",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31110,7 +31110,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "壑",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31180,22 +31180,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "羁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "罽",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "罾",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "嶷",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31270,27 +31270,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "簌",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "篾",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "篼",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簖",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簋",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31300,7 +31300,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "黛",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31330,7 +31330,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "龠",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31415,17 +31415,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "燮",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鹫",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "襄",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31455,7 +31455,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "懑",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31485,12 +31485,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蹇",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "謇",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31505,12 +31505,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "檗",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "擘",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31520,7 +31520,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "隳",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31530,7 +31530,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蟊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31540,32 +31540,32 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鍪",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鏊",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鳌",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬈",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬃",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "瞽",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31595,17 +31595,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "藜",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藠",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藩",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31615,7 +31615,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蹙",
-   first: pattern_,
+   first: pattern_ud_up_wei_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31625,17 +31625,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "燹",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "餮",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "瞿",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31665,7 +31665,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鹭",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31735,12 +31735,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "簟",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簪",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31800,12 +31800,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蹩",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鎏",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31815,7 +31815,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "彝",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31825,7 +31825,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鬏",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31850,22 +31850,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "藿",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蘧",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蘅",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "麓",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31885,17 +31885,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "霪",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "霭",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "霨",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -31985,12 +31985,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "籀",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "籁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32045,7 +32045,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "羸",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32080,7 +32080,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "襞",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32105,12 +32105,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蘩",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蘖",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32120,7 +32120,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "霰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32130,7 +32130,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "矍",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32145,7 +32145,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鼍",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32180,17 +32180,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "黧",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "纂",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "璺",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32240,7 +32240,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鼙",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32255,12 +32255,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "颦",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "曩",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32280,7 +32280,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "夔",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32300,7 +32300,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鐾",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32310,7 +32310,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蠡",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32335,7 +32335,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "霾",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32345,7 +32345,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "饕",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32370,17 +32370,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "饔",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬻",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬟",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32430,7 +32430,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蠹",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32460,12 +32460,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "纛",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬣",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32485,12 +32485,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "戆",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "爨",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32500,12 +32500,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "亍",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
    char: "彳",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32520,17 +32520,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "殳",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𠙶",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "毌",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32540,7 +32540,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "戋",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32560,12 +32560,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "仝",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𨙮",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32580,7 +32580,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣱼",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32595,7 +32595,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "宄",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32635,12 +32635,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "芏",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芃",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32655,12 +32655,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨙶",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𨙸",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32725,7 +32725,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "甪",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32775,7 +32775,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𢖳",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32800,7 +32800,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨸝",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32890,62 +32890,62 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "毐",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𦔮",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芣",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "苊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "苉",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芘",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䒜",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芴",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芠",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𫇭",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芤",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -32985,7 +32985,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "尨",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33000,17 +33000,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "坒",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "芈",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𠧚",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33020,12 +33020,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "旵",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "呙",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33050,17 +33050,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "岜",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "呇",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "冏",
-   first: pattern_,
+   first: pattern_round_up,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33070,7 +33070,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "岙",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33115,7 +33115,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨚔",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33140,12 +33140,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣲘",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𣲗",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33245,12 +33245,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨚓",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "岊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33295,7 +33295,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨚕",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33405,7 +33405,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "弆",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33420,32 +33420,32 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦭜",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "苼",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茋",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "苧",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "苾",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "苠",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33510,7 +33510,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "昇",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33555,7 +33555,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "岽",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33620,7 +33620,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "垈",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33690,7 +33690,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦔯",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33745,7 +33745,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "忞",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33755,7 +33755,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "並",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33805,12 +33805,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "峃",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "穸",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33870,7 +33870,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "卺",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33895,7 +33895,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𡛟",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33930,7 +33930,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "叕",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33945,7 +33945,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𩧬",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33980,7 +33980,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "砉",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -33990,7 +33990,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "㛃",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34000,7 +34000,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤤒",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34075,7 +34075,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "垚",
-   first: pattern_,
+   first: pattern_pin,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34110,12 +34110,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "耇",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "土+𡕘",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34155,72 +34155,72 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "荖",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "荁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "荙",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "荛",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茈",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茽",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "荄",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茺",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蔄",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "荓",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茳",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𦰡",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茛",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "荭",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34300,7 +34300,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥐰",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34320,17 +34320,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "奓",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䶮",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𠡠",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34355,7 +34355,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "昺",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34420,7 +34420,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "昪",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34450,17 +34450,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "峛",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𡷫",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𪨰",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34545,7 +34545,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "舁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34565,7 +34565,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "垕",
-   first: pattern_,
+   first: pattern_ud_up_wei_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34585,12 +34585,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "弇",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "侴",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34610,7 +34610,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦙶",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34780,12 +34780,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "宬",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "窀",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34880,7 +34880,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "枲",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34915,7 +34915,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "彖",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34925,7 +34925,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "恝",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34960,7 +34960,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤤺",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -34995,7 +34995,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤤸",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35030,7 +35030,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𡑍",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35055,7 +35055,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "垿",
-   first: pattern_,
+   first: pattern_lr_left_1_right_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35070,17 +35070,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "莰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "茝",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䓣",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35090,27 +35090,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦯬",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "莶",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "莝",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䓂",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "莙",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35200,7 +35200,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "恧",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35215,7 +35215,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨐈",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35230,7 +35230,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "牙+合",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35240,7 +35240,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "赀",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35275,7 +35275,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "冔",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35320,7 +35320,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "崁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35335,7 +35335,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "輋",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35350,7 +35350,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "崀",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35390,7 +35390,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "眚",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35400,12 +35400,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤙔",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "笫",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35455,7 +35455,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨈓",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35490,12 +35490,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨛭",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬯",
-   first: pattern_,
+   first: pattern_ud_up_wei_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35545,7 +35545,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "眢",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35600,7 +35600,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "桊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35730,27 +35730,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "礐",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "宧",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "窅",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "窊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "窎",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35785,22 +35785,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "隺",
-   first: pattern_,
+   first: pattern_single,
    later: [],
 }
 Characters[Characters.length] = {
    char: "堲",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "疍",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𨺙",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35815,7 +35815,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "烝",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35840,7 +35840,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𡝐",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35850,7 +35850,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "砮",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35860,7 +35860,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "哿",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35910,7 +35910,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "䂮",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -35970,7 +35970,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "嫢",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36010,7 +36010,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "晢",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36030,7 +36030,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "壸",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36045,27 +36045,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "菝",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "萚",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "菥",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "莿",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䓫",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36075,47 +36075,47 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "䓬",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "萆",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "菂",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "菍",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "菼",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "萣",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䓨",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "菉",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䓛",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36215,12 +36215,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "祡",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "砦",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36235,7 +36235,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣆳",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36255,7 +36255,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣆲",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36315,17 +36315,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𡹇",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "崧",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "崟",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36335,7 +36335,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "崒",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36430,17 +36430,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "笱",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "笣",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "笯",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36480,7 +36480,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𢔁",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36510,7 +36510,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "悆",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36610,7 +36610,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "堃",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36620,7 +36620,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "羕",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36695,7 +36695,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "璗",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36725,7 +36725,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "寁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36935,7 +36935,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "絜",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36985,7 +36985,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤥿",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -36995,7 +36995,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤥽",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37015,7 +37015,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "堼",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37055,7 +37055,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𢯺",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37065,7 +37065,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "絷",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37075,7 +37075,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𡎚",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37085,22 +37085,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "葜",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "惎",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "萳",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "葙",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37110,17 +37110,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "葴",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蒇",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蒈",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37130,37 +37130,37 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蒉",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蓇",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "萩",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蒐",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "葰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "葎",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "葹",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37170,22 +37170,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蒎",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "葖",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蒄",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "萹",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37195,7 +37195,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "棽",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37210,7 +37210,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣓉",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37265,7 +37265,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "盚",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37295,7 +37295,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "奡",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37315,7 +37315,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "詟",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37330,7 +37330,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "棐",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37345,12 +37345,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "黹",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "牚",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37360,7 +37360,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥆧",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37385,7 +37385,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𧿹",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37400,7 +37400,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "斝",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37410,7 +37410,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "崶",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37430,7 +37430,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "嵅",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37440,7 +37440,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "嵚",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37450,7 +37450,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𫖮",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37495,7 +37495,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨧀",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37505,7 +37505,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨱇",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37560,27 +37560,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "筀",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筘",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筜",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筥",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筅",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37615,7 +37615,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "畬",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37680,7 +37680,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鵟",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37730,7 +37730,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "粢",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37765,7 +37765,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣸣",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37860,12 +37860,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "甯",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "棨",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -37955,7 +37955,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "矞",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38040,7 +38040,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤧛",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38065,7 +38065,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "嶅",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38085,12 +38085,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "䪞",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "髢",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38130,42 +38130,42 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蒱",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蒨",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蓏",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蔀",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蓢",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蓂",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蒻",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蓣",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38180,7 +38180,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "榃",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38240,7 +38240,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "石+肯",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38260,7 +38260,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𩐁",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38290,12 +38290,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "觜",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𨝘",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38325,7 +38325,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "㬊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38340,7 +38340,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨁂",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38425,7 +38425,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨨏",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38445,27 +38445,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "篢",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筻",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筼",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筶",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "筤",
-   first: pattern_,
+   first: pattern_ud_up_1_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38575,7 +38575,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦝼",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38585,7 +38585,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "裛",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38745,7 +38745,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "塱",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38795,7 +38795,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "愍",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38910,12 +38910,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "銎",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𡐓",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38930,7 +38930,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𪤗",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38945,27 +38945,27 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蔌",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蔈",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蓰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蔹",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蔊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -38990,7 +38990,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣗋",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39010,7 +39010,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "疐",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39050,7 +39050,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥗽",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39060,7 +39060,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥔲",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39080,7 +39080,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鮆",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39100,7 +39100,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "㬎",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39130,7 +39130,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨱏",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39190,12 +39190,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "箨",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "箖",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39205,7 +39205,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥮾",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39235,12 +39235,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "槃",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "㙦",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39290,12 +39290,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𩽾",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "夐",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39310,7 +39310,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鸑",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39345,7 +39345,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣄎",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39385,7 +39385,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "㽏",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39410,17 +39410,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "窬",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "窭",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "㮾",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39525,22 +39525,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "薁",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蕰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蔃",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鼒",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39570,12 +39570,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "慭",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "霅",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39600,7 +39600,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "曏",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39650,12 +39650,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "罶",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "嶲",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39665,7 +39665,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "㠇",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39715,7 +39715,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "篊",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39730,7 +39730,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "皛",
-   first: pattern_,
+   first: pattern_pin,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39750,7 +39750,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𩾃",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39770,7 +39770,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "橥",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39800,7 +39800,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "翦",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39840,7 +39840,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "瑬",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39865,7 +39865,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鶱",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39885,7 +39885,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥛚",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39925,7 +39925,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤩲",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39955,7 +39955,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤩄",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39965,7 +39965,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "憙",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39980,7 +39980,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "薳",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -39995,32 +39995,32 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蘋",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𨞼",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蕗",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "薐",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "薢",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蕹",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40045,12 +40045,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "瑿",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "觱",
-   first: pattern_,
+   first: pattern_ud_up_wei_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40060,7 +40060,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥕢",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40115,7 +40115,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "曌",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40150,7 +40150,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𧎥",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40185,7 +40185,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨱑",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40205,22 +40205,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "篚",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䈪",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "篯",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簉",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40235,7 +40235,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "盦",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40295,7 +40295,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鷟",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40320,12 +40320,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "燊",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "燚",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40375,7 +40375,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𢣏",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40395,7 +40395,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "黉",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40415,7 +40415,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "翯",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40435,7 +40435,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤩽",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40455,7 +40455,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "髽",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40465,17 +40465,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "盩",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "薿",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "薸",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40500,7 +40500,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "繄",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40540,7 +40540,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨭎",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40550,7 +40550,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨭆",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40575,7 +40575,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨱔",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40610,17 +40610,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "簕",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簃",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簏",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40730,17 +40730,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鱀",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "螱",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "甓",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40755,7 +40755,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦈡",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40765,7 +40765,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤪌",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40790,22 +40790,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "釐",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "鬶",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "䰂",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "爇",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40820,22 +40820,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "虉",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藟",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藦",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "藨",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40870,7 +40870,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𥖨",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40900,7 +40900,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "嚚",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40910,7 +40910,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𩪁",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -40935,22 +40935,22 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "簠",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簝",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "簰",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "𥳘",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41005,7 +41005,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𦒍",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41065,7 +41065,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣂏",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41100,7 +41100,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𧒽",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41115,7 +41115,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鳘",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41130,7 +41130,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鼗",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41140,7 +41140,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𩾌",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41165,7 +41165,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "蠃",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41190,17 +41190,17 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鬒",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蘶",
-   first: pattern_,
+   first: pattern_ud_up_1_down_heng_2,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蘘",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41225,7 +41225,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨟠",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41245,7 +41245,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "犨",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41260,7 +41260,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𨭉",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41325,7 +41325,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𤫉",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41335,7 +41335,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "鬘",
-   first: pattern_,
+   first: pattern_ud_up_heng_2_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41355,12 +41355,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "𣌓",
-   first: pattern_,
+   first: pattern_ignore,
    later: [],
 }
 Characters[Characters.length] = {
    char: "罍",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41405,12 +41405,12 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "糵",
-   first: pattern_,
+   first: pattern_ud_up_shu_2_down_1,
    later: [],
 }
 Characters[Characters.length] = {
    char: "蘼",
-   first: pattern_,
+   first: pattern_ud_up_1_down_wei_2,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41450,7 +41450,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "亹",
-   first: pattern_,
+   first: pattern_ud_up_middle_down,
    later: [],
 }
 Characters[Characters.length] = {
@@ -41460,7 +41460,7 @@ Characters[Characters.length] = {
 }
 Characters[Characters.length] = {
    char: "籥",
-   first: pattern_,
+   first: pattern_ud_up_1_down_shu_2,
    later: [],
 }
 Characters[Characters.length] = {
