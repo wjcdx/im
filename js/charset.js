@@ -185,6 +185,15 @@ var partial_strokes = {
 	
 	
 	h_geming		: [h_caoheng, s_gezidi],  /* 革, 命 */
+	h_qishi			: [h_qizitou, p_eightdian],  /* 其, 实 */
+	h_doufu			: [heng, s_kou, d_qianzitou],  /* 豆，腐 */
+	h_maiqian		: [h_ten, henggou, d_tou],  /* 卖，钱 */
+	h_guantou		: [h_caozitou, s_kou, s_kou, p_quezipang],  /* 罐，右边 */
+	h_gudong		: [h_shi, s_kou, d_qianzitou, h_ten, z_you],  /* 鼓，动 */
+	h_zhenshi		: [h_ten, s_juzitou, p_eightdian],  /* 真，实 */
+	h_yifanti		: [h_shi, d_tubaogai, heng, s_kou, d_qianzitou],  /* 真，实 */
+	h_geding		: [heng, s_kou, s_tongzikuang, d_gezili],  /* 隔，右边 */
+	h_zoulu			: [h_tu, s_zouzidi],  /* 走,路 */
 
 
 
@@ -269,7 +278,18 @@ var partial_strokes = {
 	
 	
 	
-	s_he			: [s_ri, p_baozitou, p_ren, shuzheheng],  /* 曷 */
+	s_hebu			: [s_ri, p_baozitou, p_ren, shuzheheng],  /* 曷, 不 */
+	s_manmiao		: [s_ri, s_siwuzhe, z_you],  /* 曼,妙 */
+	s_heiye			: [s_heizitou, d_sidiandi],  /* 黑，夜 */
+	s_tongxue		: [s_tongzikuang, heng, s_kou],  /* 同，学 */
+	s_bufa			: [s_zhi, s_shaowud],  /* 步，伐 */
+	s_jingse		: [s_ri, d_jingdu],  /* 景，色 */
+	s_quqiubai		: [s_mu, s_mu, p_quezipang],  /* 瞿秋白 */
+	s_haojiao		: [s_kou, h_qiaoziyou],  /* 号，角 */
+	s_huer			: [s_huzipang, h_seven, p_ji],  /* 虎 */
+	s_gutou			: [s_guzitou, d_tubaogai, p_yue],  /* 骨，头 */
+	s_shushan		: [s_siwuzhe, p_baozitou，s_chong],  /* 蜀，山 */
+	s_juequ			: [s_mu, s_mu, p_quezipang, z_you],  /* 攫, 右边 */
 
 
 
@@ -416,6 +436,14 @@ var partial_strokes = {
 
 
 	p_yuer			: [p_weizitou, s_tian, heng], /* 鱼,儿 */
+	p_xianqian		: [p_niuwuwei, p_er], /* 先,前 */
+	p_zanmei		: [p_xianqian, p_xianqian, s_bei], /* 赞，美 */
+	p_shubei		: [p_jiu, z_shutidd, z_shutidd, nagou], /* 鼠，辈 */
+	p_qianque		: [p_qianzitou, p_ren], /* 欠，缺 */
+	p_beiwei		: [p_beizitou, h_ten], /* 卑，微 */
+	p_juewei		: [p_caizitou, s_siwuzhe, z_jizizuo, h_cun], /* 爵，位 */
+	p_jinqian		: [p_ren, h_jinxia], /* 金，钱 */
+	p_shiwu			: [p_ren, h_liang], /* 食，物 */
 
 
 
@@ -495,6 +523,20 @@ var partial_strokes = {
 
 
 	d_yanyu			: [d_liuzitou, h_two, s_kou],  /* 言，语 */
+	d_luer			: [d_guang, z_luzhongsh, h_bizizuo, p_bi],  /* 鹿 */
+	d_xinku			: [d_li, h_ten],  /* 辛，苦 */
+	d_jingdu		: [d_liuzitou, s_kou, z_xiao],  /* 京，都 */
+	d_qiuzhang		: [d_liuzitou, h_youxin],  /* 酋，长 */
+	d_zunzhong		: [d_qiuzhang, h_cun],  /* 尊，重 */
+	d_xiangyang		: [d_liuzitou, s_kou, s_kou, h_sanhls, p_yizidi],  /* 襄，阳 */
+	d_yanger		: [d_liuzitou, h_yangzishen],  /* 羊 */
+	d_mofang		: [d_guang, h_mu, h_mu, h_stone],  /* 磨，坊 */
+	d_cixu			: [d_liangdianshui, p_qianque],  /* 次，序 */
+	d_yongzheng		: [d_liuzitou, p_xiang, p_quezipang],  /* 雍，正 */
+	d_aile			: [d_liuzitou, s_kou, p_yizidi],  /* 哀，乐 */
+	d_anquan		: [d_baogaitou, z_nv],  /* 安，全 */
+	d_linlin		: [d_mi, p_xi, h_jiangyouxia],  /* 粼，左边 */
+	d_yichu			: [d_yizitou, s_minzidi],  /* 益,处 */
 
 
 
@@ -608,6 +650,9 @@ var partial_strokes = {
 
 
 	z_bi			: [z_shi, s_kou, d_li, h_ten],  /* 辟 */
+	z_canjia		: [z_sigong, h_da, p_sanpie],  /* 参，加 */
+	z_yuanfen		: [z_yuanzitou, h_zhizhu],  /* 缘，右边 */
+	z_lieshu		: [z_sanzhe, s_kou, p_chadian, z_shutidd, z_shutidd, nagou],  /* 躐,右边 */
 
 
 };
