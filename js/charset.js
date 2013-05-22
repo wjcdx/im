@@ -183,6 +183,7 @@ var partial_strokes = {
 	h_yuzikuang		: [heng, nagou, pie, pie, pie, dian],  /* 彧，围部 */
 	h_chefanti		: [heng, shu, hengzheshu, duoheng, shu],  /* 车，繁体 */
 	h_chexiong		: [heng, shu, hengzheshu, duoheng, shu, shuzheheng, shu],  /* 墼, 上左 */
+	h_mafanti		: [heng, shu, duoheng, shu, hengzheshugou, dian, dian, dian, dian],  /* 馼,左边 */
 	
 	
 	h_geming		: [h_caoheng, s_gezidi],  /* 革, 命 */
@@ -198,6 +199,12 @@ var partial_strokes = {
 	h_rangong		: [h_sizizuo, p_sanpie],  /* 髯，上部 */
 	h_nangkuo		: [h_nangzitou, d_tubaogai, s_kou, s_kou, h_sanhls, p_yizidi],  /* 囊，括 */
 	h_bijiao		: [h_bizizuo, p_bi],  /* 囊，括 */
+	h_yuncai		: [h_two, z_sigong],  /* 云,彩 */
+	h_zhichi		: [h_ten, z_you],  /* 支,持 */
+	h_yuanlao		: [h_two, p_er],  /* 元,老 */
+	h_hongxia		: [h_hengpie, z_sigong],  /* 宏,下部 */
+	h_quliu			: [h_tu, z_sigong],  /* 去，留 */
+	h_gongtong		: [h_gongzitou, p_eightdian],  /* 共，同 */
 
 
 
@@ -295,6 +302,7 @@ var partial_strokes = {
 	s_gutou			: [s_guzitou, d_tubaogai, p_yue],  /* 骨，头 */
 	s_shushan		: [s_siwuzhe, p_baozitou，s_chong],  /* 蜀，山 */
 	s_juequ			: [s_mu, s_mu, p_quezipang, z_you],  /* 攫, 右边 */
+	s_zhanyou		: [s_shangzitou, s_kou],  /* 占,有 */
 
 
 
@@ -450,6 +458,9 @@ var partial_strokes = {
 	p_jinqian		: [p_ren, h_jinxia], /* 金，钱 */
 	p_shiwu			: [p_ren, h_liang], /* 食，物 */
 	p_fenxiang		: [p_ren, z_dao], /* 分,享 */
+	p_pimao			: [p_pizipang, z_you],  /* 紃, 左边 */
+	p_jintian		: [p_ren, d_jinzidi],  /* 今，天 */
+	p_lingyan		: [p_ren, d_lingzidi],  /* 令,颜 */
 
 
 
@@ -655,6 +666,7 @@ var partial_strokes = {
 	z_hanzili		: [hengzhepie, shugou, dian, ti, pie, dian],  /* 函，里面 */
 	z_juzikuang		: [hengzheshu, heng, pie, hengzheshugou],  /* 局，去口，外框 */
 	z_liangzhe		: [piezhedian, piezhedian],  /* 粼, 右部 */
+	z_weiyoushang	: [hengzheshu, shu, heng],  /* 媁,右上 */
 
 
 
@@ -663,6 +675,7 @@ var partial_strokes = {
 	z_yuanfen		: [z_yuanzitou, h_zhizhu],  /* 缘，右边 */
 	z_lieshu		: [z_sanzhe, s_kou, p_chadian, z_shutidd, z_shutidd, nagou],  /* 躐,右边 */
 	z_sifanti		: [z_yao, d_sandiandi],  /* 紃, 左边 */
+	z_weifanti		: [z_weiyoushang, s_kou, h_jiangyouxia],  /* 媁,右边 */
 
 
 };
