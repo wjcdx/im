@@ -184,6 +184,7 @@ var partial_strokes = {
 	h_chexiong		: [heng, shu, hengzheshu, duoheng, shu, shuzheheng, shu],  /* 墼, 上左 */
 	h_mafanti		: [heng, shu, duoheng, shu, hengzheshugou, dian, dian, dian, dian],  /* 馼,左边 */
 	h_sizuoshang	: [heng, shu, duoheng],  /* 肆, 左上 */
+	h_fanhuaxia		: [duoheng, shu, shu, duoheng, shu],  /* 嬅, 右下  */
 	
 	
 	h_geming		: [h_caoheng, s_gezidi],  /* 革, 命 */
@@ -214,6 +215,11 @@ var partial_strokes = {
 	h_yaotang		: [h_gewudian, h_wuzidi],  /* 尧，唐 */
 	h_chenxing		: [h_chang, h_two, z_sangzidi],  /* 辰, 星 */
 	h_changfanti	: [h_sizuoshang, z_sangzidi],  /* 長 */
+	h_shizhong		: [h_two, z_xiao],  /* 示, 众 */
+	h_simiao		: [h_tu, h_cun],  /* 寺, 庙 */
+	h_keyi			: [h_tu, h_cun],  /* 寺, 庙 */
+	h_youbian		: [h_hengpie, s_kou],  /* 右，边 */
+	h_youwu			: [h_hengpie, p_yue],  /* 有，无 */
 
 
 
@@ -318,6 +324,8 @@ var partial_strokes = {
 	s_cici			: [s_zhi, p_bi],  /* 此，次 */
 	s_xiongdi		: [s_kou, p_er],  /* 兄，弟 */
 	s_zhiyou		: [s_kou, p_eightdian],  /* 只,有 */
+	s_danxi			: [s_ri, heng],  /* 旦，夕 */
+	s_yinwei		: [s_kou, h_da],  /* 因，为 */
 
 
 
@@ -493,6 +501,7 @@ var partial_strokes = {
 	p_gezhong		: [p_zhewen, s_kou],  /* 各，种 */
 	p_duoshao		: [p_xi, p_xi],  /* 多, 少 */
 	p_yusu			: [p_baozitou, d_liangdianshui],  /* 匀，速 */
+	p_weixian		: [p_weizitou, h_chang, z_cangzidi],  /* 危，险 */
 
 
 
@@ -569,6 +578,7 @@ var partial_strokes = {
 	d_hezizuo		: [dian, henggou, pie, shu, dian, duoheng, shu, heng],  /* 鹤，左边 */
 	d_jizitou		: [dian, ti, pie, dian, pie, na],  /* 脊，上部 */
 	d_sandiandi		: [dian, dian, dian],  /* 脊，上部 */
+	d_huowupie		: [dian, pie, na],  /* 㶲, 左边 */
 
 
 
@@ -592,6 +602,7 @@ var partial_strokes = {
 	d_naoziyou		: [d_liuzitou, p_chadian, z_xiongzikuang],  /* 脑，右边 */
 	d_chongman		: [d_chongzitou, p_er],  /* 充，满 */
 	d_bingqie		: [d_lanzitou, h_kai],  /* 并，且 */
+	d_kangfen		: [d_liuzitou, p_ji],  /* 亢，奋 */
 
 
 
