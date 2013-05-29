@@ -185,6 +185,7 @@ var partial_strokes = {
 	h_mafanti		: [heng, shu, duoheng, shu, hengzheshugou, dian, dian, dian, dian],  /* 馼,左边 */
 	h_sizuoshang	: [heng, shu, duoheng],  /* 肆, 左上 */
 	h_fanhuaxia		: [duoheng, shu, shu, duoheng, shu],  /* 嬅, 右下  */
+	h_yuzikuang		: [heng, shu, hengzheshugou, shu],  /* 雨，外框  */
 	
 	
 	h_geming		: [h_caoheng, s_gezidi],  /* 革, 命 */
@@ -220,6 +221,7 @@ var partial_strokes = {
 	h_keyi			: [h_tu, h_cun],  /* 寺, 庙 */
 	h_youbian		: [h_hengpie, s_kou],  /* 右，边 */
 	h_youwu			: [h_hengpie, p_yue],  /* 有，无 */
+	h_bofa			: [h_ten, d_tubaogai, z_zi],  /* 勃，左边 */
 
 
 
@@ -303,6 +305,7 @@ var partial_strokes = {
 	s_xiaowugou		: [shu, pie, dian],  /* 小，无勾 */
 	s_shuhengzuo	: [shu, heng],  /* 芈,上左 */
 	s_menfanti		: [shu, hengzheshu, heng, heng, shu, hengzheshugou, heng, heng],  /* 門 */
+	s_guifanti		: [shu, hengzheshu, duoheng, shu, shuwanhenggou, heng, shu, duoheng, hengzheshu, duoheng],  /* 鄳,左边 */
 	
 	
 	
@@ -472,6 +475,7 @@ var partial_strokes = {
 	p_piechong		: [pie, s_chong],  /* 颹, 风里 */
 	p_paiwupie		: [pie, shuzheti, na],  /* 隮, 右中右 */
 	p_daoer			: [pie, duoheng, shu],  /* 隮, 右下 */
+	p_chasidian		: [pie, dian, dian, dian, dian, dian],  /* 鬯，上里 */
 
 
 	p_yuer			: [p_weizitou, s_tian, heng], /* 鱼,儿 */
@@ -502,6 +506,13 @@ var partial_strokes = {
 	p_duoshao		: [p_xi, p_xi],  /* 多, 少 */
 	p_yusu			: [p_baozitou, d_liangdianshui],  /* 匀，速 */
 	p_weixian		: [p_weizitou, h_chang, z_cangzidi],  /* 危，险 */
+	p_jiaoluo		: [p_weizitou, p_yong],  /* 角,落 */
+	p_jianpiao		: [p_ren, heng, d_yingzidi],  /* 检，右边 */
+	p_huali			: [p_danrenpang, p_bi, h_ten],  /* 华，丽 */
+	p_zhaotou		: [p_zhaozizuo, z_zhaoziyou],  /* 兆，头 */
+	p_mianchu		: [p_weizitou, s_tuzishen],  /* 免,除 */
+	p_fenbie		: [p_ren, z_dao],  /* 分，别 */
+	p_gushen		: [p_eightdian, p_ren, s_kou],  /* 谷,神 */
 
 
 
@@ -603,6 +614,7 @@ var partial_strokes = {
 	d_chongman		: [d_chongzitou, p_er],  /* 充，满 */
 	d_bingqie		: [d_lanzitou, h_kai],  /* 并，且 */
 	d_kangfen		: [d_liuzitou, p_ji],  /* 亢，奋 */
+	d_duixian		: [d_liuzitou, s_kou, p_er],  /* 兑，现 */
 
 
 
@@ -727,6 +739,9 @@ var partial_strokes = {
 	z_siyi			: [hengzheshugou, heng, s_kou],  /* 司，仪 */
 	z_taifeng		: [z_sigong, s_kou],  /* 司，仪 */
 	z_zhaoji		: [z_dao, s_kou],  /* 召, 集 */
+	z_yongdao		: [z_yongzitou, p_yong],  /* 甬,道 */
+	z_junxiu		: [z_sigong, p_eightdian, p_zhewen],  /* 俊，右边 */
+	z_yumao			: [z_xi, z_xi],  /* 羽，毛 */
 
 
 };
