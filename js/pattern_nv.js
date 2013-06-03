@@ -76,4 +76,5 @@ pattern_nv = {
 	308: "pattern_round_right_up",
 	309: "pattern_round_left_right",
 	401: "pattern_pin",
+	0: "pattern_ignore",
 }

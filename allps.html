@@ -26,7 +26,7 @@ function print_stroke(s)
 	document.write("'" + stroke_abbrs[s]);
 }
 
-function print_partial(p)
+function print_raw_partial(p)
 {
 	for (var s in p)
 		print_stroke(p[s]);
@@ -42,27 +42,71 @@ function print_split()
 	document.write("'B01");
 }
 
+function partial_splittable(p)
+{
+	for (var s in p) {
+		if (p[s] > 1000)
+			return true;
+	}
+	return false;
+}
+
+function print_later(later, last)
+{
+	if (later > 1000) {
+
+		var p = partial_strokes[partial_nv[later]];
+
+		if (partial_splittable(p)) {
+
+			for (var s in p) {
+				var lst = false;
+				if (last && (s == p.length - 1))
+					lst = true;
+				print_later(p[s], lst);
+			}
+
+		} else {
+
+			if (last)
+				print_last_split();
+			else
+				print_split();
+			print_raw_partial(p);
+
+		}
+
+	} else {
+
+		if (last)
+			print_last_split();
+		else
+			print_split();
+		print_stroke(later);
+
+	}
+}
+
 function print_chars_abbrs()
 {
 	var seq = 100;
 	for (var i in Characters) {
+
 		var c = Characters[i];
 		if (c.char == "扎") {
 			var wjcdx = "debug";
 		}
+
+		if (c.first == pattern_ignore)
+			continue;
+
 		print_head(c, seq++);
 		for (var j in c.later) {
+			var last = false;
 			if (j == c.later.length - 1)
-				print_last_split();
-			else
-				print_split();
+				last = true;
 			var s = c.later[j];
-			if (s > 1000) {
-				var p = partial_strokes[partial_nv[s]];
-				print_partial(p);
-			} else {
-				print_stroke(s);
-			}
+			print_later(s, last);
 		}
 	}
 }
