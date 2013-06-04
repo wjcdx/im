@@ -17,7 +17,7 @@ var pattern_maps = {
 			pattern_lr_left_heng_many_right_wei_many,
 			pattern_lr_left_shu_many_right_heng_many,
 			pattern_lr_left_wei_many_right_heng_many,
-		],
+		 ],
 	'A': [
 			pattern_lr_left_1_right_shu_2,
 			pattern_lr_left_1_right_wei_2,
@@ -100,7 +100,7 @@ var bushou_maps = {};
 
 var stroke_maps = {
 	'G': [heng],
-	'B': [duoheng],
+	'B': [liaheng],
 	'H': [shu],
 	'E': [pie],
 	'R': [na],
