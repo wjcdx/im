@@ -87,12 +87,14 @@ function getNextPartialFirstStroke(later, strokeIndex)
 	if (later == null || strokeIndex == null || strokeIndex.empty())
 		return new StrokeIndex();
 
-	strokeIndex.partialInc();
+	var index = new StrokeIndex();
+	index.assign(strokeIndex);
+	index.partialInc();
 
-	if (later.length <= strokeIndex.partialIndex)
+	if (later.length <= index.partialIndex)
 		return new StrokeIndex();
 
-	return strokeIndex;
+	return index;
 }
 
 function getNextStroke(later, strokeIndex)
@@ -100,26 +102,28 @@ function getNextStroke(later, strokeIndex)
 	if (later == null || strokeIndex == null || strokeIndex.empty())
 		return new StrokeIndex();
 
-	strokeIndex.strokeInc();
+	var index = new StrokeIndex();
+	index.assign(strokeIndex);
+	index.strokeInc();
 
-	if (later.length <= strokeIndex.partialIndex)
+	if (later.length <= index.partialIndex)
 		return new StrokeIndex();
 
-	var p = later[strokeIndex.partialIndex];
+	var p = later[index.partialIndex];
 	if (isPartial(p)) {
-		if (p.length <= strokeIndex.strokeIndex)
+		if (p.length <= index.strokeIndex)
 			return new StrokeIndex();
 	} else {
-		if (strokeIndex.strokeIndex != 0)
+		if (index.strokeIndex != 0)
 			return new StrokeIndex();
 	}
 
-	return strokeIndex;
+	return index;
 }
 
 function getStrokeOfIndex(later, strokeIndex)
 {
-	if (later == null || strokeIndex == null || strokeInde.empty())
+	if (later == null || strokeIndex == null || strokeIndex.empty())
 		return null;
 
 	var c = null;
@@ -131,8 +135,8 @@ function getStrokeOfIndex(later, strokeIndex)
 
 	if (isPartial(p)) {
 
-		c = partial_strokes[strokeIndex.strokeIndex];
-		if (isUndefined(s))
+		c = partial_strokes[partial_nv[p]][strokeIndex.strokeIndex];
+		if (isUndefined(c))
 			return null;
 
 	} else {
@@ -145,12 +149,12 @@ function getStrokeOfIndex(later, strokeIndex)
 	return c;
 }
 
-//find cnow in [a,b];
-function findStrokeInRange(later, start, stop, cnow)
+// check if c among [a,b) is in strokes;
+// where b is the end of the partial.
+function findStrokeInRange(later, start, strokes)
 {
 	if (later == null
-			|| start == null || start.empty()
-			|| stop == null || stop.empty()) {
+			|| start == null || start.empty()) {
 		return new StrokeIndex();
 	}
 
@@ -160,11 +164,11 @@ function findStrokeInRange(later, start, stop, cnow)
 		if (c == null)
 			break;
 
-		if (c == cnow)
+		if (inArray(c, strokes))
 			return start;
 
 		start = getNextStroke(later, start);
-	} while (!start.after(stop));
+	} while (!start.empty());
 
 	return new StrokeIndex();
 }
@@ -173,21 +177,23 @@ function scodeMatchesLater(later, scode)
 {
 	var cnow = 0;
 	var start = new StrokeIndex();
-	var stop = new StrokeIndex();
+	var strokes = null;
 
+	start.set(-1, 0);
 	for (var i = 0; i < scode.length; i++) {
 		
 		cnow = scode.charAt(i).toUpperCase();
-		stop = getNextPartialFirstStroke(later, start);
 		
 		if (isDefined(partial_first_stroke_maps[cnow])) {
-			start = stop;
+			start = getNextPartialFirstStroke(later, start);
+			strokes = partial_first_stroke_maps[cnow];
 		} else if (isDefined(stroke_maps[cnow])) {
-			// do nothing, just search from start to stop
+			// do nothing, just search from start
 			start = getNextStroke(later, start);
+			strokes = stroke_maps[cnow];
 		}
 
-		start = findStrokeInRange(later, start, stop, cnow);
+		start = findStrokeInRange(later, start, strokes);
 		if (start.empty()) {
 			return false;
 		}
