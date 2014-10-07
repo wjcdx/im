@@ -37,7 +37,7 @@ function scode_change()
 	var candidates = new Array();
 	for (var i in Characters) {
 		var c = Characters[i];
-		if (pattnNotBelongsTo(c.first, patterns)) {
+		if (!inArray(c.first, patterns)) {
 			continue;
 		}
 		if (c.char == "兰") {

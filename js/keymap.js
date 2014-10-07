@@ -97,6 +97,25 @@ var pattern_maps = {
 };
 
 var bushou_maps = {};
+// pfs: partial first stroke
+var partial_first_stroke_maps = {
+	'G': [heng],
+	'B': [liaheng],
+	'H': [shu],
+	'E': [pie],
+	'U': [dian],
+	'K': [hengzheshu],
+	'L': [hengzheshugou],
+	'J': [shugou],
+	'I': [hengzhepie],
+	'Z': [shuwanhenggou],
+	'O': [henggou],
+	'S': [shuzheheng, shuzheti, piezheheng, piezhedian, wanshugou, nagou,
+			hengzheshuzheheng, hengzheshuzheti, hengzhenagou, shuzhehengzheshu,
+			shuzhehengzhepie, hengzheshuzhehengzheshu, hengzheshuzhehengzhepie,
+			hengzheshuwanhenggou, hengzhepiezhewanshugou, shuzhehengzheshugou,
+			hengzheshuzhehengzheshugou],
+};
 
 var stroke_maps = {
 	'G': [heng],
