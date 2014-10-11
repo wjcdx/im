@@ -17,6 +17,7 @@
 	}
 	td {
  		border-top: 1px dashed black;
+ 		border-left: 1px dashed black;
 	}
 </style>
 
@@ -38,9 +39,9 @@ function CodeStat()
 function CodeLengthStat()
 {
 	this.codeLen = 0;
-	this.totalRptNo = 0;
-	this.totalCharNo = 0;
 	this.charSign = new Array();
+	this.RepeatCodeNo = 0;
+	this.SingleCodeNo = 0;
 	this.emptyCodeNo = 0;
 	this.totalCodeNo = 0;
 }
@@ -54,12 +55,12 @@ function initPatternChars(pc)
 
 function initStrokeChars(sc)
 {
-	var nums = ['1', '2', '3', '4', '5'];
-	for (var s in stroke_maps) {
+	for (var s in partial_first_stroke_maps) {
 		sc.push(s);
 	}
-	for (var i in nums) {
-		sc.push(nums[i]);
+
+	for (var s in stroke_maps) {
+		sc.push(s);
 	}
 }
 
@@ -68,17 +69,15 @@ function getCand4Scode(cand, scode)
 	var patterns = pattern_maps[scode.charAt(0).toUpperCase()];
 
 	if (isUndefined(patterns)) {
-		cand = null;
 		return;
 	}
 	if (scodeNotInLaterMap(scode.substring(1))) {
-		cand = null;
 		return;
 	}
 
 	for (var i in Characters) {
 		var c = Characters[i];
-		if (pattnNotBelongsTo(c.first, patterns)) {
+		if (!inArray(c.first, patterns)) {
 			continue;
 		}
 		if (scode.length == 1) {
@@ -91,21 +90,14 @@ function getCand4Scode(cand, scode)
 
 function print_scode_stat(codeStat, no)
 {
-	var str = "";
 	if (codeStat == null)
 		return;
-	/*
-	for (var i in codeStat.cand) {
-		var c = codeStat.cand[i];
-		str += Characters[c].char + " ";
-	}
-	*/
+	
 	document.write("<tr>");
 	document.write("<td></td>");
 	document.write("<td></td>");
 	document.write("<td>" + no + "</td>");
 	document.write("<td>" + codeStat.code + "</td>");
-	//document.write("<td>" + str + "</td>");
 	document.write("<td>" + codeStat.cand.length + "</td>");
 	document.write("</tr>");
 }
@@ -121,14 +113,18 @@ function add_cscode_stat(codeStat, codeLenStat)
 		codeLenStat.emptyCodeNo++;
 		return;
 	}
-	codeLenStat.totalRptNo += codeStat.cand.length;
+	
+	if (codeStat.cand.length == 1) {
+		codeLenStat.SingleCodeNo++;
+	} else if (codeStat.cand.length > 1) {
+		codeLenStat.RepeatCodeNo++;
+	}
 
 	var csign = codeLenStat.charSign;
 	for (var i in codeStat.cand) {
 		var cidx = codeStat.cand[i];
 		if (isUndefined(csign[cidx])) {
 			csign[cidx] = 1;
-			codeLenStat.totalCharNo++;
 		} else {
 			csign[cidx]++;
 		}
@@ -156,17 +152,19 @@ function statCountStrokes(scode, count, strkChars, codeLenStat)
 function print_cscode_stat(codeLenStat)
 {
 	document.write("<tr>");
-	document.write("<td></td>");
 	document.write("<td>Code Length: " + codeLenStat.codeLen + "</td>");
-	document.write("<td>Ratio(char covered): " + codeLenStat.totalCharNo
-			+ " / " + Characters.length + " = "
-			+ codeLenStat.totalCharNo/Characters.length + "</td>");
-	document.write("<td>Ratio(average repeat): "
-			+ codeLenStat.totalRptNo + " / " + codeLenStat.totalCodeNo + " = "
-			+ codeLenStat.totalRptNo/codeLenStat.totalCodeNo + "</td>");
-	document.write("<td>Ratio(empty code): " + codeLenStat.emptyCodeNo
+	document.write("<td>Ratio(空码率): " + codeLenStat.emptyCodeNo
 			+ " / " + codeLenStat.totalCodeNo + " = "
 			+ codeLenStat.emptyCodeNo/codeLenStat.totalCodeNo + "</td>");
+	document.write("<td>Ratio(单码率): "
+			+ codeLenStat.SingleCodeNo + " / " + codeLenStat.totalCodeNo + " = "
+			+ codeLenStat.SingleCodeNo/codeLenStat.totalCodeNo + "</td>");
+	document.write("<td>Ratio(重码率): "
+			+ codeLenStat.RepeatCodeNo + " / " + codeLenStat.totalCodeNo + " = "
+			+ codeLenStat.RepeatCodeNo/codeLenStat.totalCodeNo + "</td>");
+	document.write("<td>Ratio(覆盖率): " + codeLenStat.charSign.length
+			+ " / " + Characters.length + " = "
+			+ codeLenStat.charSign.length/Characters.length + "</td>");
 	document.write("</tr>");
 }
 
@@ -178,7 +176,7 @@ function stat_print()
 	initPatternChars(patnChars);
 	initStrokeChars(strkChars);
 
-	for (var i = 1; i < 2; i++) {
+	for (var i = 1; i < 4; i++) {
 		var codeLenStat = new CodeLengthStat();
 		codeLenStat.codeLen = i;
 		/* iterate all patterns */
