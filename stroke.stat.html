@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script language="javascript" src="js/pattern.js"></script>
+<script language="javascript" src="js/stroke.js"></script>
+<script language="javascript" src="js/partials.js"></script>
+<script language="javascript" src="js/charset.js"></script>
+<script language="javascript" src="js/partial_nv.js"></script>
+<script language="javascript" src="js/pattern_nv.js"></script>
+<script language="javascript" src="js/stroke_nv.js"></script>
+<script type="text/javascript">
+
+function isUndefined(v)
+{
+	if (v == undefined)
+		return true;
+	return false;
+}
+
+function Stat(name, nv, func, total)
+{
+	this.name = name;
+	this.nv = nv;
+	this.add = func;
+	this.total = total;
+	this.stats = new Array();
+}
+
+Stat.prototype.dostat = function ()
+{
+	var stats = this.stats;
+	for (var i in Characters) {
+		var c = Characters[i];
+		this.add(c.later);
+	}
+}
+
+String.prototype.wrap = function (length)
+{
+	if (this.length > length)
+		return;
+
+	var str = this;
+
+	for (var i = str.length; i < length; i++) {
+		str += "&nbsp;";
+	}
+	return str;
+}
+
+Stat.prototype.print = function()
+{
+	var j = 1;
+	document.write("\n\nNo\t" + this.name.wrap(64) + "Count\tRatio(Total: " + this.total + ")<br />");
+	for (var i in this.stats) {
+		document.write((j++) + "\t"
+				+ this.nv[i].wrap(64) + ""
+				+ this.stats[i] + "\t"
+				+ this.stats[i] / this.total + "<br />");
+	}
+}
+
+function add_one(stats, s)
+{
+	if (!isUndefined(stats[s])) {
+		stats[s]++;
+	} else {
+		stats[s] = 1;
+	}
+}
+
+function has_part(part)
+{
+	for (var i in part) {
+		var s = part[i];
+		if (s > 1000) {
+			return true;
+		}
+	}
+	
+	return false;
+}
+
+var first_stroke_stat = new Stat("Stroke", stroke_nv, function (part) {
+	if (typeof(part) == "object") {
+		if (part.length == 0) {
+			return;
+		}
+		if (!has_part(part)) {
+			this.add(part[0]);
+			return;
+		}
+
+		for (var i in part) {
+			var s = part[i];
+			if (s > 1000) {
+				var p = partial_strokes[partial_nv[s]];
+				this.add(p);
+			} else {
+				this.add(s);
+			}
+		}
+	} else {
+		var s = part;
+		if (typeof part == 'undefined')
+		{
+			var a = 0;
+		}
+		add_one(this.stats, s);
+		this.total++;
+	}
+}, 0);
+first_stroke_stat.dostat();
+first_stroke_stat.print();
+
+
+</script>
+
+</head>
+
+<body>
+</body>
+
+</html>
